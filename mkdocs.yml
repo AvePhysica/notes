@@ -19,10 +19,6 @@ theme:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
-      inline_syntax:
-        - "$"
-      block_syntax:
-        - "$$"
 
 extra_javascript:
   - javascripts/mathjax.js
