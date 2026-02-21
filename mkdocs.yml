@@ -1,0 +1,26 @@
+site_name: AvePhysica Notes
+site_url: https://AvePhysica.github.io/notes/
+repo_url: https://github.com/AvePhysica/notes
+repo_name: AvePhysica/notes
+
+nav:
+  - 首页: index.md
+  - 关于我: about.md
+  - 笔记:
+      - 示例笔记 1: notes/sample1.md
+      - 示例笔记 2: notes/sample2.md
+  - 代码:
+      - README: code/README.md
+
+theme:
+  name: material
+  language: zh
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
