@@ -9,6 +9,8 @@ nav:
   - 笔记:
       - 示例笔记 1: notes/sample1.md
       - 示例笔记 2: notes/sample2.md
+      - Quantum Field Theory: 
+          - Coleman QFT - Lecture 1. 在量子力学中引入相对论: notes/Coleman QFT - Lecture 1. 在量子力学中引入相对论.md
   - 代码:
       - README: code/README.md
 
