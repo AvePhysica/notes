@@ -1,4 +1,4 @@
-# AvePhysica Notes
+# Luminosity Notes
 
 This repository hosts the source files for a personal academic notes website built with **MkDocs (Material theme)** and deployed automatically via **GitHub Pages**.
 
