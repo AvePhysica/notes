@@ -115,39 +115,37 @@ $$
 
 然而，我们还不确定我们这样定义的基能否满足**Lorentz不变性**。这里先提一下，所谓的Lorentz不变性指在 $SO(3,1)$ 下态的内积模方不变。在确认这一点之前，我们先来看看我们所期望的平移不变性与 $SO(3)$ 旋转不变性。
 
-!!! example
-
-    **平移不变性**：平移算符 $U(a)$ 由一个平移四矢量 $a^\mu$ 确定，其满足以下性质：
+**平移不变性**：平移算符 $U(a)$ 由一个平移四矢量 $a^\mu$ 确定，其满足以下性质：
    
-    $$U(a)U(a)^\dagger=1,\quad U(0)=1,\quad U(a)U(b)=1$$
+$$U(a)U(a)^\dagger=1,\quad U(0)=1,\quad U(a)U(b)=1$$
+   
+其生成元正是动量算符：
     
-    其生成元正是动量算符：
+$$U(a)=\mathrm{e}^{i\hat P\cdot a},\quad \hat P^\mu=(\hat H,\hat P)$$
     
-    $$U(a)=\mathrm{e}^{i\hat P\cdot a},\quad \hat P^\mu=(\hat H,\hat P)$$
+其作用在动量本征态上的效果是：
     
-    其作用在动量本征态上的效果是：
+$$U(a)|\vec p\rangle=\mathrm{e}^{i(\omega_{\vec p}a^0-\vec p\cdot \vec a)}|\vec p\rangle$$
     
-    $$U(a)|\vec p\rangle=\mathrm{e}^{i(\omega_{\vec p}a^0-\vec p\cdot \vec a)}|\vec p\rangle$$
+因此其只是加了一个相位，故显然保持内积的模方不变。
     
-    因此其只是加了一个相位，故显然保持内积的模方不变。
+**旋转不变性**：三维旋转算符 $U(R)$ 由一个三维空间旋转 $R\in SO(3)$ 确定，其满足：
     
-    **旋转不变性**：三维旋转算符 $U(R)$ 由一个三维空间旋转 $R\in SO(3)$ 确定，其满足：
+$$U(R)U(R)^\dagger=1,\quad U(I)=1,\quad U(R_1)U(R_2)=U(R_1R_2)$$
     
-    $$U(R)U(R)^\dagger=1,\quad U(I)=1,\quad U(R_1)U(R_2)=U(R_1R_2)$$
+其对算符的作用是：
     
-    其对算符的作用是：
+$$U(R)^\dagger \hat PU(R)=R\hat P,\quad U(R)^\dagger\hat HU(R)=\hat H$$
     
-    $$U(R)^\dagger \hat PU(R)=R\hat P,\quad U(R)^\dagger\hat HU(R)=\hat H$$
+可验证，由下面定义给出的旋转算符满足上面的所有关系：
     
-    可验证，由下面定义给出的旋转算符满足上面的所有关系：
+$$U(R)\,|\vec p\rangle=|R\vec p\rangle$$
     
-    $$U(R)\,|\vec p\rangle=|R\vec p\rangle$$
+我们来验证其中一条：
     
-    我们来验证其中一条：
+$$ U(R)^\dagger \hat PU(R)=U(R)^\dagger\hat P\int\mathrm{d}^3\vec p\,|\vec p\rangle\langle\vec p| U(R)=\int\mathrm{d}^3\vec p\,\vec p\,|R^{-1}\vec p\rangle\langle R^{-1}\vec p|=\int\mathrm{d}^3\vec p\,R\vec p\,|\vec p\rangle\langle \vec p|=R\vec P$$
     
-    $$ U(R)^\dagger \hat PU(R)=U(R)^\dagger\hat P\int\mathrm{d}^3\vec p\,|\vec p\rangle\langle\vec p| U(R)=\int\mathrm{d}^3\vec p\,\vec p\,|R^{-1}\vec p\rangle\langle R^{-1}\vec p|=\int\mathrm{d}^3\vec p\,R\vec p\,|\vec p\rangle\langle \vec p|=R\vec P$$
-    
-    其中用到了 $\mathrm{d}^3\vec p$ 在旋转下不变。
+其中用到了 $\mathrm{d}^3\vec p$ 在旋转下不变。
 
 **Lorentz不变性**：现在我们来验证这一点。前面已经提到，我们无需四个分量来刻画粒子态，因为粒子的四动量需要满足约束 $p^2=\mu^2$，这一条件也称为**在壳(On-Shell)条件**，现在的粒子态我可以写为 $|\omega_{\vec p},\,\vec p\rangle=|\vec p\rangle$。我们先将其记为态 $|p\rangle$。直觉上，Lorentz变换对态的变换应该为：
 
