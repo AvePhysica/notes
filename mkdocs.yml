@@ -1,14 +1,12 @@
-site_name: AvePhysica Notes
+site_name: Luminosity
 site_url: https://AvePhysica.github.io/notes/
 repo_url: https://github.com/AvePhysica/notes
-repo_name: AvePhysica/notes
+repo_name: Github
 
 nav:
   - 首页: index.md
-  - 关于我: about.md
+  - About me: about.md
   - 笔记:
-      - 示例笔记 1: notes/sample1.md
-      - 示例笔记 2: notes/sample2.md
       - Quantum Field Theory: 
           - Coleman QFT - Lecture 1. 在量子力学中引入相对论: notes/Coleman QFT - Lecture 1. 在量子力学中引入相对论.md
   - 代码:
