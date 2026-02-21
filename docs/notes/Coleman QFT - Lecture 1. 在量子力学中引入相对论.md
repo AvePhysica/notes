@@ -32,6 +32,7 @@ $$
 $$
 
 后面的表达式中如果感觉量纲不太对，比如差一个 $c$ 或 $\hbar$ 。那多半是使用自然单位制导致的。
+
 ### 闵氏度规与Lorentz群
 
 在相对论的情形下，使用四矢量描述物理量往往是方便的。甚至可以说狭义相对论就是建立在**闵氏时空**上的几何学。闵氏时空是配备了闵氏度规 $\eta_{\mu\nu}$ 的四维时空。关于 $\eta_{\mu\nu}$ 的选取有两种方法，分别称为西海岸度规和东海岸度规，即 $\eta=\mathrm{diag}(1,-1,-1,-1)$ 和 $\eta=\mathrm{diag}(-1,1,1,1)$。在QFT中一般更加习惯于使用前者，因此后面都遵从前者的定义（其实是我比较适应西海岸度规）。闵氏时空中的坐标点由四维矢量 $x^\mu=\{x^0,x^1,x^2,x^3\}=\{t,\vec x\}$ 刻画。同样的，能量与动量合成四矢量 $p^\mu=(E,\vec p)$ 。
@@ -116,19 +117,35 @@ $$
 
 > [!example]
 > **平移不变性**：平移算符 $U(a)$ 由一个平移四矢量 $a^\mu$ 确定，其满足以下性质：
+> 
 > $$U(a)U(a)^\dagger=1,\quad U(0)=1,\quad U(a)U(b)=1$$
-> 其生成元正是动量算符：$$U(a)=\mathrm{e}^{i\hat P\cdot a},\quad \hat P^\mu=(\hat H,\hat P)$$
-> 其作用在动量本征态上的效果是：$$U(a)|\vec p\rangle=\mathrm{e}^{i(\omega_{\vec p}a^0-\vec p\cdot \vec a)}|\vec p\rangle$$
+> 
+> 其生成元正是动量算符：
+> 
+> $$U(a)=\mathrm{e}^{i\hat P\cdot a},\quad \hat P^\mu=(\hat H,\hat P)$$
+> 
+> 其作用在动量本征态上的效果是：
+> 
+> $$U(a)|\vec p\rangle=\mathrm{e}^{i(\omega_{\vec p}a^0-\vec p\cdot \vec a)}|\vec p\rangle$$
+> 
 > 因此其只是加了一个相位，故显然保持内积的模方不变。
 > 
 > **旋转不变性**：三维旋转算符 $U(R)$ 由一个三维空间旋转 $R\in SO(3)$ 确定，其满足：
-> $$ U(R)U(R)^\dagger=1,\quad U(I)=1,\quad U(R_1)U(R_2)=U(R_1R_2)$$
+> 
+> $$U(R)U(R)^\dagger=1,\quad U(I)=1,\quad U(R_1)U(R_2)=U(R_1R_2)$$
+> 
 > 其对算符的作用是：
-> $$ U(R)^\dagger \hat PU(R)=R\hat P,\quad U(R)^\dagger\hat HU(R)=\hat H$$
+> 
+> $$U(R)^\dagger \hat PU(R)=R\hat P,\quad U(R)^\dagger\hat HU(R)=\hat H$$
+> 
 > 可验证，由下面定义给出的旋转算符满足上面的所有关系：
+> 
 > $$U(R)\,|\vec p\rangle=|R\vec p\rangle$$
+> 
 > 我们来验证其中一条：
+> 
 > $$ U(R)^\dagger \hat PU(R)=U(R)^\dagger\hat P\int\mathrm{d}^3\vec p\,|\vec p\rangle\langle\vec p| U(R)=\int\mathrm{d}^3\vec p\,\vec p\,|R^{-1}\vec p\rangle\langle R^{-1}\vec p|=\int\mathrm{d}^3\vec p\,R\vec p\,|\vec p\rangle\langle \vec p|=R\vec P$$
+> 
 > 其中用到了 $\mathrm{d}^3\vec p$ 在旋转下不变。
 
 **Lorentz不变性**：现在我们来验证这一点。前面已经提到，我们无需四个分量来刻画粒子态，因为粒子的四动量需要满足约束 $p^2=\mu^2$，这一条件也称为**在壳(On-Shell)条件**，现在的粒子态我可以写为 $|\omega_{\vec p},\,\vec p\rangle=|\vec p\rangle$。我们先将其记为态 $|p\rangle$。直觉上，Lorentz变换对态的变换应该为：
