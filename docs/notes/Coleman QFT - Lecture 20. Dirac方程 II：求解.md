@@ -518,67 +518,70 @@ $$
 
 $$
 \sigma^{\mu\nu}\equiv\dfrac i2
-[\gamma^\mu,\gamma^\nu]$$
+[\gamma^\mu,\gamma^\nu]
+$$
+
 $\sigma^{\mu\nu}/2$ 其实就是在[[Coleman QFT - Lecture 18. Lorentz群的表示]]中说明的一般的Lorentz变换的生成元 $J^{\mu\nu}$ 的表示。这源于 $\gamma^\mu$ 的矢量性：
-$$
 
+$$
 \overline {D(\Lambda)}\,\gamma^\mu D(\Lambda)=D^{-1}(\Lambda)\,\gamma^\mu D(\Lambda)=\Lambda^\mu_\nu\gamma^\nu
-
 $$
+
 由
-$$
 
+$$
 D(\Lambda(\epsilon_{\mu\nu}))=\exp\left(-\dfrac{i}{2}\epsilon_{\mu\nu}J^{\mu\nu}\right)
-
 $$
+
 应用无穷小变换 $\Lambda^\mu_\nu=I+\epsilon^\mu_\nu$ 得到：
-$$
 
+$$
 [J^{\rho\sigma},\gamma^\mu]=i(\eta^{\mu\rho}\gamma^\sigma-\eta^{\mu\sigma}\gamma^\rho)
-
 $$
+
 进行计算：
-$$
 
+$$
 [\left[\gamma^\rho,\gamma^\sigma\right],\gamma^\mu]=\gamma^\rho\{\gamma^\sigma,\gamma^\mu\}-\{\gamma^\rho,\gamma^\mu\}\gamma^\sigma-\gamma^\sigma\{\gamma^\rho,\gamma^\mu\}+\{\gamma^\sigma,\gamma^\mu\}\gamma^\rho=4(\eta^{\mu\rho}\gamma^\sigma-\eta^{\mu\sigma}\gamma^\rho)
-
 $$
+
 因此 $J^{\mu\nu}=\sigma^{\mu\nu}/2$ 满足条件。不管怎样，$\bar\psi\sigma^{\mu\nu}\psi$ 是一个Lorentz变换下的**反对称二阶张量**。
-那如果有三个gamma矩阵呢？其会不会组合出三阶张量呢？这是不会的，或者说你的确构造出了一个三阶张量，但是其可以分解为更低阶的张量。这源于**四阶全反对称张量** $\epsilon^{\mu\nu\rho\sigma}$ 是Lorentz变换下的不变量。因此我们可以定义下面的对象：
-$$
 
+那如果有三个gamma矩阵呢？其会不会组合出三阶张量呢？这是不会的，或者说你的确构造出了一个三阶张量，但是其可以分解为更低阶的张量。这源于**四阶全反对称张量** $\epsilon^{\mu\nu\rho\sigma}$ 是Lorentz变换下的不变量。因此我们可以定义下面的对象：
+
+$$
 \gamma_5\equiv i\gamma^0\gamma^1\gamma^2\gamma^3=\begin{pmatrix}
 0&1\\1&0
 \end{pmatrix}
-
 $$
+
 其性质为
-$$
 
+$$
 (\gamma_5)^2=1,\quad \gamma_5^\dagger=\gamma_5=-\overline{\gamma_5},\quad\{\gamma_5,\gamma^\mu\}=0
-
 $$
+
 $i\bar\psi\gamma_5\psi$ 是一个Lorentz标量，但是是一个**赝标量** (pseudoscalar)。因为
-$$
 
+$$
 P:i\bar\psi\gamma_5\psi\to i\bar\psi\gamma^0\gamma_5\gamma^0\psi=-i\bar\psi\gamma_5\psi
-
 $$
+
 因此我们说明了四个gamma矩阵凑出的四阶张量实际上会分解出一个赝标量。回到三个gamma矩阵的情形，其一定可以写为
-$$
 
+$$
 \bar\psi\gamma^\mu\gamma_5\psi
-
 $$
+
 这是Lorentz变换下的矢量。其在宇称下的变换为：
-$$
 
+$$
 P:\bar\psi\gamma^\mu\gamma_5\psi\to\bar\psi\gamma^0\gamma^\mu\gamma_5\gamma^0\psi=\begin{cases}
 -\bar\psi\gamma^0\gamma_5\psi,\quad \mu=0\\
 \bar\psi\gamma^i\gamma_5\psi,\quad\mu\ne 0
 \end{cases}
-
 $$
+
 反而是时间分量反号而空间分量不变，因此这是一个**赝矢量** (pseudovector)。现在，我们完成了对双线性型的全部分类，列表如下：
 
 <div align="center">
@@ -590,79 +593,77 @@ $$
 ## 20.6 正交性与完备性
 
 最后，我们来看Dirac方程的平面波解具有的正交性与完备性，这在后一章经常会用到。首先，我们在20.2节构造了下面的矢量：
-$$
 
+$$
 (u_p^{(r)\dagger}u_p^{(s)},u_p^{(r)\dagger}\vec\alpha \,u_p^{(s)})=(v_p^{(r)\dagger}v_p^{(s)},v_p^{(r)\dagger}\vec\alpha \,v_p^{(s)})=2(E_p,\vec p)\delta^{rs}
-
 $$
+
 这可以用gamma矩阵表示为
-$$
 
+$$
 \bar u_\vec p^{(r)}\gamma^\mu u_\vec p^{(s)}=\bar v_\vec p^{(r)}\gamma^\mu v_\vec p^{(s)}=2p^\mu\delta^{rs}
-
 $$
+
 将其与 $p_\mu$ 做内积得到：
-$$
 
+$$
 \bar u_\vec p^{(r)}p\mkern-8.5mu/ u_\vec p^{(s)}=\bar v_\vec p^{(r)}p\mkern-8.5mu/ v_\vec p^{(s)}=2m^2\delta^{rs}
-
 $$
+
 利用Dirac方程：
-$$
 
+$$
 (p\mkern-8.5mu/-m)u_\vec p^{(r)}=0,\quad (p\mkern-8.5mu/+m)v_\vec p^{(s)}=0
-
 $$
+
 得到
-$$
 
+$$
 \bar u_\vec p^{(r)}u_\vec p^{(s)}=2m\delta^{rs},\quad \bar v_\vec p^{(r)}v_\vec p^{(s)}=-2m\delta^{rs}
-
 $$
+
 那混合积 $\bar v_\vec p^{(r)}u_\vec p^{(s)}$ 和 $\bar u_\vec p^{(r)}v_\vec p^{(s)}$ 呢？利用
-$$
 
+$$
 m\bar u_\vec p^{(r)}v_\vec p^{(s)}=\bar u_\vec p^{(r)}p\mkern-8.5mu /v_\vec p^{(s)}=\bar u_\vec p^{(r)}(-m)v_\vec p^{(s)}\Rightarrow \bar u_\vec p^{(r)}v_\vec p^{(s)}=0
-
 $$
+
 因此
-$$
 
+$$
 \bar u_\vec p^{(r)}v_\vec p^{(s)}=\bar u_\vec p^{(r)}\gamma^\mu v_\vec p^{(s)}=\bar v_\vec p^{(r)}u_\vec p^{(s)}=\bar v_\vec p^{(r)}\gamma^\mu u_\vec p^{(s)}=0
-
 $$
+
 这样，我们知道四个平面波解是**Dirac正交**的。接下来研究完备性，考虑下面的定义：
-$$
 
+$$
 P_u\equiv\dfrac{1}{2m}\sum_{r=1}^2u_\vec p^{(r)}\bar u_\vec p^{(r)},\quad P_v\equiv\dfrac{1}{2m}\sum_{r=1}^2v_\vec p^{(r)}\bar v_\vec p^{(r)}
-
 $$
+
 可验证：
-$$
 
+$$
 P_u u_\vec p^{(s)}=\dfrac{1}{2m}\sum_{r=1}^2u_\vec p^{(r)}\underbrace{\bar u_\vec p^{(r)}u_\vec p^{(s)}}_{2m\delta^{rs}}=u_\vec p^{(s)},\quad P_u v_\vec p^{(s)}=0,\quad P_v u_{\vec p}^{(s)}=0,P_v v_\vec p^{(s)}=v_\vec p^{(s)}
-
 $$
+
 因此 $P_u,P_v$ 称为**旋量投影算符**。具体计算表明：
-$$
 
+$$
 P_u=\dfrac{1}{2m}(p\mkern-8.5mu /+m),\quad P_v=-\dfrac{1}{2m}(p\mkern-8.5mu /-m)
-
 $$
+
 这时上面的投影关系就很显然了，只需代入Dirac方程即可看出。做一些性质的检验：
-$$
 
+$$
 P_u+P_v=\dfrac{1}{2m}(p\mkern-8.5mu /+m-p\mkern-8.5mu /+m)=1
-
-$$
 $$
 
+$$
 P_u^2=\dfrac{1}{4m^2}(p\mkern-8.5mu /^2+m^2+2mp\mkern-8.5mu /)=\dfrac{1}{4m^2}(2m^2+2mp\mkern-8.5mu /)=\dfrac{1}{2m}(p\mkern-8.5mu /+m)=P_u
-
-$$
 $$
 
+$$
 P_v^2=\dfrac{1}{4m^2}(p\mkern-8.5mu /^2+m^2-2mp\mkern-8.5mu /)=\dfrac{1}{4m^2}(2m^2-2mp\mkern-8.5mu /)=-\dfrac{1}{2m}(p\mkern-8.5mu /-m)=P_v
-
 $$
+
 ---
