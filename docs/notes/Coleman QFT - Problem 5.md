@@ -1,12 +1,24 @@
 >[!question]
 >本题讨论Pair Model，其由G.Wentzel提出。模型的相互作用哈密顿量由下式给出：
->$$H_I=\dfrac{1}{2}g\,\left(\int\mathrm{d}^3\vec x\,\rho(\vec x)\phi(\vec x,t)\right)^2$$
+>
+>$$
+>H_I=\dfrac{1}{2}g\,\left(\int\mathrm{d}^3\vec x\,\rho(\vec x)\phi(\vec x,t)\right)^2
+>$$
+>
 >其与Model 2不同的点便在于其为一个二次型。
 >（1）计算 $\langle\vec p|S-1|\vec p'\rangle$，即单粒子态跃迁振幅。说明下式成立：
->$$\langle\vec p|S-1|\vec p'\rangle=\tilde\rho(\vec p)\tilde\rho(\vec p')^*F(\omega_{\vec p})\delta(\omega_{\vec p}-\omega_{\vec p'})$$
+>
+>$$
+>\langle\vec p|S-1|\vec p'\rangle=\tilde\rho(\vec p)\tilde\rho(\vec p')^*F(\omega_{\vec p})\delta(\omega_{\vec p}-\omega_{\vec p'})
+>$$
+>
 >其中 $F(\omega_{\vec p})$ 是一个关于 $\omega_{\vec p}$ 的函数，应表示为对 $|\tilde\rho(\vec p)|^2$ 的积分。
 >（2）计算说明 $S^\dagger S-1=0$ 对于单粒子态成立，即
->$$\langle\vec p|S^\dagger S-1|\vec p'\rangle=0$$
+>
+>$$
+>\langle\vec p|S^\dagger S-1|\vec p'\rangle=0
+>$$
+>
 
 （1）由于我们只要求单粒子态的矩阵元，这为我们化简许多的缩并提供了极大的便利。直接来计算：
 

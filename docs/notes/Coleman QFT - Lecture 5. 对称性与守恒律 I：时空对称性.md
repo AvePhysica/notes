@@ -56,25 +56,65 @@ $$
 
 >[!example]
 >**平移不变性**：考虑一个有平移不变性的拉格朗日量，例如：
->$$L=\dfrac12\sum_rm_r\dot{\vec x}^r\cdot\dot{\vec x}^r+\sum_{r>s}V^{(r,s)}(|\vec x^r-\vec x^s|)$$
+>
+>$$
+>L=\dfrac12\sum_rm_r\dot{\vec x}^r\cdot\dot{\vec x}^r+\sum_{r>s}V^{(r,s)}(|\vec x^r-\vec x^s|)
+>$$
+>
 >在平移变换$$\vec x^r\to{\vec x}^r+\vec e\lambda$$下不变。因此
->$$D\vec x^r=\vec e,\quad DL=0,\quad F=0$$
+>
+>$$
+>D\vec x^r=\vec e,\quad DL=0,\quad F=0
+>$$
+>
 >守恒量为：
->$$ Q=\vec e\cdot\sum_rm_r\dot{\vec x}^r$$
+>
+>$$
+> Q=\vec e\cdot\sum_rm_r\dot{\vec x}^r
+>$$
+>
 >这是沿 $\vec e$ 方向的动量守恒。
 >**时间平移**：考虑一个不含时的拉格朗日量 $L(q^a,\dot q^a)$，即 $\dfrac{\partial L}{\partial t}=0$。考虑时间平移变换：
->$$q^a(t)\to q^a(t+\lambda)$$
+>
+>$$
+>q^a(t)\to q^a(t+\lambda)
+>$$
+>
 >在此变换下：
->$$Dq^a=\dfrac{\partial q^a}{\partial\lambda}\bigg|_{\lambda=0}=\dot q^a$$
->$$DL=\dfrac{\partial L}{\partial q^a}\dot q^a+\dfrac{\partial L}{\partial \dot q^a}D\ddot q^a=\dfrac{\mathrm{d}L}{\mathrm{d}t},\quad F=L$$
->$$Q=p_aDq^a-F=p_a\dot q^a-L=E$$
+>
+>$$
+>Dq^a=\dfrac{\partial q^a}{\partial\lambda}\bigg|_{\lambda=0}=\dot q^a
+>$$
+>
+>
+>$$
+>DL=\dfrac{\partial L}{\partial q^a}\dot q^a+\dfrac{\partial L}{\partial \dot q^a}D\ddot q^a=\dfrac{\mathrm{d}L}{\mathrm{d}t},\quad F=L
+>$$
+>
+>
+>$$
+>Q=p_aDq^a-F=p_a\dot q^a-L=E
+>$$
+>
 >即能量守恒。
 >**旋转变换**：考虑一个绕轴 $\vec e$ 旋转角度 $\lambda$ 的旋转变换。假设拉格朗日量在旋转下不变。
->$$\vec x^r\to R(\lambda,\vec e)\vec x^r$$
+>
+>$$
+>\vec x^r\to R(\lambda,\vec e)\vec x^r
+>$$
+>
 >在此变换下：
->$$D\vec x^r=\vec e\times\vec x^r,\quad DL=0,\quad F=0$$
+>
+>$$
+>D\vec x^r=\vec e\times\vec x^r,\quad DL=0,\quad F=0
+>$$
+>
 >守恒量为：
->$$Q=\sum_r\vec p_r\cdot(\vec e\times\vec x^r)=\vec e\cdot\sum_r\vec x^r\times\vec p_r=\vec e\cdot J$$
+>
+>$$
+>Q=\sum_r\vec p_r\cdot(\vec e\times\vec x^r)=\vec e\cdot\sum_r\vec x^r\times\vec p_r=\vec e\cdot J
+>$$
+>
 >即沿 $\vec e$ 方向的角动量守恒。
 
 ## 5.2 量子力学中的对称性与守恒律
@@ -315,4 +355,8 @@ $$
 >守恒流的0分量代表守恒量的密度，其对全空间积分可以得到守恒量。
 >不显含时空坐标的拉格朗日量密度具有**时空平移对称性**，这导致了**能动张量**守恒：$$T^{\rho\mu}\equiv\pi_a^\mu \partial^\rho \phi^a-g^{\mu\rho}\mathcal L,\quad \partial_\mu T^{\rho\mu}=0$$
 >在Lorentz变换下是标量的拉格朗日量密度具有**Lorentz变换对称性**，这导致了**角动量流**守恒：
->$$M^{\sigma\rho\mu}=x^{\sigma}T^{\rho\mu}-x^\rho T^{\sigma\mu},\quad \partial_\mu M^{\sigma\rho\mu}=0$$
+>
+>$$
+>M^{\sigma\rho\mu}=x^{\sigma}T^{\rho\mu}-x^\rho T^{\sigma\mu},\quad \partial_\mu M^{\sigma\rho\mu}=0
+>$$
+>

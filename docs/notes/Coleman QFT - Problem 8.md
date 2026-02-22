@@ -2,11 +2,23 @@
 
 >[!question]
 >考虑一个自由标量场理论：
->$$\mathcal L=\dfrac{1}{2}(\partial_\mu\phi)^2-\dfrac12\mu^2\phi^2$$
+>
+>$$
+>\mathcal L=\dfrac{1}{2}(\partial_\mu\phi)^2-\dfrac12\mu^2\phi^2
+>$$
+>
 >现在我们定义另一个新的场 $A$：
->$$\phi=A+\dfrac12 gA^2$$
+>
+>$$
+>\phi=A+\dfrac12 gA^2
+>$$
+>
 >则用 $A$ 表示的Lagrangian为：
->$$\mathcal L=\dfrac12(\partial_\mu A)^2(1+gA)^2-\dfrac12\mu^2\left(A+\dfrac12 gA^2\right)^2$$
+>
+>$$
+>\mathcal L=\dfrac12(\partial_\mu A)^2(1+gA)^2-\dfrac12\mu^2\left(A+\dfrac12 gA^2\right)^2
+>$$
+>
 >由于 $A$ 的二次项对真空态-单粒子态矩阵元无贡献，因此我们期望新的理论同样不会有任何散射振幅（因为原先的理论根本没有相互作用）。请对于双介子弹性散射验证这一点，只需到 $g$ 的非零最低阶即可（即 $g^2$ 阶）。
 
 我们将新的Lagrangian分为自由与相互作用两部分：

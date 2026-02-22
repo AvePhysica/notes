@@ -30,11 +30,23 @@ $$
 
 >[!tip]
 >这一段可能有点难以理解，我们用 $SO(3)$ 的表示来举个例子。考虑其本身，构成一个三维矢量表示 $D^{(1)}(R)$，表示空间为矢量空间。而矢量的双线性型就是一个二阶张量 $T^{\mu\nu}=V^\mu W^\nu$。二阶张量表示是一个九维可约表示，其可分解为迹、无迹对称以及反对称三部分。这用表示的语言来说就是：
->$$D^{(1)}(R)\otimes D^{(1)}(R)=D^{(0)}(R)\oplus D^{(2)}(R)\oplus D^{(1)}(R)$$
+>
+>$$
+>D^{(1)}(R)\otimes D^{(1)}(R)=D^{(0)}(R)\oplus D^{(2)}(R)\oplus D^{(1)}(R)
+>$$
+>
 >现在我们考虑的是旋量表示的双线性型 $u_{+}^{*\alpha}u_{+}^\beta$，由于 $u_+^*$ 对应的表示是 $D^{(0,\frac12)}$，因此这个张量积对应于矢量表示：
->$$D^{(\frac12,0)}(\Lambda)\otimes D^{(0,\frac12)}(\Lambda)\sim D^{(\frac12,\frac12)}(\Lambda)$$
+>
+>$$
+>D^{(\frac12,0)}(\Lambda)\otimes D^{(0,\frac12)}(\Lambda)\sim D^{(\frac12,\frac12)}(\Lambda)
+>$$
+>
 >这个“二阶张量”的四个矩阵元经过线性组合可以变成一个四矢量的四个分量。也就是说我们要找到一个映射：
->$$\sigma^\mu_{\alpha\beta}:u_+^{*\alpha}u_+^\beta\to V^\mu$$
+>
+>$$
+>\sigma^\mu_{\alpha\beta}:u_+^{*\alpha}u_+^\beta\to V^\mu
+>$$
+>
 >其等价于四个双线性型 $u_+^\dagger \sigma^\mu u_+$，我们很快会看到，$\sigma^\mu=(I,\sigma^i)$，即单位矩阵与Pauli矩阵。
 
 接下来来考虑矢量分量对应的双线性型是什么。对于时间分量，其要在旋转下不变，因此矩阵要与所有Pauli矩阵 $\vec \sigma$ 对易，这只有单位矩阵一种可能，因此：
@@ -92,12 +104,24 @@ $$
 
 >[!add]
 >这里补充一点说明，前面我们通过Lorentz群表示的一般性质，说明了两种旋量表示可以通过复共轭相互转化，也就是说 $u_+^*$ 的变换等价于 $u_-$，这里来具体找到这个相似变换的矩阵。要用到的一个重要性质是：
->$$\sigma_y \vec\sigma^*\sigma_y^{-1}=\sigma_y \vec\sigma^*\sigma_y=-\vec \sigma$$
+>
+>$$
+>\sigma_y \vec\sigma^*\sigma_y^{-1}=\sigma_y \vec\sigma^*\sigma_y=-\vec \sigma
+>$$
+>
 >这源于在现在的基下，只有 $\sigma_y$ 是虚的（复共轭的性质很依赖于选取的基）。我们可以取相似变换矩阵为 $T=\sigma_y$。其说明 $\sigma^*\sim -\sigma$。
 >旋转：
->$$R(\hat n\theta):u_+^*\to \mathrm{e}^{+\frac i2\vec \sigma^*\cdot\hat n\theta}u_+,\quad \sigma_y\,\mathrm{e}^{+\frac i2\vec \sigma^*\cdot\hat n\theta}\sigma_y^{-1}=\mathrm{e}^{-\frac i2\vec \sigma\cdot\hat n\theta}$$
+>
+>$$
+>R(\hat n\theta):u_+^*\to \mathrm{e}^{+\frac i2\vec \sigma^*\cdot\hat n\theta}u_+,\quad \sigma_y\,\mathrm{e}^{+\frac i2\vec \sigma^*\cdot\hat n\theta}\sigma_y^{-1}=\mathrm{e}^{-\frac i2\vec \sigma\cdot\hat n\theta}
+>$$
+>
 >boost：
->$$A(\hat a\phi):u_+^*\to \mathrm{e}^{+\frac 12\vec \sigma^*\cdot\hat a\phi}u_+,\quad \sigma_y\mathrm{e}^{+\frac 12\vec \sigma^*\cdot\hat a\phi}\sigma_y^{-1}=\mathrm{e}^{-\frac 12\vec \sigma\cdot\hat a\phi}$$
+>
+>$$
+>A(\hat a\phi):u_+^*\to \mathrm{e}^{+\frac 12\vec \sigma^*\cdot\hat a\phi}u_+,\quad \sigma_y\mathrm{e}^{+\frac 12\vec \sigma^*\cdot\hat a\phi}\sigma_y^{-1}=\mathrm{e}^{-\frac 12\vec \sigma\cdot\hat a\phi}
+>$$
+>
 >因此其对应于表示 $D^{(0,\frac12)}(\Lambda)$。
 
 ## 19.2 Weyl旋量的Lagrangian
@@ -229,16 +253,36 @@ Weyl理论并不是宇称不变的，其很好的描述了有手性的中微子�
 
 >[!tip] **Majorana质量项**
 >在开启下一节，关于Dirac方程的讨论前，我先指出仅使用 $u_+$ 也是可以构造出质量项的，考虑组合 $u_+^T\sigma_2 u_+$，利用性质 $\vec \sigma^T\sigma_2=-\sigma_2\vec\sigma$，可知该组合在Lorentz变换下不变（请自行验证）。现在的Lagrangian可以写为：
->$$ \mathcal L=\pm i(u_+^\dagger\sigma^\mu\partial_\mu u_+)-\dfrac12(mu_+^T\sigma_2 u_++m^*u_+^\dagger\sigma_2 u_+^*)$$
+>
+>$$
+> \mathcal L=\pm i(u_+^\dagger\sigma^\mu\partial_\mu u_+)-\dfrac12(mu_+^T\sigma_2 u_++m^*u_+^\dagger\sigma_2 u_+^*)
+>$$
+>
 >后一项是为了让Lagrangian为厄米的。但这其实有一点作弊的感觉，因为其中用到了 $u_+^*$，这实际上已经是左手的粒子。同样的，对 $u_+^\dagger$ 变分得到运动方程：
->$$\pm i\left(\partial_0+\vec \sigma\cdot\nabla\right)u_+=m^* \sigma_2 u_+^*$$
+>
+>$$
+>\pm i\left(\partial_0+\vec \sigma\cdot\nabla\right)u_+=m^* \sigma_2 u_+^*
+>$$
+>
 >其复共轭方程给出
->$$\pm i\left(\partial_0-\vec \sigma\cdot\nabla\right)u_+^*=mu_+$$
+>
+>$$
+>\pm i\left(\partial_0-\vec \sigma\cdot\nabla\right)u_+^*=mu_+
+>$$
+>
 >联立两式可以得到：
->$$ \square^2 u_++|m|^2 u_+=0$$
+>
+>$$
+> \square^2 u_++|m|^2 u_+=0
+>$$
+>
 >这的确对应于质量为 $m$ 的粒子。
 >Majorana质量项的问题在于其破坏了条件2，由于后面的双线性型是 $u_+^T$ 与 $u_+$ 的，因此原先的 $U(1)$ 对称性被破坏：
->$$u_+\to \mathrm{e}^{i\alpha} u_+,\quad u_+^\dagger\to \mathrm{e}^{-i\alpha}u_+^\dagger$$
+>
+>$$
+>u_+\to \mathrm{e}^{i\alpha} u_+,\quad u_+^\dagger\to \mathrm{e}^{-i\alpha}u_+^\dagger
+>$$
+>
 
 ## 19.4 Dirac方程
 

@@ -194,14 +194,30 @@ $$
 
 >[!tip] 补充：
 >首先，$\vec J^{(+)}+\vec J^{(-)}$ 实际是指：
->$$\vec J^{(+)}\otimes\mathbb{1}_{2s_2+1}+\mathbb{1}_{2s_1+1}\otimes\vec J^{(-)}$$
+>
+>$$
+>\vec J^{(+)}\otimes\mathbb{1}_{2s_2+1}+\mathbb{1}_{2s_1+1}\otimes\vec J^{(-)}
+>$$
+>
 >这是独立的两块空间，而不是直接相加两个矩阵（毕竟维数都不一定一样）
 >其次，一个更加有Lorentz协变性的生成元定义为：
->$$J^{ij}=\epsilon^{ijk}L_k,\quad J^{0i}=-J^{i0}=M_i,\quad J^{00}=0$$
+>
+>$$
+>J^{ij}=\epsilon^{ijk}L_k,\quad J^{0i}=-J^{i0}=M_i,\quad J^{00}=0
+>$$
+>
 >就定义出了一个反对称矩阵。生成元的对易关系可以表示为：
->$$[J^{\mu\nu},J^{\alpha\beta}]=ig^{\nu\alpha}J^{\mu\beta}-ig^{\mu\alpha}J^{\nu\beta}-ig^{\nu\beta}J^{\mu\alpha}+ig^{\mu\beta}J^{\nu\alpha}$$
+>
+>$$
+>[J^{\mu\nu},J^{\alpha\beta}]=ig^{\nu\alpha}J^{\mu\beta}-ig^{\mu\alpha}J^{\nu\beta}-ig^{\nu\beta}J^{\mu\alpha}+ig^{\mu\beta}J^{\nu\alpha}
+>$$
+>
 >表示可以用生成元的指数映射得到：
->$$D(\Lambda(\epsilon_{\mu\nu}))=\exp\left(-\dfrac{i}{2}\epsilon_{\mu\nu}J^{\mu\nu}\right)$$
+>
+>$$
+>D(\Lambda(\epsilon_{\mu\nu}))=\exp\left(-\dfrac{i}{2}\epsilon_{\mu\nu}J^{\mu\nu}\right)
+>$$
+>
 >这里 $\epsilon_{\mu\nu}$ 是一个刻画Lorentz变换参数的反对称矩阵。
 
 ## 18.4 $SO(3)$ 群不可约表示 $D^{(s)}$ 的性质

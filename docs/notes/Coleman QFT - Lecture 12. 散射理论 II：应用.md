@@ -146,25 +146,57 @@ $$
 >- 计算质心系中的二体散射的**微分散射截面** $\dfrac{\mathrm{d}\sigma}{\mathrm{d}\varOmega}$：
 >利用已经得到的结论：$$\mathrm{d}\sigma=\dfrac{1}{4E_1E_2}\dfrac{1}{|\vec v_1-\vec v_2|}|\mathcal A_{fi}|^2D=\dfrac{1}{4E_T|\vec p_i|}|\mathcal A_{fi}|^2\dfrac{1}{16\pi^2}\dfrac{|\vec p_f|\,\mathrm{d}\varOmega_f}{E_T}$$
 >最终整理得到：
->$$\dfrac{\mathrm{d}\sigma}{\mathrm{d}\varOmega}=\dfrac{1}{64\pi^2E_T^2}\dfrac{|\vec p_f|}{|\vec p_i|}|\mathcal A_{fi}|^2$$
+>
+>$$
+>\dfrac{\mathrm{d}\sigma}{\mathrm{d}\varOmega}=\dfrac{1}{64\pi^2E_T^2}\dfrac{|\vec p_f|}{|\vec p_i|}|\mathcal A_{fi}|^2
+>$$
+>
 >对于**非弹性散射**过程，由于入射粒子与出射粒子的质量差异，一般而言有 $|\vec p_f|\ne|\vec p_i|$。你可能觉得这看上去有点问题，因为在时间反演下入射和出射粒子会交换，因此截面也会变。但这是正常的，我们只要求振幅 $\mathcal A_{fi}$ 是时间反演不变的，但是截面是可以变的。
 >在非相对论的量子散射理论中，散射振幅与微分散射截面相联系：
->$$\dfrac{\mathrm{d}\sigma}{\mathrm{d}\varOmega}=|f(p,\cos\theta)|^2$$
+>
+>$$
+>\dfrac{\mathrm{d}\sigma}{\mathrm{d}\varOmega}=|f(p,\cos\theta)|^2
+>$$
+>
 >因此我们得到：
->$$f(p,\cos\theta)=\dfrac{c}{8\pi E_T}\mathcal A_{fi},\quad |c|=1$$
+>
+>$$
+>f(p,\cos\theta)=\dfrac{c}{8\pi E_T}\mathcal A_{fi},\quad |c|=1
+>$$
+>
 >上面的式子存在一个相位自由度，在后面，我们会证明散射理论中著名的**光学定理**，那时会说明 $c=1$。
 
 >[!example]
 >- 我们来考察Model 3中所谓的介子衰变为核子对的过程：
->$$\phi\to N+\bar N$$
+>
+>$$
+>\phi\to N+\bar N
+>$$
+>
 >该过程的最低阶的Feynman图即为一个基本顶角，其贡献为：
->$$-ig(2\pi)^4\delta^{(4)}(p+p-q)$$
+>
+>$$
+>-ig(2\pi)^4\delta^{(4)}(p+p-q)
+>$$
+>
 >对应的Feynman振幅为：
->$$i\mathcal A_{fi}=-ig$$
+>
+>$$
+>i\mathcal A_{fi}=-ig
+>$$
+>
 >因此质心系中的衰变率为：
->$$\varGamma=\dfrac{1}{2E_i}\int|\mathcal A_{fi}|^2D=\dfrac{1}{2\mu}\int|\mathcal A_{fi}|^2\dfrac{1}{16\pi^2}\dfrac{|\vec p_f|\,\mathrm{d}\varOmega_f}{E_T}=\dfrac{g^2}{8\pi\mu^2}|\vec p_f|$$
+>
+>$$
+>\varGamma=\dfrac{1}{2E_i}\int|\mathcal A_{fi}|^2D=\dfrac{1}{2\mu}\int|\mathcal A_{fi}|^2\dfrac{1}{16\pi^2}\dfrac{|\vec p_f|\,\mathrm{d}\varOmega_f}{E_T}=\dfrac{g^2}{8\pi\mu^2}|\vec p_f|
+>$$
+>
 >由于$E_T=\mu=2\sqrt{|\vec p_f|^2+m^2}$，代入得到：
->$$\varGamma=\dfrac{g^2}{16\pi\mu^2}\sqrt{\mu^2-4m^2}$$
+>
+>$$
+>\varGamma=\dfrac{g^2}{16\pi\mu^2}\sqrt{\mu^2-4m^2}
+>$$
+>
 >当然，上式在 $\mu<2m$ 时没有任何意义，这其实是真实的条件：介子是稳定的，不会衰变成核子对。
 
 ## 12.4 光学定理

@@ -148,13 +148,29 @@ $$
 
 >[!question]
 >此问题我们来研究一个反幺正算符对 $S$ 矩阵的作用。为了使事情更简单，我们考虑时间反演算符 $\varOmega_T$。其对态的作用记为：
->$$|a^T\rangle\equiv\varOmega^T|a\rangle$$
+>
+>$$
+>|a^T\rangle\equiv\varOmega^T|a\rangle
+>$$
+>
 >它将改变所有动量的方向，同时会将入态与出态相交换：
->$$\varOmega_T|a\rangle^{in}=|a^T\rangle^{out}$$
+>
+>$$
+>\varOmega_T|a\rangle^{in}=|a^T\rangle^{out}
+>$$
+>
 >（1）从 $S$ 矩阵的定义出发，证明：
->$$\langle a|S|b\rangle=\langle b^T|S|a^T\rangle$$
+>
+>$$
+>\langle a|S|b\rangle=\langle b^T|S|a^T\rangle
+>$$
+>
 >（2）现在，从 $S$ 作为时间演化算符出发，证明（1）中的表达式。已知哈密顿量的变换为：
->$$\varOmega_TH_I(t)\varOmega_I^{-1}=H_I(-t)$$
+>
+>$$
+>\varOmega_TH_I(t)\varOmega_I^{-1}=H_I(-t)
+>$$
+>
 
 （1）利用S矩阵的定义：
 

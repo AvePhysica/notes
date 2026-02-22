@@ -81,7 +81,11 @@ $$
 
 >[!important]
 >**注意**：这里我们修改了Fourier变换的定义。此时采用的定义为：
->$$f(x)=\int\dfrac{\mathrm{d}^4k}{(2\pi)^4}\tilde f(k)\,\mathrm{e}^{ik\cdot x},\quad \tilde f(k)=\int\mathrm{d}^4x\,f(x)\,\mathrm{e}^{-ik\cdot x}$$
+>
+>$$
+>f(x)=\int\dfrac{\mathrm{d}^4k}{(2\pi)^4}\tilde f(k)\,\mathrm{e}^{ik\cdot x},\quad \tilde f(k)=\int\mathrm{d}^4x\,f(x)\,\mathrm{e}^{-ik\cdot x}
+>$$
+>
 
 我们利用下面的公式：
 
@@ -241,7 +245,11 @@ $$
 
 >[!theorem]
 >**Riemann-Lebesgue Lemma**：若 $f$ 在 $[a,b]$ 上Riemann可积，则
->$$\lim_{n\to\infty}\int_a^b f(x)\cos nx\,\mathrm{d}x=\lim_{n\to\infty}\int_a^b f(x)\sin nx\,\mathrm{d}x=0$$
+>
+>$$
+>\lim_{n\to\infty}\int_a^b f(x)\cos nx\,\mathrm{d}x=\lim_{n\to\infty}\int_a^b f(x)\sin nx\,\mathrm{d}x=0
+>$$
+>
 
 其说一个性质良好的函数乘上一个快速振荡的函数，在区域中的积分随振荡速度的加快而趋于零。当然，上面表达式中实际不是积分，而是对 $n$ 的求和，但结论也是一样的。我们可以在 $t_-\to-\infty$ 的极限下丢掉后一项，因此
 
@@ -284,7 +292,11 @@ $$
 
 >[!question]
 >我们前面知道通过将Green函数限制在外线的质壳上能得到散射矩阵的矩阵元。这一关系在新的散射理论中是否仍成立？以四点函数为例：
->$$\langle k_3,k_4|S-1|k_1,k_2\rangle=\prod_{r=1}^4[(-i)(k_r^2-\mu^2)]\tilde G^{(4)}(-k_3,-k_4,k_1,k_2)$$
+>
+>$$
+>\langle k_3,k_4|S-1|k_1,k_2\rangle=\prod_{r=1}^4[(-i)(k_r^2-\mu^2)]\tilde G^{(4)}(-k_3,-k_4,k_1,k_2)
+>$$
+>
 >是否成立？
 
 答案：“**almost**”是对的。我们将在本节中构造“入态”与“出态”(in/out-state)，散射矩阵S的矩阵元等于入态与出态的内积。我将证明其矩阵元在除了一个相关的因子外就等于右侧的式子。这个因子源于所谓的**波函数重整化**。公式的完整证明将留到下一章完成，这实际上就是著名的**LSZ(Lehmann-Symanzik-Zimmermann)约化公式**。
@@ -433,16 +445,28 @@ $$
 >[!tip] 自由场的重新考虑
 >这一节有一些乱，比如重整化场的条件与一个莫名其妙定义的算符 $\phi'^f(t)$，可能让人有点晕。我们来考虑在旧的散射理论中，这些东西都对应什么。这将有助于你理解并记忆这些东西。
 >自由场的平面波展开为：
->$$\phi(x)=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3}(2\omega_{\vec p})}(\,\alpha_{p}\,\mathrm{e}^{-ip\cdot x}+\alpha^\dagger_{p}\,\mathrm{e}^{ip\cdot x}\,)$$
+>
+>$$
+>\phi(x)=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3}(2\omega_{\vec p})}(\,\alpha_{p}\,\mathrm{e}^{-ip\cdot x}+\alpha^\dagger_{p}\,\mathrm{e}^{ip\cdot x}\,)
+>$$
+>
 >其直接满足了两个条件：
->$$\langle 0|\phi'(x)|0\rangle=0,\quad \langle k|\phi'(x)|0\rangle=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3}(2\omega_{\vec p})}\mathrm{e}^{ip\cdot x}\langle k|p\rangle=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3}(2\omega_{\vec p})}\mathrm{e}^{ip\cdot x}(2\pi)^{3}(2\omega_{\vec p})\delta^{(3)}(\vec p-\vec k)=\mathrm{e}^{ik\cdot x}$$
+>
+>$$
+>\langle 0|\phi'(x)|0\rangle=0,\quad \langle k|\phi'(x)|0\rangle=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3}(2\omega_{\vec p})}\mathrm{e}^{ip\cdot x}\langle k|p\rangle=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3}(2\omega_{\vec p})}\mathrm{e}^{ip\cdot x}(2\pi)^{3}(2\omega_{\vec p})\delta^{(3)}(\vec p-\vec k)=\mathrm{e}^{ik\cdot x}
+>$$
+>
 >再来看看那个奇怪的算符 $\phi'^f(t)$ 是什么，直接代入定义式得到：$$\begin{align}
 >\phi'^{f}(t)&\equiv i\int\mathrm{d}^3\vec x\,[\phi(x)\partial_0f(x)-f(x)\partial_0\phi(x)]\\
 >&=i\int\mathrm{d}^3\vec x\left[\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_p)}(\alpha_{p}\,\mathrm{e}^{-ip\cdot x}+\alpha^\dagger_{p}\,\mathrm{e}^{ip\cdot x})\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^3(2\omega_k)}F(\vec k)\cdot -i\omega_k\mathrm{e}^{-ik\cdot x}-\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_p)}(-i\omega_p\alpha_{p}\,\mathrm{e}^{-ip\cdot x}+i\omega_p\alpha^\dagger_{p}\,\mathrm{e}^{ip\cdot x})\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^3(2\omega_k)}F(\vec k)\,\mathrm{e}^{-ik\cdot x}\right]\\
 >&=\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^3(2\omega_k)^2}\alpha^\dagger_kF(\vec k)\cdot 2\omega_k=\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^3(2\omega_k)}F(\vec k)\,\alpha^\dagger_k
 >\end{align}$$
 >因此其显然是一个单粒子态产生算符，作用于真空态的效果为：
->$$\phi'^f(t)|0\rangle=\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^3(2\omega_k)}F(\vec k)\,|k\rangle=|f\rangle$$
+>
+>$$
+>\phi'^f(t)|0\rangle=\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^3(2\omega_k)}F(\vec k)\,|k\rangle=|f\rangle
+>$$
+>
 >这正是我们预期的结果。因此，在原先的散射理论下，算符 $\phi'^f(t)$ 就是 $|f\rangle$ 的产生算符，实际上也不依赖于时间。但在我们新的理论下，Heisenberg场是无法显式求解的，因此我们类比自由场，构造了新理论下的单粒子态产生算符 $\phi'^f(t)$。其不同点便在于只有取无穷远的渐近极限 $t\to\pm\infty$ ，此算符才能变成真正的产生算符。
 
 ---

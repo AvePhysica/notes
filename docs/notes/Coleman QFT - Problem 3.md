@@ -11,7 +11,11 @@ $$
 >（1）列出其对应的Euler-Lagrange方程。
 >（2）考虑平面波解，即 $\psi\sim\mathrm{e}^{i(\vec p\cdot\vec x-\omega t)}$。求解色散关系 $\omega(|\vec p|)$。
 >（3）此理论并不是Lorentz不变的，但是其仍然有时空平移对称性与 $U(1)$ 的内部对称性。即下面的变换是对称性：
->$$\psi\to\mathrm{e}^{-i\lambda}\psi,\quad \psi^*\to\mathrm{e}^{i\lambda}\psi^*$$
+>
+>$$
+>\psi\to\mathrm{e}^{-i\lambda}\psi,\quad \psi^*\to\mathrm{e}^{i\lambda}\psi^*
+>$$
+>
 >因此其有守恒的能量、动量与电荷。求解这些守恒量的表达式，用场及其导数的积分式表示。
 
 （1）将 $\psi$ 与 $\psi^*$ 视为独立的场，对 $\psi^*$ 与 $\psi$ 变分得到EL方程：
@@ -134,7 +138,11 @@ $$
 
 >[!question]
 >在相对论性的复标量场理论中，我们构造了相应于三种分立对称性(CPT)的变换算符 $U_C,U_P,\varOmega_T$。其对标量场的作用为：
->$$\begin{align}U_C^\dagger\,\psi(\vec x,t)\,U_C&=\psi^*(\vec x,t)\\ U_P^\dagger\,\psi(\vec x,t)\,U_P&=\psi(-\vec x,t)\\ \varOmega^{-1}_T\,\psi(\vec x,t)\,\varOmega_T&=\psi(\vec x,-t)\end{align}$$
+>
+>$$
+>\begin{align}U_C^\dagger\,\psi(\vec x,t)\,U_C&=\psi^*(\vec x,t)\\ U_P^\dagger\,\psi(\vec x,t)\,U_P&=\psi(-\vec x,t)\\ \varOmega^{-1}_T\,\psi(\vec x,t)\,\varOmega_T&=\psi(\vec x,-t)\end{align}
+>$$
+>
 >在上面的非相对论理论中，如果我们仍然采取上面的变换定义，将会只有两种变换是仍存在的，而另一种违反了一些关系而不能存在。请说明这一点。
 
 **宇称**：其对复标量场的变换为：
@@ -189,9 +197,17 @@ $$
 
 >[!question]
 >考虑一个无质量的自由标量场。其拉格朗日量为：
->$$\mathcal L(x)=\dfrac12\partial^\mu\phi(x)\partial_\mu\phi(x)$$
+>
+>$$
+>\mathcal L(x)=\dfrac12\partial^\mu\phi(x)\partial_\mu\phi(x)
+>$$
+>
 >对其实施一个单参连续**扩张**变换(dilation)，变换由下式定义：
->$$\mathcal D:\phi(x)\to\mathrm{e}^\lambda\phi(\mathrm{e}^\lambda x)$$
+>
+>$$
+>\mathcal D:\phi(x)\to\mathrm{e}^\lambda\phi(\mathrm{e}^\lambda x)
+>$$
+>
 >（1）说明作用量 $S=\int\mathrm{d}^4x\,\mathcal L(x)$ 在此变换下不变，因此此变换是系统的对称性。
 >（2）计算扩张变换对应的守恒流 $J^\mu$ 与守恒量 $Q$。
 >（3）计算 $Q$ 与 $\phi$ 的对易子，验证其为：$$[\phi,Q]=iD\phi$$

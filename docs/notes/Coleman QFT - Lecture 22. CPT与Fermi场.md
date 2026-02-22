@@ -300,9 +300,17 @@ $$
 
 >[!tip]
 >如果不采用Majorana基，事情会复杂许多。比如我们采用另一组基， $\psi_S$ 与 $\psi_M$ 通过相似变换联系：
->$$\psi_S=S\psi_M$$
+>
+>$$
+>\psi_S=S\psi_M
+>$$
+>
 >此时电荷共轭对其的作用即为：
->$$C:\psi_S=S\psi_M\to S\psi_M^*=S(S^{-1})^*\psi_S^*=\mathcal C\psi_S^*$$
+>
+>$$
+>C:\psi_S=S\psi_M\to S\psi_M^*=S(S^{-1})^*\psi_S^*=\mathcal C\psi_S^*
+>$$
+>
 >这会多出一个额外的变换矩阵 $\mathcal C$。
 
 为了研究电荷共轭对耦合项的作用，我们考虑其对一般二次型 $\bar\psi_AM\psi_B$ 的作用，这两个场在电荷共轭下的作用均为：
