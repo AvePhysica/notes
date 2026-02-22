@@ -238,72 +238,73 @@ $$
 
 $$
 H=\dfrac12\int\mathrm{d}^3
-\vec x\,(\pi^2(\vec x,t)+|\nabla\phi(\vec x,t)|^2+\mu^2\phi^2(\vec x,t))$$
+\vec x\,(\pi^2(\vec x,t)+|\nabla\phi(\vec x,t)|^2+\mu^2\phi^2(\vec x,t))
+$$
+
 同时我们知道标量场的展开式为：
-$$
 
+$$
 \phi(x)=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(\,a_{\vec p}\,\mathrm{e}^{-ip\cdot x}+a^\dagger_{\vec p}\,\mathrm{e}^{ip\cdot x}\,)
-
 $$
+
 代入表达式中，逐项计算得：
-$$
 
+$$
 \begin{align}
 \dfrac12\int\mathrm{d}^3\vec x\,\pi^2(\vec x,t)&=\dfrac12\iiint\dfrac{\mathrm{d}^3\vec x\,\mathrm{d}^3\vec p\,\mathrm{d}^3\vec p'}{2(2\pi)^3\sqrt{\omega_{\vec p}\omega_{\vec p'}}}(-i\omega_\vec p a_{\vec p}\,\mathrm{e}^{-ip\cdot x}+i\omega_{\vec p}a^\dagger_{\vec p}\,\mathrm{e}^{ip\cdot x}\,)(-i\omega_{\vec p'} a_{\vec p'}\,\mathrm{e}^{-ip'\cdot x}+i\omega_{\vec p'}a^\dagger_{\vec p'}\,\mathrm{e}^{ip'\cdot x}\,)\\&=\dfrac12\int\dfrac{\mathrm{d}^3\vec p}{2\omega_{\vec p}}[-\omega_{\vec p}^2(a_{\vec p}a_{-\vec p}\,\mathrm{e}^{-2i\,\omega_{\vec p}\,t}+a_{\vec p}^\dagger a_{-\vec p}^\dagger\,\mathrm{e}^{2i\,\omega_{\vec p}t})+\omega_{\vec p}^2(a_{\vec p}a_{\vec p}^\dagger+a_{\vec p}^\dagger a_{\vec p})]
 \end{align}
-
-$$
 $$
 
+$$
 \dfrac12\int\mathrm{d}^3\vec x\,|\nabla\phi(\vec x,t)|^2=\dfrac{1}{2}\int\dfrac{\mathrm{d}^3\vec p}{2\omega_{\vec p}}|\vec p|^2(a_{\vec p}a_{-\vec p}\,\mathrm{e}^{-2i\,\omega_{\vec p}\,t}+a_{\vec p}^\dagger a_{-\vec p}^\dagger\,\mathrm{e}^{2i\,\omega_{\vec p}\,t}+a_{\vec p}a_{\vec p}^\dagger+a_{\vec p}^\dagger a_{\vec p})
-
-$$
 $$
 
+$$
 \dfrac12\int\mathrm{d}^3\vec x\,\mu^2\phi^2(\vec x,t)=\dfrac12
 \int\dfrac{\mathrm{d}^3\vec p}{2\omega_{\vec p}}\mu^2(a_{\vec p}a_{-\vec p}\,\mathrm{e}^{-2i\,\omega_{\vec p}\,t}+a_{\vec p}^\dagger a_{-\vec p}^\dagger\,\mathrm{e}^{2i\,\omega_{\vec p}\,t}+a_{\vec p}a_{\vec p}^\dagger+a_{\vec p}^\dagger a_{\vec p})
-
 $$
+
 综上可得：
-$$
 
+$$
 \begin{align}
 H&=\dfrac{1}{2}\int\dfrac{\mathrm{d}^3\vec p}{2\omega_{\vec p}}\left[(a_{\vec p}a_{-\vec p}\,\mathrm{e}^{-2i\,\omega_{\vec p}\,t}+a_{\vec p}^\dagger a_{-\vec p}^\dagger\,\mathrm{e}^{2i\,\omega_{\vec p}t})\times(\underbrace{-\omega_{\vec p}^2+|\vec p|^2+\mu^2}_{0})+(a_{\vec p}a_{\vec p}^\dagger+a_{\vec p}^\dagger a_{\vec p})\times(\underbrace{\omega_{\vec p}^2+|\vec p|^2+\mu^2}_{2\omega_{\vec p^2}})\right]\\&=\dfrac12\int\mathrm{d}^3\vec p\,(a_{\vec p}a_{\vec p}^\dagger+a_{\vec p}^\dagger a_{\vec p})\,\omega_{\vec p}
 \end{align}
-
 $$
+
 然而，我们期待的形式却是：
-$$
 
+$$
 H=\int\mathrm{d}^3\vec p\,(a_{\vec p}^\dagger a_{\vec p})\,\omega_{\vec p}
-
 $$
+
 事实上，这两个哈密顿量间相差了一个无穷大，这是因为
-$$
 
+$$
 \dfrac12\int\mathrm{d}^3\vec p\,(a_{\vec p}a_{\vec p}^\dagger+a_{\vec p}^\dagger a_{\vec p})\,\omega_{\vec p}=\int\mathrm{d}^3\vec p\,\left(a_{\vec p}^\dagger a_{\vec p}+\dfrac12[a_{\vec p},a_{\vec p}^\dagger]\right)\,\omega_{\vec p}=\int\mathrm{d}^3\vec p\,\left(a_{\vec p}^\dagger a_{\vec p}+\dfrac12\delta^{(3)}(\vec 0)\right)\,\omega_{\vec p}
-
 $$
+
 然而，一个绝对的能量是无法测量的，我们能测量的只有相对能量。因此，我们轻率的丢弃这一项“无穷大的常数项”。然而，我们最好还是统一一下这两种方式得到的哈密顿量形式。为此，引入一种排序产生-湮灭算符顺序的约定，称为**正规序**(normal ordering)：
+
 设 $\{\phi^{a_1}(x_1),\phi^{(a_2)}(x_2),\cdots,\phi^{a_n}(x_n)\}$ 为一组自由标量场，其按正规序的积记为：
-$$
 
+$$
 :\phi^{a_1}(x_1)\phi^{(a_2)}(x_2)\cdots\phi^{a_n}(x_n):
-
 $$
+
 即正规序积记为 $:(\cdots):$ 。其含义为对于这些场的展开式中的产生湮灭算符，统一**先作用湮灭算符，后作用产生算符**。也就是说，产生算符在左侧而湮灭算符在右侧。简单举一个例子：
-$$
 
+$$
 :aa^\dagger:\,=\,:a^\dagger a:\,=a^\dagger a
-
 $$
+
 上面的哈密顿量的表达式可以用正规序积表示为：
-$$
 
+$$
 H=\dfrac12\int\mathrm{d}^3
 \vec x\,(:\pi^2+|\nabla\phi|^2+\mu^2\phi^2:)=\int\mathrm{d}^3\vec p\,(a_{\vec p}^\dagger a_{\vec p})\,\omega_{\vec p}
-
 $$
+
 先预告一下，在后面我们在做时间演化算符的微扰展开时，Dyson级数被表示为[[Coleman QFT - Problem 1]]中提到的**时序积**，但为了方便求矩阵元，我们希望将其化为**正规序**的形式。这一步骤由QFT中重要的**Wick定理**实现。
 
 ---
