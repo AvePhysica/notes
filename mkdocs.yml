@@ -59,6 +59,13 @@ nav:
 
 theme:
   name: material
+  palette:
+    primary: blue  
+    accent: orange
+  features:
+    - dark_mode
+    - search.highlight
+    - search.indexes
   language: zh
 
 markdown_extensions:
