@@ -9,6 +9,48 @@ nav:
   - 笔记:
       - Quantum Field Theory: 
           - Coleman QFT - Lecture 1. 在量子力学中引入相对论: notes/Coleman QFT - Lecture 1. 在量子力学中引入相对论.md
+          - Coleman QFT - Lecture 2. 简单的多体理论: notes/Coleman QFT - Lecture 2. 简单的多体理论.md
+          - Coleman QFT - Lecture 3. 构建标量量子场: notes/Coleman QFT - Lecture 3. 构建标量量子场.md
+          - Coleman QFT - Lecture 4. 场的正则量子化: notes/Coleman QFT - Lecture 4. 场的正则量子化.md
+          - Coleman QFT - Lecture 5. 对称性与守恒律 I：时空对称性: notes/Coleman QFT - Lecture 5. 对称性与守恒律 I：时空对称性.md
+          - Coleman QFT - Lecture 6. 对称性与守恒律 II：内部对称性: notes/Coleman QFT - Lecture 6. 对称性与守恒律 II：内部对称性.md
+          - Coleman QFT - Lecture 7. 微扰论与散射理论初步: notes/Coleman QFT - Lecture 7. 微扰论与散射理论初步.md
+          - Coleman QFT - Lecture 8. 微扰理论 I：Wick diagram: notes/Coleman QFT - Lecture 8. 微扰理论 I：Wick diagram.md
+          - Coleman QFT - Lecture 9. 微扰理论 II：发散与抵消项: notes/Coleman QFT - Lecture 9. 微扰理论 II：发散与抵消项.md
+          - Coleman QFT - Lecture 10. 质量重整化与费曼图: notes/Coleman QFT - Lecture 10. 质量重整化与费曼图.md
+          - Coleman QFT - Lecture 11. 散射理论 I：Mandelstam变量、CPT和相空间: notes/Coleman QFT - Lecture 11. 散射理论 I：Mandelstam变量、CPT和相空间.md
+          - Coleman QFT - Lecture 12. 散射理论 II：应用: notes/Coleman QFT - Lecture 12. 散射理论 II：应用.md
+          - Coleman QFT - Lecture 13. Green函数与Heisenberg场: notes/Coleman QFT - Lecture 13. Green函数与Heisenberg场.md
+          - Coleman QFT - Lecture 14. LSZ约化公式: notes/Coleman QFT - Lecture 14. LSZ约化公式.md
+          - Coleman QFT - Lecture 15. 重整化 I：确定抵消项: notes/Coleman QFT - Lecture 15. 重整化 I：确定抵消项.md
+          - Coleman QFT - Lecture 16. 重整化 II：推广与延伸: notes/Coleman QFT - Lecture 16. 重整化 II：推广与延伸.md
+          - Coleman QFT - Lecture 17. 不稳定粒子: notes/Coleman QFT - Lecture 17. 不稳定粒子.md
+          - Coleman QFT - Lecture 18. Lorentz群的表示: notes/Coleman QFT - Lecture 18. Lorentz群的表示.md
+          - Coleman QFT - Lecture 19. Dirac方程 I：构造拉格朗日量: notes/Coleman QFT - Lecture 19. Dirac方程 I：构造拉格朗日量.md
+          - Coleman QFT - Lecture 20. Dirac方程 II：求解: notes/Coleman QFT - Lecture 20. Dirac方程 II：求解.md
+          - Coleman QFT - Lecture 21. Dirac方程 III：量子化与Feynman规则: notes/Coleman QFT - Lecture 21. Dirac方程 III：量子化与Feynman规则.md
+          - Coleman QFT - Lecture 22. CPT与Fermi场: notes/Coleman QFT - Lecture 22. CPT与Fermi场.md
+          - Coleman QFT - Lecture 23. 旋量场理论的重整化: notes/Coleman QFT - Lecture 23. 旋量场理论的重整化.md
+          - Coleman QFT - Lecture 24. 同位旋: notes/Coleman QFT - Lecture 24. 同位旋.md
+          - Coleman QFT - Lecture 25. 处理无限大：正规化与重整化: notes/Coleman QFT - Lecture 25. 处理无限大：正规化与重整化.md
+          - Coleman QFT - Lecture 26. 矢量场: notes/Coleman QFT - Lecture 26. 矢量场.md
+          - Coleman QFT - Lecture 27. 电磁相互作用与最小耦合: notes/Coleman QFT - Lecture 27. 电磁相互作用与最小耦合.md
+          - Coleman QFT - Lecture 28. 泛函积分与Feynman图: notes/Coleman QFT - Lecture 28. 泛函积分与Feynman图.md
+          - Coleman QFT - Problem 1: notes/Coleman QFT - Problem 1.md
+          - Coleman QFT - Problem 2: notes/Coleman QFT - Problem 2.md
+          - Coleman QFT - Problem 3: notes/Coleman QFT - Problem 3.md
+          - Coleman QFT - Problem 4: notes/Coleman QFT - Problem 4.md
+          - Coleman QFT - Problem 5: notes/Coleman QFT - Problem 5.md
+          - Coleman QFT - Problem 6: notes/Coleman QFT - Problem 6.md
+          - Coleman QFT - Problem 7: notes/Coleman QFT - Problem 7.md
+          - Coleman QFT - Problem 8: notes/Coleman QFT - Problem 8.md
+          - Coleman QFT - Problem 9: notes/Coleman QFT - Problem 9.md
+          - Coleman QFT - Problem 10: notes/Coleman QFT - Problem 10.md
+          - Coleman QFT - Problem 11: notes/Coleman QFT - Problem 11.md
+          - Coleman QFT - Problem 12: notes/Coleman QFT - Problem 12.md
+          - Coleman QFT - Problem 13: notes/Coleman QFT - Problem 13.md
+          - Coleman QFT - Problem 14: notes/Coleman QFT - Problem 14.md
+          - Coleman QFT - Problem 15: notes/Coleman QFT - Problem 15.md
   - 代码:
       - README: code/README.md
 
