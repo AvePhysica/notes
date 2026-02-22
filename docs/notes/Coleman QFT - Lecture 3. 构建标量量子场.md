@@ -32,19 +32,23 @@ $$
 $$
 
 3. Translations：
+
 $$
 \mathrm{e}^{-iP\cdot y}\phi^a(x)\mathrm{e}^{iP\cdot y}=\phi^a(x-y)
 $$
 
 4. Lorentz Transformations：
+
 $$
 U(\Lambda)^\dagger\phi^a(x)U(\Lambda)=\phi^a(\Lambda^{-1} a)
 $$
 
 5. Linear combination assumption：
+
 $$
 \phi^a(x)=\int \mathrm{d}^3\vec p\,[F^a_{\vec p}(x)a_{\vec p}+G^a_{\vec p}(x)a^\dagger_{\vec p}\,]
 $$
+
 上面的第四条是**标量场**的定义，即洛伦兹变换下的标量。至于为什么平移是 $-y$ 以及洛伦兹变换是 $\Lambda^{-1}$，可以理解为我对算符场做了一个**主动变换**，而这等效于对时空坐标点的**逆向被动变换**。
 
 ### 显式构造标量场
