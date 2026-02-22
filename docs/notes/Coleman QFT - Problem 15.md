@@ -101,35 +101,35 @@ $$
 $$
 \mathrm{Tr}[\gamma^\mu(p\mkern-8.5mu/_2+m_2)\gamma_\mu(p\mkern-8.5mu/_1+m_1)]=\mathrm{Tr}[(-2p\mkern-8.5mu/_2+4m_2)(p\mkern-8.5mu/_1+m_1)]=-8p_1\cdot p_2
 +16m_1m_2$$
+
 代入得到：
-$$
 
+$$
 \dfrac12\sum_{s,s';r}|\mathcal A_{fi}|^2=g^2\left[\dfrac{2(p_1\cdot p_2+m_1m_2)(m_1-m_2)^2}{\mu^2}-8m_1m_2+4p_1\cdot p_2\right]
-
 $$
+
 在质心系中：
-$$
 
+$$
 p_1=(m_1,0),\quad \sqrt{|\vec p_2|^2+\mu^2}+\sqrt{|\vec p_2|^2+m_2^2}=m_1
-
 $$
+
 解得
-$$
 
+$$
 |\vec p_2|=\sqrt{\dfrac{(m_1^2-(m_2+\mu)^2)(m_1^2-(m_2-\mu)^2)}{2m_1}},\quad E_2=\sqrt{|\vec p_2|^2+\mu^2}
-
 $$
+
 则
-$$
 
+$$
 \dfrac12\sum_{s,s';r}|\mathcal A_{fi}|^2=2g^2m_1\left[\dfrac{E_2+m_2}{\mu^2}(m_1-m_2)^2-2(2m_1-E_2)\right]
-
-$$
 $$
 
+$$
 \varGamma=\dfrac{|\vec p_2|}{8\pi m_1^2}\cdot\dfrac12\sum_{s,s';r}|\mathcal A_{fi}|^2=\dfrac{g^2|\vec p_2|}{4\pi m_1}\left[\dfrac{E_2+m_2}{\mu^2}(m_1-m_2)^2-2(2m_1-E_2)\right]
-
 $$
+
 可以看到，当 $m_1\ne m_2$ 时，结果在 $\mu\to 0$ 时出现了发散的问题。
 
 ---
@@ -162,95 +162,95 @@ $$
 </div>
 
 最后一张图是抵消项，四个图之和在对称点处应互相抵消，也就是说
-$$
 
+$$
 \mathcal A_4=-C_2,\quad \mathcal A_1+\mathcal A_2+\mathcal A_3-C_2=0\quad \text{at }\;s=t=u=\dfrac43\mu^2
-
 $$
+
 前三幅图就对应着三种模式。第一幅图为 $s$ 模式，有
-$$
 
+$$
 i\mathcal A_1=(-ig)^2\cdot\dfrac12\int\dfrac{\mathrm{d}^4k}{(2\pi)^4}\dfrac{i}{k^2-\mu^2+i\epsilon}\dfrac{i}{[(k+p+q)^2-\mu^2+i\epsilon]}
-
 $$
+
 这里的 $1/2$ 是因为 $1/4!$ 无法被完全消除。解释：从四个 $\phi(x_1)$ 与四个 $\phi(x_2)$ 中选择两组进行缩并，并选取未缩并场对应的外线，则选取的方式数为：
-$$
 
+$$
 (C_4^2)^2\times2\times 2^2=288
-
 $$
+
 因此总的因子就是
-$$
 
+$$
 \dfrac{288}{(4!)^2}=\dfrac12
-
 $$
+
 使用Feynman参数化，得到：
-$$
 
+$$
 \mathcal A_1(s)-\mathcal A_1(s=4\mu^2/3)=-\dfrac{g^2}{32\pi^2}\int_0^1\mathrm{d}x\,\ln\left[\dfrac{\mu^2-sx(1-x)-i\epsilon}{\mu^2-4\mu^2x(1-x)/3}\right]\equiv g^2f(s)
-
 $$
+
 剩下的两幅图只需将 $s$ 换成 $t,u$ 即可，因此介子-介子散射的振幅即为
-$$
 
+$$
 \mathcal A=-g+g^2[f(s)+f(t)+f(u)]+O(g^3)
-
 $$
+
 引用[[Coleman QFT - Lecture 12. 散射理论 II：应用]]中的结论，双粒子弹性散射的微分散射截面为
-$$
 
+$$
 \dfrac{\mathrm{d}\sigma}{\mathrm{d}\varOmega}=\dfrac{1}{64\pi^2E_T^2}|\mathcal A_{fi}|^2=\dfrac{g^2}{64\pi^2s}+O(g^3)
-
 $$
+
 总截面为（注意全同性的影响）：
-$$
 
+$$
 \sigma=\dfrac12\int\mathrm{d}\varOmega\dfrac{\mathrm{d}\sigma}{\mathrm{d}\varOmega}=\dfrac{g^2}{32\pi s}+O(g^3)
-
 $$
+
 在质心系中，入射动量与能量可以用 $s$ 表示：
-$$
 
+$$
 s=4(|\vec p_i|^2+\mu^2)\Rightarrow |\vec p_i|=\sqrt{\dfrac s4-\mu^2},\quad E_T=\sqrt s
-
 $$
+
 则
-$$
 
+$$
 2E_T|\vec p_i|\sigma=\dfrac{g^2}{32\pi}\sqrt{1-\dfrac{4\mu^2}{s^2}}
-
 $$
+
 另一方面，再来计算前向散射振幅 $\mathcal A_{ii}$ 的虚部。由于其相当于不发生作用，此时 $p=p',q=q'$，因此 $t=0,\;s\geq 4\mu^2,\;u=4\mu^2-s<0$。而虚部来源于积分中的对数可能存在负数，即
-$$
 
+$$
 \mu^2-sx(1-x)<0
-
 $$
+
 时会出现虚部。显然，$f(t),f(u)$ 都不会出现上述情况，因此
-$$
 
+$$
 \mathrm{Im}\,\mathcal A_{ii}=g^2\,\mathrm{Im}\,f(s)
-
 $$
+
 而
-$$
 
+$$
 \mathrm{Im}\,f(s)=-\dfrac{1}{32\pi^2}(-\pi)|x_2-x_1|
-
 $$
+
 其中 $x_1,x_2\in[0,1]$ 是分子的两个零点。由
-$$
 
+$$
 sx(1-x)=\mu^2\Rightarrow |x_2-x_1|=\sqrt{1-\dfrac{4\mu^2}{s}}
-
 $$
+
 因此
-$$
 
+$$
 \mathrm{Im}\,\mathcal A_{ii}=\dfrac{g^2}{32\pi}\sqrt{1-\dfrac{4\mu^2}{s^2}}=2E_T|\vec p_i|\sigma
-
 $$
+
 正是光学定理。
 
 ---
