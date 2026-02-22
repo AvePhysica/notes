@@ -62,6 +62,7 @@ theme:
   palette:
     primary: lightpurple
     accent: blue
+    background: #f5f5f5
   features:
     - dark_mode
     - search.highlight
