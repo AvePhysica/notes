@@ -51,7 +51,6 @@ $$
 $$
 \begin{align}
 \langle\vec p|\phi^-(\vec x_1,t_1)\phi^+(\vec y_n,t_n)|\vec p'\rangle&=\int\dfrac{\mathrm{d}^3\vec q}{(2\pi)^{3/2}\sqrt{2\omega_{\vec q}}}\mathrm{e}^{iq\cdot x_1}\int\dfrac{\mathrm{d}^3\vec q'}{(2\pi)^{3/2}\sqrt{2\omega_{\vec q'}}}\mathrm{e}^{-iq'\cdot y_n}\langle \vec p|a_{\vec q}^\dagger \,a_{\vec q'}|\vec p'\rangle\\&=\int\dfrac{\mathrm{d}^3\vec q}{(2\pi)^{3/2}\sqrt{2\omega_{\vec q}}}\mathrm{e}^{iq\cdot x_1}\int\dfrac{\mathrm{d}^3\vec q'}{(2\pi)^{3/2}\sqrt{2\omega_{\vec q'}}}\mathrm{e}^{-iq'\cdot y_n}\,\delta^{(3)}(\vec p-\vec q)\delta^{(3)}(\vec p'-\vec q')\\&=\dfrac{\mathrm{e}^{ip\cdot x_1}}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}\dfrac{\mathrm{e}^{-ip'\cdot y_n}}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p'}}}
-
 \end{align}
 $$
 
