@@ -354,99 +354,105 @@ $$
 $$
 
 注意这里我们又取的是 $|\vec p\rangle$，与[[Coleman QFT - Lecture 10. 质量重整化与费曼图]]中注意区分。
+
 我们将 $S-1$ 的矩阵元写为下面的形式：
 
 $$
 \langle f|S-1|i\rangle=i\mathcal A_{fi}^{VT}(2\pi)^4\delta_{VT}^{(4)}(p_f-p_i)\prod_f
 \left(\dfrac{1}{\sqrt V}\dfrac{1}{\sqrt{2E_{\vec p_f}}}\right)\prod_i
-\left(\dfrac{1}{\sqrt{2E_{\vec p_i}}}\right)\dfrac{1}{\sqrt V}$$
+\left(\dfrac{1}{\sqrt{2E_{\vec p_i}}}\right)\dfrac{1}{\sqrt V}
+$$
+
 为什么这与我们一开始看到的形式：
-$$
 
+$$
 \langle f|S-1|i\rangle=i(2\pi)^4\delta^{(4)}(p_f-p_i)\mathcal A_{fi}
-
 $$
+
 不同？这实际上就是来源于我们选取了不同的归一化关系，由于在离散表象下讨论问题，此时
-$$
 
+$$
 \langle 0|\phi(x)|\vec p\rangle=\dfrac{1}{\sqrt V\sqrt{2{E_{\vec p}}}}\mathrm{e}^{-ip\cdot x}
-
 $$
+
 因此每一根外线会贡献一个
-$$
 
+$$
 \dfrac{1}{\sqrt V\sqrt{2{E_{\vec p}}}}
-
 $$
+
 但是由于我们对 $|i\rangle$ 的额外乘的 $\sqrt V$ 因子，因此最终入射只会贡献一个 $1/\sqrt V$。
+
 我们希望趋于连续情况时，有
-$$
 
+$$
 \lim_{V,T\to \infty}\mathcal{A}_{fi}^{VT}=\mathcal A_{fi}
-
 $$
+
 但这个 $\delta_{VT}^{(4)}(p_f-p_i)$ 呢？我们不太希望得到delta函数，因为我们最终是要对振幅平方的，delta函数的平方是“纯粹的垃圾”，我们不太会处理它。我将其的表达式显式的写在下面：
-$$
 
+$$
 (2\pi)^4\delta_{VT}^{(4)}(p)=\int\mathrm{d}^3\vec x\int_{-T/2}^{T/2}\mathrm{d}t\, f(t)\,\mathrm{e}^{ip\cdot x}
-
 $$
+
 显然有
-$$
 
+$$
 \lim_{V,T\to \infty}\int\mathrm{d}^3\vec x\int_{-T/2}^{T/2}\mathrm{d}t\, f(t)\,\mathrm{e}^{ip\cdot x}=\int\mathrm{d}^4x\,\mathrm{e}^{ip\cdot x}=(2\pi)^4\delta^{(4)}(p)
-
 $$
+
 这是delta函数。但我们感兴趣的是其平方：
-$$
 
+$$
 \begin{align}
 \int\dfrac{\mathrm{d}^4p}{(2\pi)^4}|(2\pi)^4\delta_{VT}^{(4)}(p)|^2&=\int_V\mathrm{d}^3\vec x\int_V\mathrm{d}^3\vec x'\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3}\,\mathrm{e}^{-i\vec p\cdot(\vec x-\vec x')}\int\dfrac{\mathrm{d}\omega_{\vec p}}{2\pi}\left|\int_{-T/2}^{T/2}\mathrm{d}t\, f(t)\,\mathrm{e}^{i\omega_{\vec p}t}\right|\\&=\int_V\mathrm{d}^3\vec x\int_{-T/2}^{T/2}\mathrm{d}t\,|f(t)|^2=VT
 \end{align}
-
 $$
+
 因此
-$$
 
+$$
 \lim_{V,T\to\infty}[(2\pi)^4\delta_{VT}^{(4)}(p)]^2=(2\pi)^4VT\delta^{(4)}(p)
-
 $$
+
 这实际上是一个渐近形式。这个形式比原先那个delta函数的平方好多了，我们知道了其与 $V,T$ 的渐近关系。
+
 接下来，散射振幅的平方又如何与微分跃迁概率相联系呢？首先，我们要知道像空间中的体积元是什么。这可以直接由离散情形过渡到连续情形来确定：在一个体积元 $\mathrm{d}^3\vec p$ 中的状态数为
-$$
 
+$$
 \dfrac{n_xn_yn_z}{p_xp_yp_z}\mathrm{d}^3\vec p=\dfrac{V\mathrm{d}^3\vec p}{(2\pi)^3}
-
 $$
+
 当然，熟悉统计力学的人对这个表达式是很熟悉的（不要忘记我们在自然单位制下，分母实际上就是 $\hbar^3(2\pi)^3=h^3$）。因此，微分跃迁概率为：
-$$
 
+$$
 (\text{diff. trans. prob.})=(\text{trans.prob.})\times\prod_f\dfrac{V\mathrm{d}^3\vec p_f}{(2\pi)^3}=|\langle f|S-1|i\rangle|^2\times\prod_f\dfrac{V\mathrm{d}^3\vec p_f}{(2\pi)^3}
-
 $$
+
 代入前面的表达式得到：
-$$
 
+$$
 (\text{diff. trans. prob.})=|\mathcal A_{fi}|^2(2\pi)^4VT\delta^{(4)}(p_f-p_i)\times\left[\prod_{f}\dfrac{1}{2E_f}\dfrac{1}{V}\cdot\dfrac{V\mathrm{d}^3\vec p_f}{(2\pi)^3}\right]\left[\prod_i\dfrac{1}{2E_i}\right]\dfrac{1}{V}
-
 $$
+
 可以看到，微分跃迁概率与时间 $T$ 成正比，这其实是Fermi黄金定则。同时，易验证上面的所有 $V$ 都消掉了，因此我们可以放心的取 $V\to\infty$。单位时间的微分跃迁概率为：
-$$
 
+$$
 (\text{diff. trans. prob. per unit time})=(2\pi)^4\delta^{(4)}(p_f-p_i)|\mathcal A_{fi}|^2\prod_f\dfrac{\mathrm{d}^3\vec p_f}{(2\pi)^32E_f}\prod_i\dfrac{1}{2E_i}
-
 $$
+
 我们通常将上面的结果写为：
-$$
 
+$$
 (\text{diff. trans. prob. per unit time})=|\mathcal A_{fi}|^2D\prod_i\dfrac{1}{2E_i}
-
 $$
+
 其中 $D$ 称为末态的相对论性态密度：
-$$
 
+$$
 D=(2\pi)^4\delta^{(4)}(p_f-p_i)\prod_f\dfrac{\mathrm{d}^3\vec p_f}{(2\pi)^32E_f}
-
 $$
+
 这是一个Lorentz变换下的**标量**。
+
 至此，我们完成了对散射的一般推导。用Feynman图算出Lorentz不变的散射振幅 $\mathcal{A}_{fi}$，然后再代入上面的公式，即可得到任意跃迁的跃迁率。下一章，我们将把上面的结果应用于实际的过程中，研究其又是如何与我们熟悉的那些物理过程相联系的。
