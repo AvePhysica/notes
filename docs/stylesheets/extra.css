@@ -21,3 +21,7 @@
 [data-md-color-scheme="default"] .md-sidebar__scrollwrap {
   background-color: var(--site-theme-sidebar);
 }
+
+body {
+  font-family: "Times New Roman", "Noto Serif SC", "Source Han Serif SC", serif;
+}
