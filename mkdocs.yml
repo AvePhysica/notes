@@ -61,7 +61,7 @@ theme:
   name: material
   palette:
     primary: blue  
-    accent: orange
+    accent: purple
   features:
     - dark_mode
     - search.highlight
