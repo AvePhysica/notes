@@ -175,7 +175,7 @@ $$
 $\theta(x)$ 是阶跃函数，在 $x>0$ 时取1，$x<0$时为0。这一测度才是Lorenzt不变的三维测度。从图像上理解，粒子态被束缚在四维时空的一个超双曲面的一支上。我们实际上是求出了曲面各处的超面积。
  
 <div align="center">
-  <img src="../../images/Pasted%20image%2020251118112532.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251118112532.png" width="500">
 </div>
 
 因此，需要的完备性关系为：
@@ -229,7 +229,7 @@ $$
 这一积分可用留数定理化简。可以看到，$\omega_{\vec p}$ 是多值函数，其两个分支点为 $p=\pm i\mu$。取下面的割线以及围道，大圆弧上的积分趋于零，故原先的积分等于割线左右路径的积分。
 
 <div align="center">
-  <img src="../../images/Pasted%20image%2020251118110807.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251118110807.png" width="500">
 </div>
 
 在割线左右 $p=iy$：
