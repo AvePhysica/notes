@@ -1,5 +1,5 @@
->[!question]
->在[[Coleman QFT - Lecture 20. Dirac方程 II：求解]]中，我们得到了Dirac方程的沿 $z$ 轴运动平面波解。现在对于一般的 $\vec p$，找到两个线性独立的正频率解，使其为螺旋度的本征态。（Hint：旋转算符与螺旋度算符对易）。
+> [!question]
+> 在[[Coleman QFT - Lecture 20. Dirac方程 II：求解]]中，我们得到了Dirac方程的沿 $z$ 轴运动平面波解。现在对于一般的 $\vec p$，找到两个线性独立的正频率解，使其为螺旋度的本征态。（Hint：旋转算符与螺旋度算符对易）。
 
 对于沿 $z$ 轴的运动，我们得到：
 
@@ -56,24 +56,22 @@ $$
 
 ---
 
->[!question]
->本题来研究如何求解形如 $a\mkern-9.5mu /$ 的乘积的迹。前几个是容易的：
+> [!question]
+> 本题来研究如何求解形如 $a\mkern-9.5mu /$ 的乘积的迹。前几个是容易的：
 >
->$$
->\mathrm{Tr}\,(\mathbb 1)=4
->$$
+> $$
+> \mathrm{Tr}\,(\mathbb 1)=4
+> $$
 >
+> $$
+> \mathrm{Tr}\,(a\mkern-9.5mu /)=\mathrm{Tr}\,(\gamma_5\gamma_5a\mkern-9.5mu /)=-\mathrm{Tr}\,(\gamma_5a\mkern-9.5mu /\gamma_5)=-\mathrm{Tr}\,(\gamma_5\gamma_5a\mkern-9.5mu /)=0
+> $$
 >
->$$
->\mathrm{Tr}\,(a\mkern-9.5mu /)=\mathrm{Tr}\,(\gamma_5\gamma_5a\mkern-9.5mu /)=-\mathrm{Tr}\,(\gamma_5a\mkern-9.5mu /\gamma_5)=-\mathrm{Tr}\,(\gamma_5\gamma_5a\mkern-9.5mu /)=0
->$$
+> $$
+> \mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /)=\dfrac12\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /+b\mkern-9.5mu /a\mkern-9.5mu /)=4a\cdot b
+> $$
 >
->
->$$
->\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /)=\dfrac12\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /+b\mkern-9.5mu /a\mkern-9.5mu /)=4a\cdot b
->$$
->
->请继续计算 $\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /c\mkern-9.5mu /),\;\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /c\mkern-9.5mu /d\mkern-9.5mu /)$ 以及 $\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /c\mkern-9.5mu /d\mkern-9.5mu /\gamma_5)$。
+> 请继续计算 $\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /c\mkern-9.5mu /),\;\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /c\mkern-9.5mu /d\mkern-9.5mu /)$ 以及 $\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /c\mkern-9.5mu /d\mkern-9.5mu /\gamma_5)$。
 
 - 对于奇数个相乘的情形，我们可以使用 $\gamma_5$-trick，即
 

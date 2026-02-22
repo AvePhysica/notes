@@ -1,13 +1,13 @@
 本章紧接上一章[[Coleman QFT - Lecture 13. Green函数与Heisenberg场]]，来回答第二个问题：
 
->[!question]
->我们前面知道通过将Green函数限制在外线的质壳上能得到散射矩阵的矩阵元。这一关系在新的散射理论中是否仍成立？以四点函数为例：
+> [!question]
+> 我们前面知道通过将Green函数限制在外线的质壳上能得到散射矩阵的矩阵元。这一关系在新的散射理论中是否仍成立？以四点函数为例：
 >
->$$
->\langle k_3,k_4|S-1|k_1,k_2\rangle=\prod_{r=1}^4[(-i)(k_r^2-\mu^2)]\tilde G^{(4)}(-k_3,-k_4,k_1,k_2)
->$$
+> $$
+> \langle k_3,k_4|S-1|k_1,k_2\rangle=\prod_{r=1}^4[(-i)(k_r^2-\mu^2)]\tilde G^{(4)}(-k_3,-k_4,k_1,k_2)
+> $$
 >
->是否成立？
+> 是否成立？
 
 我们先回忆一下，在上一章的最后一节中，我们对于每一个单粒子态 $|f\rangle$：
 
@@ -73,21 +73,37 @@ $$
 
 现在，我们可以开始证明LSZ约化公式了，这个公式的表述整理如下
 
->[!tip] LSZ约化公式
->首先按下式定义**重整化场**对应的Green函数：$$G'^{(n)}(x_1,\cdots,x_n)\equiv\langle0|T(\phi'(x_1)\cdots\phi'(x_n))|0\rangle=Z_3^{-n/2}G^{(n)}(x_1,\cdots,x_n)$$
->由Fourier变换定义动量空间中的Green函数：$$\tilde G'^{(n)}(k_1,\cdots,k_n)\equiv\int\mathrm{d}^4x_1\cdots\mathrm{d}^4x_n\,\mathrm{e}^{-ik_1\cdot x_1-\cdots-ik_n\cdot x_n}G'^{(n)}(x_1,\cdots,x_n)$$
->则$$\langle k_{i+1},\cdots,k_n|S-1|k_1,\cdots,k_i\rangle=(-i)^4\prod_{r=1}^n(k_r^2-\mu^2)\tilde G'^{(n)}(k_1,\cdots,k_i,-k_{i+1},\cdots,-k_n)$$
->我们可以把总的LSZ定理表述为：（以四点函数为例）
+> [!tip] LSZ约化公式
+> 首先按下式定义**重整化场**对应的Green函数：
 >
->$$
->\langle k_3,k_4|S-1|k_1,k_2\rangle=(i)^4\int\mathrm{d}^4x_1\mathrm{d}^4x_2\mathrm{d}^4x_3\mathrm{d}^4x_4\,\mathrm{e}^{-ik_1\cdot x_1-ik_2\cdot x_2+ik_3\cdot x_3+ik_4\cdot x_4}\times\prod_{r=1}^4(\square^2_r+\mu^2)\langle0|T(\phi'(x_1)\phi'(x_2)\phi'(x_3)\phi'(x_4))|0\rangle
->$$
+> $$
+> G'^{(n)}(x_1,\cdots,x_n)\equiv\langle0|T(\phi'(x_1)\cdots\phi'(x_n))|0\rangle=Z_3^{-n/2}G^{(n)}(x_1,\cdots,x_n)
+> $$
 >
->另一方面，由于物理的散射过程都是用波包态描述的，LSZ约化公式也可表述为以下形式：
+> 由Fourier变换定义动量空间中的Green函数：
 >
->$$
->\langle g_1,g_2|S-1|f_1,f_2\rangle=(i)^4\int\mathrm{d}^4x_1\mathrm{d}^4x_2\mathrm{d}^4x_3\mathrm{d}^4x_4\,g_1^*(x_1)g_2^*(x_2)f_{1}(x_3)f_2(x_4)\times\prod_{r=1}^4(\square^2_r+\mu^2)\langle0|T(\phi'(x_1)\phi'(x_2)\phi'(x_3)\phi'(x_4))|0\rangle
->$$
+> $$
+> \tilde G'^{(n)}(k_1,\cdots,k_n)\equiv\int\mathrm{d}^4x_1\cdots\mathrm{d}^4x_n\,\mathrm{e}^{-ik_1\cdot x_1-\cdots-ik_n\cdot x_n}G'^{(n)}(x_1,\cdots,x_n)
+> $$
+>
+> 则
+>
+> $$
+> \langle k_{i+1},\cdots,k_n|S-1|k_1,\cdots,k_i\rangle=(-i)^4\prod_{r=1}^n(k_r^2-\mu^2)\tilde G'^{(n)}(k_1,\cdots,k_i,-k_{i+1},\cdots,-k_n)
+> $$
+>
+> 我们可以把总的LSZ定理表述为：（以四点函数为例）
+>
+> $$
+> \langle k_3,k_4|S-1|k_1,k_2\rangle=(i)^4\int\mathrm{d}^4x_1\mathrm{d}^4x_2\mathrm{d}^4x_3\mathrm{d}^4x_4\,\mathrm{e}^{-ik_1\cdot x_1-ik_2\cdot x_2+ik_3\cdot x_3+ik_4\cdot x_4}\times\prod_{r=1}^4(\square^2_r+\mu^2)\langle0|T(\phi'(x_1)\phi'(x_2)\phi'(x_3)\phi'(x_4))|0\rangle
+> $$
+>
+> 另一方面，由于物理的散射过程都是用波包态描述的，LSZ约化公式也可表述为以下形式：
+>
+> $$
+> \langle g_1,g_2|S-1|f_1,f_2\rangle=(i)^4\int\mathrm{d}^4x_1\mathrm{d}^4x_2\mathrm{d}^4x_3\mathrm{d}^4x_4\,g_1^*(x_1)g_2^*(x_2)f_{1}(x_3)f_2(x_4)\times\prod_{r=1}^4(\square^2_r+\mu^2)\langle0|T(\phi'(x_1)\phi'(x_2)\phi'(x_3)\phi'(x_4))|0\rangle
+> $$
+>
 >
 
 下面我们来证明LSZ约化公式。首先从一个有用的引理开始：假设 $|f\rangle$ 是一个单粒子波包态，$f(x)$ 是其对应的KG方程的解。假设 $A(x)$ 是另一个单粒子场，我们可以类比定义其产生算符：

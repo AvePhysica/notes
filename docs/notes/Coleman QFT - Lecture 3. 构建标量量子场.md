@@ -10,8 +10,8 @@ $$
 
 这是因为不对易的算符之间的测量必然受到**不确定性原理**的约束。这样，原先的可观测量被扩展为**可观测量场**：即在每个时空点处分布着一些可观测量。我们将这个场记为 $\phi(x)$，或者还可能有一组这样的场 $\phi^a(x)$。这里的算符是时空的函数，所以我们处在**海森堡绘景**下。
 
->[!note]
->注意区分这里的场与波函数的概念。波函数 $\psi(x)$ 本质是从时空点到**复数**的映射，而可观测量场 $\phi(x)$ 是时空点到**算符**的映射。实际上，二次量子化中的**“二次”**，就是指建立一个算符场。
+> [!note]
+> 注意区分这里的场与波函数的概念。波函数 $\psi(x)$ 本质是从时空点到**复数**的映射，而可观测量场 $\phi(x)$ 是时空点到**算符**的映射。实际上，二次量子化中的**“二次”**，就是指建立一个算符场。
 
 ## 3.2 构造标量场
 
@@ -191,17 +191,46 @@ $$
 
 实际上，从这两个方程出发，而不是原先第五个条件，我们就可以重新构造出原先的标量场。下面是必要的步骤：
 
->[!hint]
->我们从KG方程出发，其解的一般形式为：
+> [!hint]
+> 我们从KG方程出发，其解的一般形式为：
 >
->$$
->\phi(x)=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(\,a_{\vec p}\,\mathrm{e}^{-ip\cdot x}+b_{\vec p}\,\mathrm{e}^{ip\cdot x}\,)
->$$
+> $$
+> \phi(x)=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(\,a_{\vec p}\,\mathrm{e}^{-ip\cdot x}+b_{\vec p}\,\mathrm{e}^{ip\cdot x}\,)
+> $$
 >
->厄米性要求 $b_{\vec p}=a_{\vec p}^\dagger$ 。由方程 $[\phi(x),\phi(y)]=0$，我们可以得到算符的基本对易关系：$$[a_{\vec p},a_{\vec p}^\dagger]=\delta^{(3)}(\vec p-\vec p')$$
->利用平移变换关系：$$\phi(x-a)=\mathrm{e}^{-iP\cdot x}\phi(x)\mathrm{e}^{iP\cdot x}$$
->我们可以通过求导推导出 $a_{\vec p},\,a^\dagger_{\vec p}$ 与动量算符 $\vec P$ 以及哈密顿量 $\hat H$ 的对易关系。例如对时间求导：海森堡方程为$$\dfrac{\partial\phi(x)}{\partial t}=i[H,\phi(x)]$$$$\mathrm{LHS}=\dfrac{\partial}{\partial t}\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(\,a_{\vec p}\,\mathrm{e}^{-ip\cdot x}+b_{\vec p}\,\mathrm{e}^{ip\cdot x}\,)=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(-i\omega_{\vec p}\,a_{\vec p}\,\mathrm{e}^{-ip\cdot x}+i\omega_{\vec p}a_{\vec p}^\dagger\,\mathrm{e}^{ip\cdot x}\,)$$$$\mathrm{RHS}=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(\,i[H,a_{\vec p}]\,\mathrm{e}^{-ip\cdot x}+i[H,a^\dagger_{\vec p}]\,\mathrm{e}^{ip\cdot x}\,)$$
->故$$[H,a_{\vec p}\,]=-\omega_{\vec p},\quad[H,a^\dagger_{\vec p}\,]=\omega_{\vec p}$$
+> 厄米性要求 $b_{\vec p}=a_{\vec p}^\dagger$ 。由方程 $[\phi(x),\phi(y)]=0$，我们可以得到算符的基本对易关系：
+>
+> $$
+> [a_{\vec p},a_{\vec p}^\dagger]=\delta^{(3)}(\vec p-\vec p')
+> $$
+>
+> 利用平移变换关系：
+>
+> $$
+> \phi(x-a)=\mathrm{e}^{-iP\cdot x}\phi(x)\mathrm{e}^{iP\cdot x}
+> $$
+>
+> 我们可以通过求导推导出 $a_{\vec p},\,a^\dagger_{\vec p}$ 与动量算符 $\vec P$ 以及哈密顿量 $\hat H$ 的对易关系。例如对时间求导：海森堡方程为
+>
+> $$
+> \dfrac{\partial\phi(x)}{\partial t}=i[H,\phi(x)]
+> $$
+>
+> $$
+> \mathrm{LHS}=\dfrac{\partial}{\partial t}\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(\,a_{\vec p}\,\mathrm{e}^{-ip\cdot x}+b_{\vec p}\,\mathrm{e}^{ip\cdot x}\,)=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(-i\omega_{\vec p}\,a_{\vec p}\,\mathrm{e}^{-ip\cdot x}+i\omega_{\vec p}a_{\vec p}^\dagger\,\mathrm{e}^{ip\cdot x}\,)
+> $$
+>
+> $$
+> \mathrm{RHS}=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(\,i[H,a_{\vec p}]\,\mathrm{e}^{-ip\cdot x}+i[H,a^\dagger_{\vec p}]\,\mathrm{e}^{ip\cdot x}\,)
+> $$
+>
+> 故
+>
+> $$
+> [H,a_{\vec p}\,]=-\omega_{\vec p},\quad[H,a^\dagger_{\vec p}\,]=\omega_{\vec p}
+> $$
+>
+>
 
 接下来我要提到的一点是，第二个方程，即关于 $[\phi(x),\phi(y)]$ 的条件可以**被减弱**。我们考虑下面的**等时对易子**(equal time commutator)：
 
@@ -211,13 +240,13 @@ $$
 
 其间隔一定是类空的，因为$(\vec x-\vec y)^2=-|\vec x-\vec y|^2<0$，因此我们期望其结果为0。验证如下：
 
->[!check]
+> [!check]
 >
->$$
->[\phi(\vec x,t),\phi(\vec y,t)]=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[\mathrm{e}^{i\vec p\cdot(\vec x-\vec y)}-\mathrm{e}^{-i\vec p\cdot(\vec x-\vec y)}]=0
->$$
+> $$
+> [\phi(\vec x,t),\phi(\vec y,t)]=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[\mathrm{e}^{i\vec p\cdot(\vec x-\vec y)}-\mathrm{e}^{-i\vec p\cdot(\vec x-\vec y)}]=0
+> $$
 >
->因为被积函数为奇函数。
+> 因为被积函数为奇函数。
 
 因此
 
@@ -239,9 +268,14 @@ $$
 
 因此前面的条件 $(b)$ 被我们拆成了两个条件 $(1b),(2b)$。现在，条件 $(a),(1b),(2b)$ 也足以推导出整个标量场理论。
 
->[!tip]
->对这件事更本质的理解在于KG方程是一个对 $x^0$ 的二阶微分方程，其可等价的写为将 $\phi(y)$ 固定时**等时对易子满足的方程**：$$(\square^2_x+\mu^2)[\phi(x),\phi(y)]=0$$
->而条件 $(1b),(2b)$ 在实际上相当于给出了等时对易子的在 $x^0=t$ 时的初值与对 $x^0$ 导数的处置条件，由微分方程理论，这已经足以确定标量场 $\phi(x)$ 的形式。
+> [!tip]
+> 对这件事更本质的理解在于KG方程是一个对 $x^0$ 的二阶微分方程，其可等价的写为将 $\phi(y)$ 固定时**等时对易子满足的方程**：
+>
+> $$
+> (\square^2_x+\mu^2)[\phi(x),\phi(y)]=0
+> $$
+>
+> 而条件 $(1b),(2b)$ 在实际上相当于给出了等时对易子的在 $x^0=t$ 时的初值与对 $x^0$ 导数的处置条件，由微分方程理论，这已经足以确定标量场 $\phi(x)$ 的形式。
 
 最后，我要提的一点是：上面我们从一般的对易子 $[\phi(x),\phi(y)]$ 转向等时对易子 $[\phi(\vec x,t),\phi(\vec y,t)]$ 时，显然时间与空间不再平权（不然为什么我们没有考虑什么同一位置的对易子之类的）。这是正常的，因为我从没说过QFT中时间与空间平权。事实上，在后面还会谈到利用Lagrangian构建标量场，在这一步中更能看出时间与空间的不同。事实上，空间坐标应当视为一种“**标记**”，不同空间处的算符应当视为**不同**的可观测量，而同一位置、不同时间的算符则被视为同一算符的**时间演化**。
 
@@ -255,8 +289,14 @@ $$
 
 仍是因为被积函数是奇函数。
 
->[!summary]
->总结一下，我们得到的三个等时对易子为：$$[\phi(\vec x,t),\phi(\vec y,t)]=[\dot\phi(\vec x,t),\dot\phi(\vec y,t)]=0,\quad [\dot\phi(\vec x,t),\phi(\vec y,t)]=-i\delta^{(3)}(\vec x-\vec y)$$
+> [!summary]
+> 总结一下，我们得到的三个等时对易子为：
+>
+> $$
+> [\phi(\vec x,t),\phi(\vec y,t)]=[\dot\phi(\vec x,t),\dot\phi(\vec y,t)]=0,\quad [\dot\phi(\vec x,t),\phi(\vec y,t)]=-i\delta^{(3)}(\vec x-\vec y)
+> $$
+>
+>
 
 回忆：在初等量子力学的海森堡绘景下，一个最为基本的概念是坐标与动量的对易子：
 

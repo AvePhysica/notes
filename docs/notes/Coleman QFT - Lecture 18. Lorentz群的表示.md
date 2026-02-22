@@ -87,8 +87,8 @@ $$
 
 上面使用了“初始条件”$D(R(0))=I$。注意这是一个矩阵指数。现在，寻找表示 $D(R)$ 就转化为寻找 $\vec L$ 了。
 
->[!tip]
->这里，$SO(3)$ 是一个李群，而其无穷小变换的生成元 $\vec L$ 构成了一个线性空间，且此空间上有对易子结构，这样的配有对易子（Lie括号）的线性空间称为一个Lie代数。
+> [!tip]
+> 这里，$SO(3)$ 是一个李群，而其无穷小变换的生成元 $\vec L$ 构成了一个线性空间，且此空间上有对易子结构，这样的配有对易子（Lie括号）的线性空间称为一个Lie代数。
 
 通过研究无穷小旋转的复合关系，我们得到生成元的对易关系：
 
@@ -192,33 +192,33 @@ $$
 
 因此这不是一个幺正表示。
 
->[!tip] 补充：
->首先，$\vec J^{(+)}+\vec J^{(-)}$ 实际是指：
+> [!tip] 补充：
+> 首先，$\vec J^{(+)}+\vec J^{(-)}$ 实际是指：
 >
->$$
->\vec J^{(+)}\otimes\mathbb{1}_{2s_2+1}+\mathbb{1}_{2s_1+1}\otimes\vec J^{(-)}
->$$
+> $$
+> \vec J^{(+)}\otimes\mathbb{1}_{2s_2+1}+\mathbb{1}_{2s_1+1}\otimes\vec J^{(-)}
+> $$
 >
->这是独立的两块空间，而不是直接相加两个矩阵（毕竟维数都不一定一样）
->其次，一个更加有Lorentz协变性的生成元定义为：
+> 这是独立的两块空间，而不是直接相加两个矩阵（毕竟维数都不一定一样）
+> 其次，一个更加有Lorentz协变性的生成元定义为：
 >
->$$
->J^{ij}=\epsilon^{ijk}L_k,\quad J^{0i}=-J^{i0}=M_i,\quad J^{00}=0
->$$
+> $$
+> J^{ij}=\epsilon^{ijk}L_k,\quad J^{0i}=-J^{i0}=M_i,\quad J^{00}=0
+> $$
 >
->就定义出了一个反对称矩阵。生成元的对易关系可以表示为：
+> 就定义出了一个反对称矩阵。生成元的对易关系可以表示为：
 >
->$$
->[J^{\mu\nu},J^{\alpha\beta}]=ig^{\nu\alpha}J^{\mu\beta}-ig^{\mu\alpha}J^{\nu\beta}-ig^{\nu\beta}J^{\mu\alpha}+ig^{\mu\beta}J^{\nu\alpha}
->$$
+> $$
+> [J^{\mu\nu},J^{\alpha\beta}]=ig^{\nu\alpha}J^{\mu\beta}-ig^{\mu\alpha}J^{\nu\beta}-ig^{\nu\beta}J^{\mu\alpha}+ig^{\mu\beta}J^{\nu\alpha}
+> $$
 >
->表示可以用生成元的指数映射得到：
+> 表示可以用生成元的指数映射得到：
 >
->$$
->D(\Lambda(\epsilon_{\mu\nu}))=\exp\left(-\dfrac{i}{2}\epsilon_{\mu\nu}J^{\mu\nu}\right)
->$$
+> $$
+> D(\Lambda(\epsilon_{\mu\nu}))=\exp\left(-\dfrac{i}{2}\epsilon_{\mu\nu}J^{\mu\nu}\right)
+> $$
 >
->这里 $\epsilon_{\mu\nu}$ 是一个刻画Lorentz变换参数的反对称矩阵。
+> 这里 $\epsilon_{\mu\nu}$ 是一个刻画Lorentz变换参数的反对称矩阵。
 
 ## 18.4 $SO(3)$ 群不可约表示 $D^{(s)}$ 的性质
 

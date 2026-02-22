@@ -1,11 +1,11 @@
->[!question]
->在[[Coleman QFT - Lecture 8. 微扰理论 I：Wick diagram]]中，我们精确求解了Model 1，其Lagrangian density为：
+> [!question]
+> 在[[Coleman QFT - Lecture 8. 微扰理论 I：Wick diagram]]中，我们精确求解了Model 1，其Lagrangian density为：
 >
->$$
->\mathcal L=\dfrac12(\partial_\mu\phi)^2-\dfrac12\mu^2\phi^2-g\rho(x)\phi(x)
->$$
+> $$
+> \mathcal L=\dfrac12(\partial_\mu\phi)^2-\dfrac12\mu^2\phi^2-g\rho(x)\phi(x)
+> $$
 >
->其中图二代表了一个常数 $-\alpha+i\beta$。我们通过其作用于真空态上的归一化关系确定了其实部 $\alpha$，本题请通过直接求解图二验证这一点。
+> 其中图二代表了一个常数 $-\alpha+i\beta$。我们通过其作用于真空态上的归一化关系确定了其实部 $\alpha$，本题请通过直接求解图二验证这一点。
 
 <div align="center">
   <img src="../../images/qft_images/Pasted%20image%2020251128134719.png" width="500">
@@ -69,39 +69,44 @@ $$
 
 ---
 
->[!question]
->本题研究**相干态**。考虑一个谐振子，其哈密顿量为：
+> [!question]
+> 本题研究**相干态**。考虑一个谐振子，其哈密顿量为：
 >
->$$
->H=\dfrac12(p^2+q^2)
->$$
+> $$
+> H=\dfrac12(p^2+q^2)
+> $$
 >
->定义升降算符为 $$a=\dfrac{1}{\sqrt 2}(q+ip),\quad a^\dagger=\dfrac{1}{\sqrt 2}(q-ip)$$
->相干态(coherent state) $|z\rangle$ 的定义为
+> 定义升降算符为 
 >
->$$
->|z\rangle=N\mathrm{e}^{za^\dagger}|0\rangle,\quad z\in\mathbb{C}
->$$
+> $$
+> a=\dfrac{1}{\sqrt 2}(q+ip),\quad a^\dagger=\dfrac{1}{\sqrt 2}(q-ip)
+> $$
 >
->$N$ 为一个正实数，用于归一化：$\langle z|z\rangle=1$。
->（1）求解$N$。
->（2）计算两个相干态间的内积 $\langle z|z'\rangle$，说明其没有正交性。
->（3）证明相干态 $|z\rangle$ 是湮灭算符 $a$ 的本征态，并求其本征值。
->（4）所有相干态 $\{|z\rangle\}$ 是**超完备的**(overcomplete)。实际上，能量本征态可以相干态 $|z\rangle$ 在 $z=0$ 处的各阶导数表示，请说明这一点。此外，实际上有一个看上去像是完备性关系的公式：
+> 相干态(coherent state) $|z\rangle$ 的定义为
 >
->$$
->1=\alpha\int\mathrm{d}(\mathrm{Re}\,z)\mathrm{d}(\mathrm{Im}\,z)\,\mathrm{e}^{-\beta z^*z}|z\rangle\langle z|
->$$
+> $$
+> |z\rangle=N\mathrm{e}^{za^\dagger}|0\rangle,\quad z\in\mathbb{C}
+> $$
 >
->请证明这一公式，并且求出实数 $\alpha$ 与 $\beta$ 的值。
->（5）展示若 $F(q,p)$ 为正则坐标与动量的任意多项式，其正规序在相干态下的平均值为：
+> $N$ 为一个正实数，用于归一化：$\langle z|z\rangle=1$。
+> （1）求解$N$。
+> （2）计算两个相干态间的内积 $\langle z|z'\rangle$，说明其没有正交性。
+> （3）证明相干态 $|z\rangle$ 是湮灭算符 $a$ 的本征态，并求其本征值。
+> （4）所有相干态 $\{|z\rangle\}$ 是**超完备的**(overcomplete)。实际上，能量本征态可以相干态 $|z\rangle$ 在 $z=0$ 处的各阶导数表示，请说明这一点。此外，实际上有一个看上去像是完备性关系的公式：
 >
->$$
->\langle z|:F(p,q):|z\rangle=F(\bar p,\bar q)
->$$
+> $$
+> 1=\alpha\int\mathrm{d}(\mathrm{Re}\,z)\mathrm{d}(\mathrm{Im}\,z)\,\mathrm{e}^{-\beta z^*z}|z\rangle\langle z|
+> $$
 >
->其中 $\bar p,\bar q$ 为实数，用 $z,z^*$ 表示 $\bar p,\bar q$。
->（6）求相干态 $|z\rangle$ 在坐标表象下的波函数，即 $\langle q|z\rangle$。
+> 请证明这一公式，并且求出实数 $\alpha$ 与 $\beta$ 的值。
+> （5）展示若 $F(q,p)$ 为正则坐标与动量的任意多项式，其正规序在相干态下的平均值为：
+>
+> $$
+> \langle z|:F(p,q):|z\rangle=F(\bar p,\bar q)
+> $$
+>
+> 其中 $\bar p,\bar q$ 为实数，用 $z,z^*$ 表示 $\bar p,\bar q$。
+> （6）求相干态 $|z\rangle$ 在坐标表象下的波函数，即 $\langle q|z\rangle$。
 
 （1）直接计算得到
 $$1=\langle z|z\rangle=|N|^2\langle0|\mathrm{e}^{z^*a}\mathrm{e}^{za^\dagger}|0\rangle=N^2\left(\sum_{i=0}^\infty \dfrac{z^{*i}}{(i!)^{1/2}}\langle i|\right)\left(\sum_{j=0}^\infty\dfrac{z^j}{(j!)^{1/2}}|j\rangle\right)=N^2\sum_{i=0}^\infty\dfrac{|z|^{2i}}{i!}=N^2\,\mathrm{e}^{|z|^2}
@@ -253,26 +258,26 @@ $$
 
 ---
 
->[!question]
->设 $K$ 是一个厄米算符，$|\psi\rangle$ 是一个归一的态。 $f(K)$ 在态 $|\psi\rangle$ 下的期望值定义为：
+> [!question]
+> 设 $K$ 是一个厄米算符，$|\psi\rangle$ 是一个归一的态。 $f(K)$ 在态 $|\psi\rangle$ 下的期望值定义为：
 >
->$$
->\langle f(K)\rangle=\langle \psi|f(K)|\psi\rangle
->$$
+> $$
+> \langle f(K)\rangle=\langle \psi|f(K)|\psi\rangle
+> $$
 >
->现在定义一个关于实自变量 $k$ 的函数 $\eta(k)$：
+> 现在定义一个关于实自变量 $k$ 的函数 $\eta(k)$：
 >
->$$
->\eta(k)\equiv\langle\delta(K-k)\rangle
->$$
+> $$
+> \eta(k)\equiv\langle\delta(K-k)\rangle
+> $$
 >
->现在假设
+> 现在假设
 >
->$$
->K=\int\mathrm{d}^3\vec x\, g(\vec x)\phi(\vec x,0)
->$$
+> $$
+> K=\int\mathrm{d}^3\vec x\, g(\vec x)\phi(\vec x,0)
+> $$
 >
->求在质量为 $m$ 的自由标量场 $\phi(x)$ 的真空态下的 $\eta(k)$。提示：你可能会用到Model 1的一些计算结果。可以取 $\beta=0$。
+> 求在质量为 $m$ 的自由标量场 $\phi(x)$ 的真空态下的 $\eta(k)$。提示：你可能会用到Model 1的一些计算结果。可以取 $\beta=0$。
 
 利用下面的公式：
 $$

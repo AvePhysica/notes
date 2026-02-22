@@ -262,8 +262,8 @@ $$
   <img src="../../images/qft_images/Pasted%20image%2020251203171455.png" width="500">
 </div>
 
->[!tip]
->为什么选取这样的 $f(t)$ 呢？
+> [!tip]
+> 为什么选取这样的 $f(t)$ 呢？
 首先，我们已经精确求解过Model 1，因此对于任意一个在 $t\to\pm\infty$ 的开关 $f(t)$ ，我们都能直接引用之前的结果，写出对应的散射算符 $S=U_I(\infty,-\infty)$。上面的这个 $f(t)$ 是满足要求的。
 另一方面，让我们考虑 $t=-\infty$ 时的真空态 $|0\rangle$ 的演化。对于足够小的正数 $\epsilon$ ，源加上来的速度是足够慢的，由**绝热定理**，我们知道 $t=0$ 时的态即源存在下的基态 $|0\rangle_P$。但是，在 $t=0$ 时源被突然撤去，因此态仍将保持在 $|0\rangle_P$ 上（注意我们在相互作用绘景中）。也就是说，我们只需要计算 $S=U_I(\infty,-\infty)$，将其作用于真空态 $|0\rangle$ 就能得到 $|0\rangle_P$。即$$U_I(\infty,-\infty)|0\rangle=|0\rangle_P$$
 

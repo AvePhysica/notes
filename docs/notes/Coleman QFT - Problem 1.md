@@ -1,4 +1,4 @@
->[!Question]
+> [!Question]
 说明$\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega)}$是Lorentz不变量。
 
 Proof：考虑Lorentz变换。首先，这个积分测度显然在 $SO(3)$ 下是不变的，因此只需验证boost下的不变性。又由于其为各向同性的，只需验证一个沿 $z$ 方向的boost即可。将其记为 $\Lambda$，其一般的形式为：
@@ -27,20 +27,20 @@ $$
 
 ---
 
->[!question]
->**（时序积）** 两个算符场 $A(x)$ 与 $B(y)$ 的**时序积**被定义为：
+> [!question]
+> **（时序积）** 两个算符场 $A(x)$ 与 $B(y)$ 的**时序积**被定义为：
 >
->$$
->T(A(x)B(y))=\begin{cases}A(x)B(y),\quad \text{if $x_0>y_0$} \\ B(y)A(x),\quad \text{if $x_0<y_0$}\end{cases}
->$$
+> $$
+> T(A(x)B(y))=\begin{cases}A(x)B(y),\quad \text{if $x_0>y_0$} \\ B(y)A(x),\quad \text{if $x_0<y_0$}\end{cases}
+> $$
 >
->即时间上晚的算符放在前面。仅使用场满足的KG方程以及等时对易子，证明：对于一个质量为 $\mu$ 的自由标量场，满足：
+> 即时间上晚的算符放在前面。仅使用场满足的KG方程以及等时对易子，证明：对于一个质量为 $\mu$ 的自由标量场，满足：
 >
->$$
->(\square_x^2+\mu^2)T(\phi(x)\phi(y))=c\delta^{(4)}(x-y)
->$$
+> $$
+> (\square_x^2+\mu^2)T(\phi(x)\phi(y))=c\delta^{(4)}(x-y)
+> $$
 >
->并确定 $c$ 的值。
+> 并确定 $c$ 的值。
 
 Proof：KG方程为：
 
@@ -156,9 +156,14 @@ $$
 
 ---
 
->[!question]
->定义如下的可观测量：$$A(a)=\dfrac{1}{(a\sqrt\pi)^3}\int\mathrm{d}^3\vec x\,\phi(\vec x,0)\,\mathrm{e}^{-|\vec x|^2/a^2}$$
->求其在真空态下的方差 $\mathrm{var}\,A$，并求出其在 $a$ 很小与很大时的渐近关系。
+> [!question]
+> 定义如下的可观测量：
+>
+> $$
+> A(a)=\dfrac{1}{(a\sqrt\pi)^3}\int\mathrm{d}^3\vec x\,\phi(\vec x,0)\,\mathrm{e}^{-|\vec x|^2/a^2}
+> $$
+>
+> 求其在真空态下的方差 $\mathrm{var}\,A$，并求出其在 $a$ 很小与很大时的渐近关系。
 
 Solution：由于 $\langle0| \phi(\vec x,0)|0\rangle=0$，故 $\langle A\rangle=0$。因此 $\mathrm{var}\,A=\langle A^2\rangle$。
 

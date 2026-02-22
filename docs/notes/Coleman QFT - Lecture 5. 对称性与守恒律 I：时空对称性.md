@@ -54,68 +54,72 @@ $$
 
 来看几个例子：
 
->[!example]
->**平移不变性**：考虑一个有平移不变性的拉格朗日量，例如：
+> [!example]
+> **平移不变性**：考虑一个有平移不变性的拉格朗日量，例如：
 >
->$$
->L=\dfrac12\sum_rm_r\dot{\vec x}^r\cdot\dot{\vec x}^r+\sum_{r>s}V^{(r,s)}(|\vec x^r-\vec x^s|)
->$$
+> $$
+> L=\dfrac12\sum_rm_r\dot{\vec x}^r\cdot\dot{\vec x}^r+\sum_{r>s}V^{(r,s)}(|\vec x^r-\vec x^s|)
+> $$
 >
->在平移变换$$\vec x^r\to{\vec x}^r+\vec e\lambda$$下不变。因此
+> 在平移变换
 >
->$$
->D\vec x^r=\vec e,\quad DL=0,\quad F=0
->$$
+> $$
+> \vec x^r\to{\vec x}^r+\vec e\lambda
+> $$
 >
->守恒量为：
+> 下不变。因此
 >
->$$
+> $$
+> D\vec x^r=\vec e,\quad DL=0,\quad F=0
+> $$
+>
+> 守恒量为：
+>
+> $$
 > Q=\vec e\cdot\sum_rm_r\dot{\vec x}^r
->$$
+> $$
 >
->这是沿 $\vec e$ 方向的动量守恒。
->**时间平移**：考虑一个不含时的拉格朗日量 $L(q^a,\dot q^a)$，即 $\dfrac{\partial L}{\partial t}=0$。考虑时间平移变换：
+> 这是沿 $\vec e$ 方向的动量守恒。
+> **时间平移**：考虑一个不含时的拉格朗日量 $L(q^a,\dot q^a)$，即 $\dfrac{\partial L}{\partial t}=0$。考虑时间平移变换：
 >
->$$
->q^a(t)\to q^a(t+\lambda)
->$$
+> $$
+> q^a(t)\to q^a(t+\lambda)
+> $$
 >
->在此变换下：
+> 在此变换下：
 >
->$$
->Dq^a=\dfrac{\partial q^a}{\partial\lambda}\bigg|_{\lambda=0}=\dot q^a
->$$
+> $$
+> Dq^a=\dfrac{\partial q^a}{\partial\lambda}\bigg|_{\lambda=0}=\dot q^a
+> $$
 >
+> $$
+> DL=\dfrac{\partial L}{\partial q^a}\dot q^a+\dfrac{\partial L}{\partial \dot q^a}D\ddot q^a=\dfrac{\mathrm{d}L}{\mathrm{d}t},\quad F=L
+> $$
 >
->$$
->DL=\dfrac{\partial L}{\partial q^a}\dot q^a+\dfrac{\partial L}{\partial \dot q^a}D\ddot q^a=\dfrac{\mathrm{d}L}{\mathrm{d}t},\quad F=L
->$$
+> $$
+> Q=p_aDq^a-F=p_a\dot q^a-L=E
+> $$
 >
+> 即能量守恒。
+> **旋转变换**：考虑一个绕轴 $\vec e$ 旋转角度 $\lambda$ 的旋转变换。假设拉格朗日量在旋转下不变。
 >
->$$
->Q=p_aDq^a-F=p_a\dot q^a-L=E
->$$
+> $$
+> \vec x^r\to R(\lambda,\vec e)\vec x^r
+> $$
 >
->即能量守恒。
->**旋转变换**：考虑一个绕轴 $\vec e$ 旋转角度 $\lambda$ 的旋转变换。假设拉格朗日量在旋转下不变。
+> 在此变换下：
 >
->$$
->\vec x^r\to R(\lambda,\vec e)\vec x^r
->$$
+> $$
+> D\vec x^r=\vec e\times\vec x^r,\quad DL=0,\quad F=0
+> $$
 >
->在此变换下：
+> 守恒量为：
 >
->$$
->D\vec x^r=\vec e\times\vec x^r,\quad DL=0,\quad F=0
->$$
+> $$
+> Q=\sum_r\vec p_r\cdot(\vec e\times\vec x^r)=\vec e\cdot\sum_r\vec x^r\times\vec p_r=\vec e\cdot J
+> $$
 >
->守恒量为：
->
->$$
->Q=\sum_r\vec p_r\cdot(\vec e\times\vec x^r)=\vec e\cdot\sum_r\vec x^r\times\vec p_r=\vec e\cdot J
->$$
->
->即沿 $\vec e$ 方向的角动量守恒。
+> 即沿 $\vec e$ 方向的角动量守恒。
 
 ## 5.2 量子力学中的对称性与守恒律
 
@@ -347,16 +351,42 @@ $$
 
 ---
 
->[!summary]
->在经典力学中，系统的拉格朗日量是广义坐标及其时间导数的函数：$$L=L(q^a,\dot q^a,t)$$
->系统具有某种**单参数连续对称性**，即 $DL=\frac{\mathrm{d}F}{\mathrm dt}$，则Noether定理给出其必有相应的**守恒量**：$$ Q=p_a Dq^a-F,\quad \dfrac{\mathrm{d}Q}{\mathcal{d}t}=0$$
->扩展至场论中，系统的拉格朗日量密度是**场与其对时空坐标偏导**的函数：$$\mathcal L=\mathcal L(\phi^a,\partial_\mu\phi^a,x^\mu)$$
->系统具有某种**单参数连续对称性**，等价于 $D\mathcal L=\partial_\mu F^\mu$，Noether定理给出一定存在对应的**守恒流**：$$J^\mu=\pi_a^\mu D\phi^a-F^\mu,\quad \partial_\mu J^\mu=0$$
->守恒流的0分量代表守恒量的密度，其对全空间积分可以得到守恒量。
->不显含时空坐标的拉格朗日量密度具有**时空平移对称性**，这导致了**能动张量**守恒：$$T^{\rho\mu}\equiv\pi_a^\mu \partial^\rho \phi^a-g^{\mu\rho}\mathcal L,\quad \partial_\mu T^{\rho\mu}=0$$
->在Lorentz变换下是标量的拉格朗日量密度具有**Lorentz变换对称性**，这导致了**角动量流**守恒：
+> [!summary]
+> 在经典力学中，系统的拉格朗日量是广义坐标及其时间导数的函数：
 >
->$$
->M^{\sigma\rho\mu}=x^{\sigma}T^{\rho\mu}-x^\rho T^{\sigma\mu},\quad \partial_\mu M^{\sigma\rho\mu}=0
->$$
+> $$
+> L=L(q^a,\dot q^a,t)
+> $$
+>
+> 系统具有某种**单参数连续对称性**，即 $DL=\frac{\mathrm{d}F}{\mathrm dt}$，则Noether定理给出其必有相应的**守恒量**：
+>
+> $$
+>  Q=p_a Dq^a-F,\quad \dfrac{\mathrm{d}Q}{\mathcal{d}t}=0
+> $$
+>
+> 扩展至场论中，系统的拉格朗日量密度是**场与其对时空坐标偏导**的函数：
+>
+> $$
+> \mathcal L=\mathcal L(\phi^a,\partial_\mu\phi^a,x^\mu)
+> $$
+>
+> 系统具有某种**单参数连续对称性**，等价于 $D\mathcal L=\partial_\mu F^\mu$，Noether定理给出一定存在对应的**守恒流**：
+>
+> $$
+> J^\mu=\pi_a^\mu D\phi^a-F^\mu,\quad \partial_\mu J^\mu=0
+> $$
+>
+> 守恒流的0分量代表守恒量的密度，其对全空间积分可以得到守恒量。
+> 不显含时空坐标的拉格朗日量密度具有**时空平移对称性**，这导致了**能动张量**守恒：
+>
+> $$
+> T^{\rho\mu}\equiv\pi_a^\mu \partial^\rho \phi^a-g^{\mu\rho}\mathcal L,\quad \partial_\mu T^{\rho\mu}=0
+> $$
+>
+> 在Lorentz变换下是标量的拉格朗日量密度具有**Lorentz变换对称性**，这导致了**角动量流**守恒：
+>
+> $$
+> M^{\sigma\rho\mu}=x^{\sigma}T^{\rho\mu}-x^\rho T^{\sigma\mu},\quad \partial_\mu M^{\sigma\rho\mu}=0
+> $$
+>
 >
