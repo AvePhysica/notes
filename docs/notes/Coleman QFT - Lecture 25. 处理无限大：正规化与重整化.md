@@ -7,7 +7,7 @@ $$
 $O(g^3)$ 阶的Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260211150135.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260211150135.png" width="500">
 </div>
 
 第一个图对应到表达式：
@@ -41,7 +41,7 @@ $$
 将右侧通分并展开，可以得到使得分母次数升高的各条件：
 
 <div align="center">
-  <img src="Pasted image 20260211152236.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260211152236.png" width="500">
 </div>
 
 这一过程可以通过在Lagrangian中引入所谓的**Pauli-Villars场** $\phi_1$ 来实现，即
@@ -123,7 +123,7 @@ $$
 但是，我们会发现当取 $d\to 4$ 的极限时，$\nu$ 的影响却不会那么简单的消失。具体来说，考虑下面的 $O(\lambda^2)$ 阶的四点Green函数图：
 
 <div align="center">
-  <img src="Pasted image 20260211160051.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260211160051.png" width="500">
 </div>
 
 对应的散射振幅为：
@@ -177,7 +177,7 @@ $$
 其中每一个 $\mathcal L_i$ 是一个相互作用单项式，其包含 $f_i$ 个Fermi场，$b_i$ 个Bose场以及 $d_i$ 个导数项。一些典型的相互作用及其参数列在下面：
 
 <div align="center">
-  <img src="Pasted image 20260211171116.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260211171116.png" width="500">
 </div>
 
 在后面我们会需要这些记号。
@@ -197,7 +197,7 @@ $$
 举一些例子：
 
 <div align="center">
-  <img src="Pasted image 20260211170137.png" width="800">
+  <img src="../../images/qft_images/Pasted%20image%2020260211170137.png" width="500">
 </div>
 
 这里提到“表观发散度”实际上不能完全决定一个图是发散的还是收敛的。比如最后一个图，它实际上是发散的，但表观发散度 $D=-2<0$。这是因为对于不止一个环路积分的图，有可能是其中一个积分引起的发散，但其被其他图的收敛掩盖了，最终导致 $D<0$。
@@ -206,7 +206,7 @@ $$
 每一个Feynman图都是外线动量 $p_i$ 的解析函数，我们可以在 $p_i=0$ 附近做Taylor展开。例如
 
 <div align="center">
-  <img src="Pasted image 20260211171400.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260211171400.png" width="500">
 </div>
 
 ### BPHZ算法
@@ -383,7 +383,7 @@ $$
 其有 $\delta=0$，这不是一个可重整化理论。因为下图（介子-介子散射）是对数发散的：
 
 <div align="center">
-  <img src="Pasted image 20260211223105.png" width="300">
+  <img src="../../images/qft_images/Pasted%20image%2020260211223105.png" width="500">
 </div>
 
 因此需要引入 $\phi^4$ 的抵消项，但其不能解释为原Lagrangian变换参数的结果。换言之，下面的理论就是**严格可重整化的**：

@@ -183,7 +183,7 @@ $$
 
 第二项为边界项。对于任意固定的 $\vec x$ ，$n\cdot x,n'\cdot x$ 在 $t\to\infty$ 时均大于零，而在 $t\to-\infty$ 时均小于零。因此第二项对于无限大的边界积分为零。具体如下图所示：
 <div align="center">
-  <img src="Pasted image 20251123232930.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251123232930.png" width="500">
 </div>
 
 第一项由于 $\partial_\mu J^\mu=0$ 故为零。综上，$Q$ 是Lorentz不变量。

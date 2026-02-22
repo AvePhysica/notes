@@ -263,7 +263,7 @@ $$
 这一项为介子的抵消项，其对应的Feynman图基本顶点为：
 
 <div align="center">
-  <img src="Pasted image 20260103223426.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260103223426.png" width="500">
 </div>
 表达式为：
 
@@ -274,7 +274,7 @@ $$
 我们还不知道 $(\cdots)$ 代表的导数项是什么，但我们已经可以猜了，由于右侧是 $\mu^2$，直接猜是 $q^2$，即有替换 $\partial_\mu\phi\to ik_\mu\phi$。为来验证这一点，我们来算理论的两点Green函数 $\tilde G'^{(2)}(q,q')$，其可展开为下面的连通图之和（我们不需要真空泡）：
 
 <div align="center">
-  <img src="Pasted image 20260103224638.png" width="800">
+  <img src="../../images/qft_images/Pasted%20image%2020260103224638.png" width="500">
 </div>
 
 其对应的表达式为：

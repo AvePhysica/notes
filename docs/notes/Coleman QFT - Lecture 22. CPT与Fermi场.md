@@ -332,7 +332,7 @@ $$
 因此可以写出16个二次型的电荷共轭变换性质，只需将中间的矩阵取自伴+复共轭即可。如下表所示：
 
 <div align="center">
-  <img src="Pasted image 20260205140539.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260205140539.png" width="500">
 </div>
 
 做一些解释：第一个 $\bar \psi\psi$ 显然不变，第二个由于 $\gamma_5$ 是反自伴的：
@@ -520,7 +520,7 @@ $$
 我们考虑一个具体的例子：考虑只有一条核子出射线与一条核子入射线的Feynman图：
 
 <div align="center">
-  <img src="Pasted image 20260205162842.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260205162842.png" width="500">
 </div>
 
 其振幅的一般形式为：

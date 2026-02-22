@@ -98,7 +98,7 @@ $$
 其最低阶的非平凡介子自能项由下图给出：
 
 <div align="center">
-  <img src="Pasted image 20260113130558.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260113130558.png" width="500">
 </div>
 
 这里我们已经按能动量守恒标上了动量，这样就不用管那些顶点delta函数的积分。暂时先不考虑**组合因子**（这对 $\phi^4$ 理论是一个难点）以及常数因子。其涉及的积分为：
@@ -159,13 +159,13 @@ $$
 其基本顶点与 $g\psi^*\psi\phi$ 是相同的。为了确定 $F$ ，我们需要考虑三点Green函数。首先定义相应的1PI图：
 
 <div align="center">
-  <img src="Pasted image 20260113141232.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260113141232.png" width="500">
 </div>
 
 最低阶的几个Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260113141724.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260113141724.png" width="500">
 </div>
 
 现在我们面临一个问题：重整化条件源于 $g$ 的定义，但我们并不知道怎么定义 $g$。一般而言，习惯于取下面的约定：
@@ -186,7 +186,7 @@ $$
 其对应的图可以分类为以下四种：
 
 <div align="center">
-  <img src="Pasted image 20260113143630.png" width="700">
+  <img src="../../images/qft_images/Pasted%20image%2020260113143630.png" width="500">
 </div>
 
 (a)类为四点1PI图。而(b), (c), (d)类呈现出s, t, u通道的特征。对于(b)图，其表达式为：
@@ -218,7 +218,7 @@ $$
 类似的，图可以分为四种情况，我们这次只列出 t 通道：
 
 <div align="center">
-  <img src="Pasted image 20260113150224.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260113150224.png" width="500">
 </div>
 
 其在 $t=\mu^2$ 处有极点，因此散射振幅为：
@@ -234,7 +234,7 @@ $$
 在计算介子的传播子时，我们发现重整化项 $B,C$ 消除了 $\tilde\Pi'(p^2)$ 中的无穷大，但这并不意味着重整化是完全为消除无限大而出现的。实际上。对于介子的两点1PI图，其只需质量重整化项 $C$ 就足以消除无限大，因此需要的重整化常数是多于消除无限大要求的常数数量的。另一方面，对于耦合常数重整化，$F_3$ 由下面的图确定：
 
 <div align="center">
-  <img src="Pasted image 20260113151348.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260113151348.png" width="500">
 </div>
 
 其有三条内线以及一个回路，因此在大 $k$ 时的趋势为 $\mathrm{d}^4k/k^6$，因此积分是收敛的。抵消项 $F$ 并没有起到消除无限大的作用。
@@ -247,7 +247,7 @@ $$
 首先考虑到 $O(g_0^2)$ 阶的图。对两点函数，有下面的“唇形图”：
 
 <div align="center">
-  <img src="Pasted image 20260113152130.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260113152130.png" width="500">
 </div>
 
 在大 $k$ 时，其趋近于 $\mathrm{d}^4k_1\mathrm{d}^4k_2/k^6$。现在，我们同时需要抵消项系数 $B,C$，第一个将二次发散变成对数发散，而第二个将对数发散变成收敛的积分。我们实际关心的是该图的二阶导：
@@ -259,7 +259,7 @@ $$
 其次，我们还有四点函数：
 
 <div align="center">
-  <img src="Pasted image 20260113152930.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260113152930.png" width="500">
 </div>
 
 这个图在大 $k$ 时趋于 $\mathrm{d}^4k/k^4$，因此是对数发散的，其可以被耦合常数重整化的抵消项消除。至此为止，一切都很好，对理论的重整化顺利消除了可能出现的各种无穷大。
@@ -273,14 +273,14 @@ $$
 此时，我们有下面的到 $O(g^2)$ 阶的六点函数图：
 
 <div align="center">
-  <img src="Pasted image 20260113153311.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260113153311.png" width="500">
 </div>
 
 其同样是对数发散的。但是，现在我们最多外线的重整化是耦合常数重整化，其是一个五点函数，对上面的六点函数无能为力。
 如果想要强行消除这个发散，我们需要引入六点函数的重整化项：
 
 <div align="center">
-  <img src="Pasted image 20260113153605.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260113153605.png" width="500">
 </div>
 
 因此Lagrangian变成：
@@ -292,7 +292,7 @@ $$
 但我们真的消除了无穷大吗？并没有，我们实际上产生了新的发散图：
 
 <div align="center">
-  <img src="Pasted image 20260113153808.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260113153808.png" width="500">
 </div>
 
 其为发散的八点函数与七点函数。为了消除这里的无穷大，我们又不得不引入新的抵消项：

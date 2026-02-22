@@ -96,7 +96,7 @@ $$
 相关的Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20251221170749.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020251221170749.png" width="500">
 </div>
 
 其Feynman振幅为：

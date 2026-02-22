@@ -4,7 +4,7 @@
 首先是 $2.6\quad N+\bar N\to N+\bar N$，其同样对应到两个Feynman图：
 
 <div align="center">
-  <img src="Pasted image 20251211184352.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251211184352.png" width="500">
 </div>
 
 注意这里不像 $N+N\to N+N$，其两个图区别在于交换出射粒子（或入射粒子）的动量。现在 $N$ 与 $\bar N$ 并不相同，因此交换动量对应的是不同的散射过程。然而，我们可以改变基本顶点的位置，得到上面的两个不同的Feynman图。其代表的物理过程是有差异的，前者代表一个核子自己衰变成一个核子加一个虚介子，虚介子与反核子作用变成一个新的反核子。而后者代表初始的核子与反核子湮灭成一个虚介子，然后虚介子又自发分裂成新的核子与反核子。利用Feynman规则，我们能写出核子-反核子散射过程的Feynman振幅为：
@@ -36,7 +36,7 @@ $$
 $2.7\quad N+\phi\to N+\phi$ ，此过程同样有两个Feynman图：
 
 <div align="center">
-  <img src="Pasted image 20251211190524.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020251211190524.png" width="500">
 </div>
 
 (b)和(b')是同一个图。按Feynman规则可写出散射过程的振幅为：
@@ -106,7 +106,7 @@ $$
 $2.8\quad N+\bar N\to \phi+\phi$ 的Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20251211203047.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251211203047.png" width="500">
 </div>
 
 其并没有什么新的东西，和核子-核子散射是比较类似的。实际上，我们会在下一次练习的Problem中处理它。在此先不提。
@@ -132,7 +132,7 @@ $$
 上面提到，这些散射过程实际上都是涉及到四个粒子的过程（两个入射，两个出射），我们可以用下面的图来描述这一类过程：
 
 <div align="center">
-  <img src="Pasted image 20251211205431.png" width="300">
+  <img src="../../images/qft_images/Pasted%20image%2020251211205431.png" width="500">
 </div>
 
 这样的图称为**交叉图**(crossing diagram)。
@@ -195,7 +195,7 @@ $$
 这个恒等式是出奇的简洁。三个Mandelstam变量之和为固定值，因此只有两个独立自由度。我们可以用下面的图来刻画这一关系：
 
 <div align="center">
-  <img src="Pasted image 20251211223550.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251211223550.png" width="500">
 </div>
 
 等边三角形内部的点到三条边的距离之和为一常数，即为等边三角形的高。同时，如果我们将外侧的距离定义为负数，则对平面这一结论都是成立的。平面上的点的坐标可以用Madelstam变量表示：
@@ -214,7 +214,7 @@ $$
 当然我们这里假设了粒子质量相等，只是为了说明的确有的区域不能代表真实散射过程。因此，我们可以预见，对于真实的散射过程，应当会有两个变量为负，一个变量为正，且正的变量决定是哪一种模式（如 $s>0$ 就是 $s-$channel）。画在图上，即
 
 <div align="center">
-  <img src="Pasted image 20251211230253.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251211230253.png" width="500">
 </div>
 
 可以看到，对 $s-$channel，$s$ 有一个极小值 $4m^2$，当然这也可以从其定义式中很容易看出来。
@@ -231,7 +231,7 @@ $$
 更具体一点，考虑下面的最简单的一个 $s-$channel散射过程：
 
 <div align="center">
-  <img src="Pasted image 20251211230930.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020251211230930.png" width="500">
 </div>
 
 其对应的振幅中含有的项为 $\dfrac{1}{(p_1+p_2)^2-m_5^2}=\dfrac{1}{s-m_5^2}$ ，这是一个亚纯函数，其有一个极点 $s=m_5^2$，但是其会出现在threshold以下。

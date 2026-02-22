@@ -39,7 +39,7 @@ $$
 其表示粒子2在单位体积内出现的概率为1。接下来，我们来求流的强度，其刻画了粒子1与粒子2“接近”彼此的速率。考虑下面的示意图：
 
 <div align="center">
-  <img src="Pasted image 20251215170818.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251215170818.png" width="500">
 </div>
 
 流的强度定义为单位时间穿过单位面积的粒子数，其表示为：
@@ -307,8 +307,8 @@ $$
 首先想到的：它可能是更大的一个Feynman图的内部部分，一个例子如下图所示：
 
 <div align="center">
-  <img src="Pasted image 20251215201838.png" width="28%" style="display: inline-block;">
-  <img src="Pasted image 20251215201852.png" width="25%" style="display: inline-block;">
+  <img src="../../images/qft_images/Pasted%20image%2020251215201838.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251215201852.png" width="500">
 </div>
 
 另一个观点是：所有这些允许外部线脱离质壳的Feynman图，其将与称为**格林函数**的物理对象相联系。其能刻画我们的理论对外界源的响应。具体的内容将会留到下一章详细展开。

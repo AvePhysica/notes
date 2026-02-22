@@ -552,7 +552,7 @@ $$
 反而是时间分量反号而空间分量不变，因此这是一个**赝矢量** (pseudovector)。现在，我们完成了对双线性型的全部分类，列表如下：
 
 <div align="center">
-  <img src="Pasted image 20260126175542.png" width="900">
+  <img src="../../images/qft_images/Pasted%20image%2020260126175542.png" width="500">
 </div>
 
 任何一个双线性型均可以分解为上面这五种类型的线性组合。

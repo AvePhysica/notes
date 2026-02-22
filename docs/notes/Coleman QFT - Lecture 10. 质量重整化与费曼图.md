@@ -99,13 +99,13 @@ $$
 与上面散射过程的振幅相联系的Wick图为：
 
 <div align="center">
-  <img src="Pasted image 20251207231040.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020251207231040.png" width="500">
 </div>
 
 回顾一下，这一个Wick图有两个顶点，因此是 $O(g^2)$ 阶的。另一方面，其通过缩并介子场 $\phi$ ，外线剩下四个核子场（两个 $\psi$ 与两个 $\psi^*$）。**右侧的两个 $\psi$ 场用于湮灭入射的两个核子，而左侧的两个 $\psi^*$ 场则用于产生两个出射的核子。** 因此，此图对上面的散射过程有贡献。因为我们考虑的是给出动量的散射过程，不妨将对应场产生/湮灭粒子的动量标在对应的**外线**上。因此，我们可以画出下面两个图：
 
 <div align="center">
-  <img src="Pasted image 20251207231532.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020251207231532.png" width="500">
 </div>
 
 注意两个图的差异。但是，我们实际上还能交换顶点的序号得到不同的图，但其会给出完全相同的贡献。因此，我们不妨干脆将顶点序号擦掉，并乘上一个 $n!$ 因子。这将抵消Dyson展开式中的 $1/n!$ 因子。此时得到的图，我们称为**Feynman diagram**。
@@ -194,7 +194,7 @@ $$
 实际上，每当我们画出一个Feynman图，其各个部分可以按照一定的规则对应到式子，这样我们就不用从Dyson展开式出发，而是直接将图对应的表达式组合出来即可。这些规则便称为**Feynman规则**，其总结为下表：
 
 <div align="center">
-  <img src="Pasted image 20251208101135.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020251208101135.png" width="500">
 </div>
 
 因此Feynman图成为了计算具体散射过程的有力工具。我们只需画出散射过程对应顶点数的所有可能Feynman图，再对每个图写出其对应的表达式，最后将所有表达式相加即可。注意上面的规则实际上是有一些规律的。关于 $2\pi$ ：每一个动量积分 $\mathrm{d}q$ 要除以一个 $2\pi$ ，每一个delta函数要乘一个 $2\pi$。
@@ -204,7 +204,7 @@ $$
 接下来，我们来具体讨论Model 3中直到 $O(g^2)$ 的所有可能Feynman图。首先，先来看 $O(g)$ 阶的图，一共有两个：
 
 <div align="center">
-  <img src="Pasted image 20251208105238.png" width="300">
+  <img src="../../images/qft_images/Pasted%20image%2020251208105238.png" width="500">
 </div>
 
 第一个就是一个基本顶点，其代表了一个介子衰变至两个核子的过程。如果这一过程可发生，说明介子是不稳定的。但是，实际的介子质量 $\mu$ 小于两倍的核子质量 $2m$。因此顶点处的能动量守恒关系是不可能实现的，因此该过程振幅为零，介子仍然是稳定的。这实际上是在说，单粒子衰变产物的总静质量必须小于原粒子的静质量，才可能满足能动量守恒关系。
@@ -213,13 +213,13 @@ $$
 接下来是 $O(g^2)$ 阶的图，共有23个。（或由对称性减至17个）
 
 <div align="center">
-  <img src="Pasted image 20251208110455.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020251208110455.png" width="500">
 </div>
 
 这就是两个图1.1，同样的，当 $\mu<2m$ 时振幅为零。
 
 <div align="center">
-  <img src="Pasted image 20251208110626.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020251208110626.png" width="500">
 </div>
 
 图2包含了三个没有外腿的费曼图，其为全部对 $\langle 0|S|0\rangle$ 的 $O(g^2)$ 阶有贡献的图，最后一个即为抵消项，其系数 $a$ 由下面的条件确定：
@@ -232,7 +232,7 @@ $$
 接下来是有两条外腿的图，首先是介子：
 
 <div align="center">
-  <img src="Pasted image 20251208111221.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251208111221.png" width="500">
 </div>
 
 代表了单介子散射，我们应当要求单介子在真空中不应发生散射，因此图(b)代表的抵消项的系数 $b$ 由下式确定：
@@ -244,7 +244,7 @@ $$
 接下来是核子：
 
 <div align="center">
-  <img src="Pasted image 20251208111523.png" width="700">
+  <img src="../../images/qft_images/Pasted%20image%2020251208111523.png" width="500">
 </div>
 
 这里有三个可能的图，同样的，由重整化条件确定抵消项系数 $c$ ：
@@ -281,7 +281,7 @@ $$
 >这里没有提到介子-介子散射 $\phi+\phi\to\phi+\phi$，因为其最低阶的图是 $O(g^4)$ 阶的：
 
 <div align="center">
-  <img src="Pasted image 20251208160143.png" width="700">
+  <img src="../../images/qft_images/Pasted%20image%2020251208160143.png" width="500">
 </div>
 所以我们先不讨论。
 对于所有的这些散射过程，都会对应到两个Feynman图。马上我将演示每一个散射的振幅求解过程。回顾：
@@ -297,7 +297,7 @@ $$
 我们先来回头看看我们已经处理过的核子-核子散射过程。其对应于下面的两个Feynman图：
 
 <div align="center">
-  <img src="Pasted image 20251208160914.png" width="700">
+  <img src="../../images/qft_images/Pasted%20image%2020251208160914.png" width="500">
 </div>
 
 其中(b)和(b')是一个图，只是不同方式而已。图(a)根据Feynman规则可以写出表达式：
@@ -319,7 +319,7 @@ $$
 现在，我们先后退一步，回到非相对论量子力学中的散射问题。两个核子发生弹性散射的过程，被理解为其在一个排斥势下的偏转。由于上面我们取的是最低阶 $O(g^2)$ 阶的结果，对应到散射理论中，我们自然想到会使用**Born近似**。考虑下图所示的核子-核子在质心系的散射过程：
 
 <div align="center">
-  <img src="Pasted image 20251208162134.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251208162134.png" width="500">
 </div>
 
 此时的四动量为：

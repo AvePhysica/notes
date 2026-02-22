@@ -10,7 +10,7 @@ $$
 其中 $\tilde \Sigma^f(p^2)$ 对应于下图：
 
 <div align="center">
-  <img src="Pasted image 20260124224219.png" width="300">
+  <img src="../../images/qft_images/Pasted%20image%2020260124224219.png" width="500">
 </div>
 
 即

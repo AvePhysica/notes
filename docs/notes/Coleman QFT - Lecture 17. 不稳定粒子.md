@@ -65,7 +65,7 @@ $$
 因此，我们可以发现，当 $\mu<2m$ 逐渐过渡到 $\mu>2m$ 的不稳定情形时，原先的实轴上的极点 $p^2=\mu^2$ 逐渐右移，直至碰到割线的起点，然后下移至实轴下方。解析结构如下图所示：
 
 <div align="center">
-  <img src="Pasted image 20260118110908.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260118110908.png" width="500">
 </div>
 
 最后，你可能会觉得奇怪，我们之前不是证明过传播子除实轴的极点与割线外，应该是全平面解析的吗？现在这个实轴下方的极点又怎么解释。事实上，我们取的小虚部 $i\epsilon$ 告诉我们要取割线上方的解析分支。这个在割线下方的极点并不在原先的复平面内，而是进入了第二张复平面，这也就是所谓的**Riemann面**。
@@ -106,7 +106,7 @@ $$
 我们可以画出这一函数代表的Lorentz线型(lineshape)：
 
 <div align="center">
-  <img src="Pasted image 20260118113214.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260118113214.png" width="500">
 </div>
 
 这个分布称为Breit-Wigner分布，其在 $k^2=\mu^2$ 处有一个峰，即最容易产生该动量的粒子。但是，衰变率导致实际分布有一个宽度。同时，在质心系中考虑，则 $k^2=E^2$，由于
@@ -147,7 +147,7 @@ $$
 其中 $k$ 为多粒子态的动量。而后面的 $\langle n|\phi'(0)|0\rangle$ 与传播子的虚部相联系。我们想要创造一个在空间与动量域上都比较局域的源（当然，由于不确定原理，其不可能绝对局域）。$f(x)$ 及其Fourier变换具有下面的形状：
 
 <div align="center">
-  <img src="Pasted image 20260118150106.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260118150106.png" width="500">
 </div>
 
 同时调节参数使 $\bar k\approx \mu$，这样可以保证产生的大部分是想要的K介子。其次，我们使用探测器在 $y$ 处探测介子，其将探测下面态的振幅：

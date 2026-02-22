@@ -53,7 +53,7 @@ $$
 $O(g^2)$ 阶的两个Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260202165541.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260202165541.png" width="500">
 </div>
 
 其对应的Feynman振幅为：
@@ -104,7 +104,7 @@ $$
 相关的Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260202171242.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260202171242.png" width="500">
 </div>
 
 两个图实际上等效于交换费米线 $p_1'$ 与 $p_2$ ，因此振幅要相减。相应的Feynman振幅为：

@@ -26,7 +26,7 @@ $$
 在[[Coleman QFT - Lecture 21. Dirac方程 III：量子化与Feynman规则]]中介绍了其相关的Feynman规则，对于 $pp\to pp$ 散射，其对应的Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260210204540.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260210204540.png" width="500">
 </div>
 
 对应的表达式为：
@@ -38,7 +38,7 @@ $$
 当然，$nn\to nn$ 散射是类似的，其将上面的 $g_P$ 换成 $g_n$ 即可。对于 $pn\to pn$ 散射，设质子用 $1,1'$ 标记，中子用 $2,2'$ 标记，有两个Feynman图：
 
 <div align="center">
-  <img src="Pasted image 20260210205041.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260210205041.png" width="500">
 </div>
 
 对应到表达式：
@@ -186,7 +186,7 @@ $$
 我们来考虑介子-核子散射。由于有三种介子与两种核子，因此初态和末态都各有六种可能，因此一共有36种散射。但是，其中很多被电荷守恒所禁止。唯一 $q=2$ 的态是 $\pi^+p$ ，因此其只能发生弹性散射（即 $\pi^+p\to \pi^+p$ ）。两个态有 $q=1$：$\pi^0p$ 与 $\pi^+n$。因此可以发生四种散射，其中两种是弹性散射：$\pi^+n\to \pi^+n,\,\pi^0p\to \pi^0p$。以及两个非弹性散射：$\pi^+n\to \pi^0p,\,\pi^0p\to \pi^+n$。同样的，两个态（ $\pi^0n,\pi^-p$ ）有 $q=0$ ，可以发生四种散射。以及最后唯一的态 $\pi^-n$ 有 $q=-1$ ，只能发生弹性散射 $\pi^-n\to \pi^-n$。列表如下
 
 <div align="center">
-  <img src="Pasted image 20260211102034.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260211102034.png" width="500">
 </div>
 
 现在，我们来做同位旋分析。核子-介子具有的同位旋是 $I_\pi=1$ 与 $I_N=1/2$ 的张量积，可以分解为直和：
@@ -223,7 +223,7 @@ $$
 这一点已经从实验上证实。如下图所示，$\pi^-p\to \pi^-p$ 的总截面的确在 $\Delta^{++}$ 处有一个约为 $\sigma(\pi^+p)$ 高度三分之一的峰。
 
 <div align="center">
-  <img src="Pasted image 20260211103545.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260211103545.png" width="500">
 </div>
 
 同位旋对称性可以加进多粒子态的交换对称性中。比如对于全同玻色系统，其空间部分、自旋部分与同位旋部分的总和需在交换下全对称，全同费米体系则需全反对称。这称为**广义Pauli原理**。例如，考虑过程：

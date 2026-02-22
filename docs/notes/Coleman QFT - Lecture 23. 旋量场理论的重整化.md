@@ -118,7 +118,7 @@ $$
 抵消项 $A,B$ 由介子传播子 $p^2=\mu^2$ 处的解析性质决定，即这是介子自能函数 $\tilde \Pi'(\mu^2)$ 的一阶极点，且留数为 $i$。那为了确定抵消项 $C,D$，自然要考察核子的Dirac传播子：
 
 <div align="center">
-  <img src="Pasted image 20260207220431.png" width="700">
+  <img src="../../images/qft_images/Pasted%20image%2020260207220431.png" width="500">
 </div>
 
 值得注意的是，由于在计算Green函数时不会加外线的 $u,\bar u$ 因子，因此这里的 $\tilde S'(p)$ 是一个 $4\times 4$ 矩阵。我们可以将其分解为16个二次型的线性组合：
@@ -184,7 +184,7 @@ $$
 从这个形式，我们能看出传播子视为单复变量 $z$ 的函数 $\tilde S'(z)$ 的解析性质：其在 $z=m$ 处为一阶极点，且有两条割线，即实轴上范围 $z\leq -(m+\mu)$ 与 $z\geq m+\mu$ 为割线。可以见下图：
 
 <div align="center">
-  <img src="Pasted image 20260207231557.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260207231557.png" width="500">
 </div>
 
 ## 23.4 核子的自能函数 $\tilde\Sigma'$
@@ -192,7 +192,7 @@ $$
 与介子类似的，定义有两条核子外线的1PI图：
 
 <div align="center">
-  <img src="Pasted image 20260207231746.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260207231746.png" width="500">
 </div>
 
 $\tilde\Sigma'(p\mkern-8.5mu/)$ 即为**核子的自能函数**。Dirac传播子可以写为一串1PI图的等比求和，得到：
@@ -216,7 +216,7 @@ $$
 $O(g^2)$ 对应的Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260207232348.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260207232348.png" width="500">
 </div>
 
 对于导数项，我们简单做替换 $\partial\mkern-9mu/\to p\mkern-8.5mu/$ ，则
@@ -265,7 +265,7 @@ $$
 另一方面，我们还能重新看看介子的自能函数。到 $O(g^2)$ 阶的Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260208100100.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260208100100.png" width="500">
 </div>
 
 其形成了核子线的闭合圈。Feynman规则给出：
@@ -285,7 +285,7 @@ $$
 最后，我们来处理耦合常数的重整化问题。其要考虑三点Green函数：
 
 <div align="center">
-  <img src="Pasted image 20260208100834.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260208100834.png" width="500">
 </div>
 
 注意 $\tilde\varGamma'$ 是一个 $4\times 4$ 矩阵。在微扰下其给出：
