@@ -60,9 +60,9 @@ nav:
 theme:
   name: material
   palette:
-    primary: lightpurple
-    accent: blue
-    background: #f5f5f5
+    primary: #9240f7
+    accent: #4da9ff
+    background: #d0aff8
   features:
     - dark_mode
     - search.highlight
