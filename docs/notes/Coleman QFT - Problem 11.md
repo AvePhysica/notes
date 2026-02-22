@@ -89,41 +89,41 @@ $$
 且
 
 $$
-\mathrm{Tr}(\gamma^\mu\gamma^\nu)=\dfrac12\mathrm{Tr}(\{\gamma^\mu,\gamma^\nu\})=\dfrac12\cdot2\eta^{\mu\nu}\,\mathrm{Tr}(\mathbb 1_{4\times 4})=4\eta^{\mu\nu}$$
+\mathrm{Tr}(\gamma^\mu\gamma^\nu)=\dfrac12\mathrm{Tr}(\{\gamma^\mu,\gamma^\nu\})=\dfrac12\cdot2\eta^{\mu\nu}\,\mathrm{Tr}(\mathbb 1_{4\times 4})=4\eta^{\mu\nu}
+$$
 
 因此
-$$
 
+$$
 \mathrm{Tr}(\gamma^\alpha\gamma^\beta\gamma^\mu\gamma^\nu)=4\eta^{\mu\nu}\eta^{\alpha\beta}-4\eta^{\beta\nu}\eta^{\alpha\mu}+4\eta^{\alpha\nu}\eta^{\beta\mu}
-
-$$
 $$
 
+$$
 \mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /c\mkern-9.5mu /d\mkern-9.5mu /)=4(a\cdot b)(c\cdot d)-4(a\cdot c)(b\cdot d)+4(a\cdot d)(b\cdot c)
-
 $$
+
 - 最后，$\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /c\mkern-9.5mu /d\mkern-9.5mu /\gamma_5)$ 的计算：$\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$，上面得到的表达式说明
-$$
 
+$$
 \mathrm{Tr}\,\gamma_5=0
-
 $$
+
 进一步，考虑 $\mathrm{Tr}(\gamma^\mu\gamma^\nu\gamma_5)$，当 $\mu=\nu$ 时，由于 $(\gamma^\mu)^2=\pm 1$，因此迹为零。当 $\mu\ne\nu$ 时，其会与 $\gamma_5$ 中的两个gamma矩阵抵掉，还剩下两个角标不同的gamma矩阵。由于 $\mathrm{Tr}(\gamma^\mu\gamma^\nu)=4\eta^{\mu\nu}$，故角标不同的gamma矩阵的积为零。因此
-$$
 
+$$
 \mathrm{Tr}(\gamma^\mu\gamma^\nu\gamma_5)=0
-
 $$
+
 接下来，考虑 $\mathrm{Tr}(\gamma^\alpha\gamma^\beta\gamma^\mu\gamma^\nu\gamma_5)$，若前面的四个角标中有相同的话，则会抵消回到上面的情形，因此迹不为零的条件是四个角标不相等。利用
-$$
 
+$$
 \mathrm{Tr}(\gamma^3\gamma^2\gamma^1\gamma^0\gamma_5)=\mathrm{Tr}(\gamma^3\gamma^2\gamma^1\gamma^0 \cdot i\gamma^0\gamma^1\gamma^2\gamma^3)=-i\,\mathrm{Tr}(\mathbb 1)=-4i
-
 $$
+
 而其他的组合都只至多差一个负号。得到
-$$
 
+$$
 \mathrm{Tr}(\gamma^\alpha\gamma^\beta\gamma^\mu\gamma^\nu\gamma_5)=4i\epsilon^{\alpha\beta\mu\nu},\quad \mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /c\mkern-9.5mu /d\mkern-9.5mu /\gamma_5)=4i\epsilon_{\alpha\beta\mu\nu}a^\alpha b^\beta c^\mu d^\nu
-
 $$
+
 ---
