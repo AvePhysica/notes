@@ -31,8 +31,13 @@ $$
 $$
 
 >从产生-湮灭算符的对易关系我们可以推导出多粒子态的正交归一关系。首先我们约定真空态是归一的：$$\langle 0|0\rangle=1$$
->**单粒子态**：$$\langle \vec p'|\vec p\rangle=\langle 0|a_{\vec p}a_{\vec p}^\dagger|0\rangle=\delta^{(3)}(\vec p-\vec p')$$
->**双粒子态**：$$\langle \vec p_1',\vec p_2'|\vec p_1,\vec p_2\rangle=\langle 0|a_{\vec p_1'}a_{\vec p_2'}a_{\vec p_1}^\dagger a_{\vec p_2}^\dagger|0\rangle=\delta^{(3)}(\vec p_1'-\vec p_1)\delta^{(3)}(\vec p_2'-\vec p_2)+\delta^{(3)}(\vec p_1'-\vec p_2)\delta^{(3)}(\vec p_2'-\vec p_1)$$
+>**单粒子态**：
+>
+>$$\langle \vec p'|\vec p\rangle=\langle 0|a_{\vec p}a_{\vec p}^\dagger|0\rangle=\delta^{(3)}(\vec p-\vec p')$$
+>
+>**双粒子态**：
+>
+>$$\langle \vec p_1',\vec p_2'|\vec p_1,\vec p_2\rangle=\langle 0|a_{\vec p_1'}a_{\vec p_2'}a_{\vec p_1}^\dagger a_{\vec p_2}^\dagger|0\rangle=\delta^{(3)}(\vec p_1'-\vec p_1)\delta^{(3)}(\vec p_2'-\vec p_2)+\delta^{(3)}(\vec p_1'-\vec p_2)\delta^{(3)}(\vec p_2'-\vec p_1)$$
 
 ## 2.2 Lorentz 不变性的讨论
 
