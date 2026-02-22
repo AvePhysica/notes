@@ -1,41 +1,42 @@
->[!summary]
->先对上一章做一个简单的回顾：
->- Lorentz群的表示 $D^{(\frac12,0)},\,D^{(0,\frac12)}$ 是**旋量表示**，其表示空间中生活着**Weyl旋量** $u_\pm$，两者在旋转下的变换相同，boost下的变换不同，可以通过宇称相互转换。通过Pauli矩阵可以构造作为矢量分量的双线性型：
+> [!summary]
+> 先对上一章做一个简单的回顾：
+> - Lorentz群的表示 $D^{(\frac12,0)},\,D^{(0,\frac12)}$ 是**旋量表示**，其表示空间中生活着**Weyl旋量** $u_\pm$，两者在旋转下的变换相同，boost下的变换不同，可以通过宇称相互转换。通过Pauli矩阵可以构造作为矢量分量的双线性型：
 >
->$$
->V^\mu=(u_+^\dagger u_+,u_+^\dagger\sigma^i u_+),\quad W^\mu=(W^0,W^i)=(u_-^\dagger u_-,-u_-^\dagger \sigma^i u_-)
->$$
+> $$
+> V^\mu=(u_+^\dagger u_+,u_+^\dagger\sigma^i u_+),\quad W^\mu=(W^0,W^i)=(u_-^\dagger u_-,-u_-^\dagger \sigma^i u_-)
+> $$
 >
->- 矢量的散度是**标量**，可以用于构造Lagrangian：
+> - 矢量的散度是**标量**，可以用于构造Lagrangian：
 >
->$$
->\mathcal L_+=\pm i\,(u_+^\dagger \partial_0 u_++u_+^\dagger \vec \sigma\cdot\nabla u_+)\quad \mathcal L_-=\pm i(u_-^\dagger \partial_0 u_--u_-^\dagger \vec \sigma\cdot\nabla u_-)
->$$
+> $$
+> \mathcal L_+=\pm i\,(u_+^\dagger \partial_0 u_++u_+^\dagger \vec \sigma\cdot\nabla u_+)\quad \mathcal L_-=\pm i(u_-^\dagger \partial_0 u_--u_-^\dagger \vec \sigma\cdot\nabla u_-)
+> $$
 >
->其变分可以得到Weyl方程。两种旋量场分别代表了**右手与左手**（**螺旋度** $\pm1/2$ ）的**无质量**粒子。Weyl理论不具有**宇称**对称性，两种粒子在宇称下相互转化。
->- 将两种旋量场都放进Lagrangian中，可以构造出**含质量项**的**宇称不变**的Lagrangian：
+> 其变分可以得到Weyl方程。两种旋量场分别代表了**右手与左手**（**螺旋度** $\pm1/2$ ）的**无质量**粒子。Weyl理论不具有**宇称**对称性，两种粒子在宇称下相互转化。
+> - 将两种旋量场都放进Lagrangian中，可以构造出**含质量项**的**宇称不变**的Lagrangian：
 >
->$$
->\mathcal L=\pm\left[i\left(u_+^\dagger\partial_0 u_++u_+^\dagger\vec\sigma\cdot\nabla u_++ u_-^\dagger \partial_0 u_--u_-^\dagger\vec \sigma\cdot\nabla u_-\right)-m(u_+^\dagger u_++ u_-^\dagger u_+)\right]
->$$
+> $$
+> \mathcal L=\pm\left[i\left(u_+^\dagger\partial_0 u_++u_+^\dagger\vec\sigma\cdot\nabla u_++ u_-^\dagger \partial_0 u_--u_-^\dagger\vec \sigma\cdot\nabla u_-\right)-m(u_+^\dagger u_++ u_-^\dagger u_+)\right]
+> $$
 >
->通过定义Weyl基底下的**Dirac旋量**与**Dirac矩阵**：
+> 通过定义Weyl基底下的**Dirac旋量**与**Dirac矩阵**：
 >
->$$
->\psi\equiv\begin{pmatrix}u_+\\u_-\end{pmatrix},\quad \vec \alpha=\begin{pmatrix}\vec \sigma&0\\0&-\vec \sigma\end{pmatrix},\quad \beta=\begin{pmatrix}0&\mathbb 1\\\mathbb 1& 0\end{pmatrix}
->$$
+> $$
+> \psi\equiv\begin{pmatrix}u_+\\u_-\end{pmatrix},\quad \vec \alpha=\begin{pmatrix}\vec \sigma&0\\0&-\vec \sigma\end{pmatrix},\quad \beta=\begin{pmatrix}0&\mathbb 1\\\mathbb 1& 0\end{pmatrix}
+> $$
 >
->可以得到更简单的Lagrangian：
+> 可以得到更简单的Lagrangian：
 >
->$$
+> $$
 > \mathcal L=\pm\left[i\psi^\dagger(\partial_0+\vec \alpha\cdot\nabla)\psi-m\psi^\dagger\beta\psi\right]
->$$
+> $$
 >
->以及变分得到的**Dirac方程**：
+> 以及变分得到的**Dirac方程**：
 >
->$$
->i\partial_0\psi+i\vec\alpha\cdot\nabla\psi=m\beta\psi
->$$
+> $$
+> i\partial_0\psi+i\vec\alpha\cdot\nabla\psi=m\beta\psi
+> $$
+>
 >
 
 ## 20.1 Dirac 基底
@@ -95,12 +96,13 @@ $$
 \vec L=\dfrac12\vec\varSigma,\quad\vec M=\dfrac i2\vec \alpha
 $$
 
->[!tip]
->Dirac表示与Weyl表示只是基底变换而已，其通过下面的相似变换联系：
+> [!tip]
+> Dirac表示与Weyl表示只是基底变换而已，其通过下面的相似变换联系：
 >
->$$
->\psi_D=T\psi_W,\quad \vec\alpha_D=T\vec\alpha_W T^{-1},\quad \beta_D=T\beta_W T^{-1},\quad T=\dfrac{1}{\sqrt 2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}
->$$
+> $$
+> \psi_D=T\psi_W,\quad \vec\alpha_D=T\vec\alpha_W T^{-1},\quad \beta_D=T\beta_W T^{-1},\quad T=\dfrac{1}{\sqrt 2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}
+> $$
+>
 >
 
 ## 20.2 平面波解
@@ -266,8 +268,8 @@ $$
 $$
 
 这一关系显然在相似变换下不变。那么，Clifford代数能否将Dirac矩阵限制在至多差一个相似变换的范围内呢？答案是可以的。这就是Pauli定理，表述如下：
->[!tip] Pauli theorem
->任何一组满足Dirac代数的 $4\times 4$ 矩阵表示都等价于Weyl表示。
+> [!tip] Pauli theorem
+> 任何一组满足Dirac代数的 $4\times 4$ 矩阵表示都等价于Weyl表示。
 
 此定理暗示了下面的结果：所有只包含自旋1/2粒子且宇称对称的Lorentz群的表示都是**等价的**。也就是说，Dirac理论是唯一可以构建出的有宇称对称性的自旋1/2粒子的理论。下面就来证明该定理：
 首先，定义

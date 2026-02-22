@@ -277,8 +277,8 @@ $$
 N+\bar N\to \phi+\phi\xleftrightarrow{\,\,\,T\,\,\,}\phi+\phi\to \bar N+N
 $$
 
->[!tip]
->这里没有提到介子-介子散射 $\phi+\phi\to\phi+\phi$，因为其最低阶的图是 $O(g^4)$ 阶的：
+> [!tip]
+> 这里没有提到介子-介子散射 $\phi+\phi\to\phi+\phi$，因为其最低阶的图是 $O(g^4)$ 阶的：
 
 <div align="center">
   <img src="../../images/qft_images/Pasted%20image%2020251208160143.png" width="500">
