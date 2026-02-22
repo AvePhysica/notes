@@ -1,20 +1,23 @@
 :root {
-  --site-theme-primary: #F0DEFF;
-  --site-theme-accent: #B46BFF;
-  --site-theme-background: #F0DEFF;
+  --site-theme-primary: #8c63d9;
+  --site-theme-accent: #b46bff;
+  --site-theme-background: #f0deff;
+  --site-theme-sidebar: #ead8ff;
 }
 
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: var(--site-theme-primary);
-  --md-primary-fg-color--light: #F7EEFF;
-  --md-primary-fg-color--dark: #D9B8FF;
+  --md-primary-fg-color--light: #a985e6;
+  --md-primary-fg-color--dark: #6f47bb;
   --md-accent-fg-color: var(--site-theme-accent);
   --md-default-bg-color: var(--site-theme-background);
 }
 
-[data-md-color-scheme="default"] .md-content,
-[data-md-color-scheme="default"] .md-sidebar,
-[data-md-color-scheme="default"] .md-header,
-[data-md-color-scheme="default"] .md-tabs {
+[data-md-color-scheme="default"] .md-content {
   background-color: transparent;
+}
+
+[data-md-color-scheme="default"] .md-sidebar,
+[data-md-color-scheme="default"] .md-sidebar__scrollwrap {
+  background-color: var(--site-theme-sidebar);
 }
