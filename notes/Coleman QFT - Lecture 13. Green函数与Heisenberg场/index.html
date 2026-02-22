@@ -1,0 +1,2391 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://AvePhysica.github.io/notes/notes/Coleman%20QFT%20-%20Lecture%2013.%20Green%E5%87%BD%E6%95%B0%E4%B8%8EHeisenberg%E5%9C%BA/">
+      
+      
+        <link rel="prev" href="../Coleman%20QFT%20-%20Lecture%2012.%20%E6%95%A3%E5%B0%84%E7%90%86%E8%AE%BA%20II%EF%BC%9A%E5%BA%94%E7%94%A8/">
+      
+      
+        <link rel="next" href="../Coleman%20QFT%20-%20Lecture%2014.%20LSZ%E7%BA%A6%E5%8C%96%E5%85%AC%E5%BC%8F/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Coleman QFT - Lecture 13. Green函数与Heisenberg场 - Luminosity</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#131-tilde-gnk_i" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Luminosity" class="md-header__button md-logo" aria-label="Luminosity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Luminosity
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Coleman QFT - Lecture 13. Green函数与Heisenberg场
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AvePhysica/notes" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Luminosity" class="md-nav__button md-logo" aria-label="Luminosity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Luminosity
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AvePhysica/notes" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    笔记
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    笔记
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Field Theory
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Quantum Field Theory
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%201.%20%E5%9C%A8%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E4%B8%AD%E5%BC%95%E5%85%A5%E7%9B%B8%E5%AF%B9%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 1. 在量子力学中引入相对论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%202.%20%E7%AE%80%E5%8D%95%E7%9A%84%E5%A4%9A%E4%BD%93%E7%90%86%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 2. 简单的多体理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%203.%20%E6%9E%84%E5%BB%BA%E6%A0%87%E9%87%8F%E9%87%8F%E5%AD%90%E5%9C%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 3. 构建标量量子场
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%204.%20%E5%9C%BA%E7%9A%84%E6%AD%A3%E5%88%99%E9%87%8F%E5%AD%90%E5%8C%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 4. 场的正则量子化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%205.%20%E5%AF%B9%E7%A7%B0%E6%80%A7%E4%B8%8E%E5%AE%88%E6%81%92%E5%BE%8B%20I%EF%BC%9A%E6%97%B6%E7%A9%BA%E5%AF%B9%E7%A7%B0%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 5. 对称性与守恒律 I：时空对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%206.%20%E5%AF%B9%E7%A7%B0%E6%80%A7%E4%B8%8E%E5%AE%88%E6%81%92%E5%BE%8B%20II%EF%BC%9A%E5%86%85%E9%83%A8%E5%AF%B9%E7%A7%B0%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 6. 对称性与守恒律 II：内部对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%207.%20%E5%BE%AE%E6%89%B0%E8%AE%BA%E4%B8%8E%E6%95%A3%E5%B0%84%E7%90%86%E8%AE%BA%E5%88%9D%E6%AD%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 7. 微扰论与散射理论初步
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%208.%20%E5%BE%AE%E6%89%B0%E7%90%86%E8%AE%BA%20I%EF%BC%9AWick%20diagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 8. 微扰理论 I：Wick diagram
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%209.%20%E5%BE%AE%E6%89%B0%E7%90%86%E8%AE%BA%20II%EF%BC%9A%E5%8F%91%E6%95%A3%E4%B8%8E%E6%8A%B5%E6%B6%88%E9%A1%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 9. 微扰理论 II：发散与抵消项
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2010.%20%E8%B4%A8%E9%87%8F%E9%87%8D%E6%95%B4%E5%8C%96%E4%B8%8E%E8%B4%B9%E6%9B%BC%E5%9B%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 10. 质量重整化与费曼图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2011.%20%E6%95%A3%E5%B0%84%E7%90%86%E8%AE%BA%20I%EF%BC%9AMandelstam%E5%8F%98%E9%87%8F%E3%80%81CPT%E5%92%8C%E7%9B%B8%E7%A9%BA%E9%97%B4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 11. 散射理论 I：Mandelstam变量、CPT和相空间
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2012.%20%E6%95%A3%E5%B0%84%E7%90%86%E8%AE%BA%20II%EF%BC%9A%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 12. 散射理论 II：应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 13. Green函数与Heisenberg场
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 13. Green函数与Heisenberg场
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#131-tilde-gnk_i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 \(\tilde G^{(n)}(k_i)\) 的图形化定义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#132-gnx_i-zrho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 \(G^{(n)}(x_i)\) 的生成泛函 \(Z[\rho]\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#133" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 丢掉绝热开关
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.4 问题的解答
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.5 构造“入态”与“出态”
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2014.%20LSZ%E7%BA%A6%E5%8C%96%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 14. LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2015.%20%E9%87%8D%E6%95%B4%E5%8C%96%20I%EF%BC%9A%E7%A1%AE%E5%AE%9A%E6%8A%B5%E6%B6%88%E9%A1%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 15. 重整化 I：确定抵消项
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2016.%20%E9%87%8D%E6%95%B4%E5%8C%96%20II%EF%BC%9A%E6%8E%A8%E5%B9%BF%E4%B8%8E%E5%BB%B6%E4%BC%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 16. 重整化 II：推广与延伸
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2017.%20%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%B2%92%E5%AD%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 17. 不稳定粒子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2018.%20Lorentz%E7%BE%A4%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 18. Lorentz群的表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2019.%20Dirac%E6%96%B9%E7%A8%8B%20I%EF%BC%9A%E6%9E%84%E9%80%A0%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E9%87%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 19. Dirac方程 I：构造拉格朗日量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2020.%20Dirac%E6%96%B9%E7%A8%8B%20II%EF%BC%9A%E6%B1%82%E8%A7%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 20. Dirac方程 II：求解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2021.%20Dirac%E6%96%B9%E7%A8%8B%20III%EF%BC%9A%E9%87%8F%E5%AD%90%E5%8C%96%E4%B8%8EFeynman%E8%A7%84%E5%88%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 21. Dirac方程 III：量子化与Feynman规则
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2022.%20CPT%E4%B8%8EFermi%E5%9C%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 22. CPT与Fermi场
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2023.%20%E6%97%8B%E9%87%8F%E5%9C%BA%E7%90%86%E8%AE%BA%E7%9A%84%E9%87%8D%E6%95%B4%E5%8C%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 23. 旋量场理论的重整化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2024.%20%E5%90%8C%E4%BD%8D%E6%97%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 24. 同位旋
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2025.%20%E5%A4%84%E7%90%86%E6%97%A0%E9%99%90%E5%A4%A7%EF%BC%9A%E6%AD%A3%E8%A7%84%E5%8C%96%E4%B8%8E%E9%87%8D%E6%95%B4%E5%8C%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 25. 处理无限大：正规化与重整化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2026.%20%E7%9F%A2%E9%87%8F%E5%9C%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 26. 矢量场
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2027.%20%E7%94%B5%E7%A3%81%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8%E4%B8%8E%E6%9C%80%E5%B0%8F%E8%80%A6%E5%90%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 27. 电磁相互作用与最小耦合
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2028.%20%E6%B3%9B%E5%87%BD%E7%A7%AF%E5%88%86%E4%B8%8EFeynman%E5%9B%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 28. 泛函积分与Feynman图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%201/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%202/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%203/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%205/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%208/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%209/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%2010/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%2011/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%2012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%2013/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%2014/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%2015/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ultracold Atom Physics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ultracold Atom Physics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lecture%201.%20A%20Single%20Atom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lecture 1. A Single Atom
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lecture%202.%20Two-body%20Interaction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lecture 2. Two-body Interaction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    代码
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    代码
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    README
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#131-tilde-gnk_i" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 \(\tilde G^{(n)}(k_i)\) 的图形化定义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#132-gnx_i-zrho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 \(G^{(n)}(x_i)\) 的生成泛函 \(Z[\rho]\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#133" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 丢掉绝热开关
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.4 问题的解答
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.5 构造“入态”与“出态”
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Coleman QFT - Lecture 13. Green函数与Heisenberg场</h1>
+
+<p>在上一章[[Coleman QFT - Lecture 12. 散射理论 II：应用]]的最后，我们提到了外线不在质壳上的Feynman图。这个研究对象是比较有趣的，它将引出我们本章要讲的<strong>Green函数</strong>。为了简单起见，我将只考虑外线为介子线的Feynman图。其推广是简单的。</p>
+<h2 id="131-tilde-gnk_i">13.1  <span class="arithmatex">\(\tilde G^{(n)}(k_i)\)</span> 的图形化定义</h2>
+<p>我们仍在Model 3下讨论。我将定义一个四点函数 <span class="arithmatex">\(\tilde G^{(4)}(k_1,k_2,k_3,k_4)\)</span>，其定义为所有有四条介子外线的图代表的表达式之和。其将包含微扰的所有阶数。如下图所示：</p>
+<div align="center">
+  <img src="../../images/qft_images/Pasted%20image%2020251228224927.png" width="500">
+</div>
+
+<p>我将采取如下的定义：所有的图包含了连通与不连通的图，每个图包含所有的delta函数，以及所有传播子（包括外线），外线的动量均规定为向内，并且要对内线动量积分。于是，上面的四点函数 <span class="arithmatex">\(\tilde G^{(4)}(k_1,k_2,k_3,k_4)\)</span> 的按阶数展开的前几项为：</p>
+<div align="center">
+  <img src="../../images/qft_images/Pasted%20image%2020251228225157.png" width="500">
+</div>
+
+<p>可以看到，其的确是包含 <span class="arithmatex">\(O(g^0)\)</span> 阶的图，而此外最低阶就是 <span class="arithmatex">\(O(g^4)\)</span> 了。我们将对应的表达式写出来：</p>
+<div class="arithmatex">\[
+\tilde G^{(4)}(k_1,k_2,k_3,k_4)=(2\pi)^4\delta^{(4)}(k_1+k_3)\dfrac{1}{k_1^2-\mu^2+i\epsilon}(2\pi)^4\delta^{(4)}(k_2+k_4)\dfrac{1}{k_2^2-\mu^2+i\epsilon}+\cdots
+\]</div>
+<p>现在，我们只是定义了一个四点函数而已。如果我们想要回到真实的物理过程，就需要使外线回到质壳上，且去掉它们的传播子。因此，有下面的公式：</p>
+<div class="arithmatex">\[
+\langle k_3,k_4|S-1|k_1,k_2\rangle=\prod_{r=1}^4[(-i)(k_r^2-\mu^2)]\tilde G^{(4)}(-k_3,-k_4,k_1,k_2)
+\]</div>
+<p>其中最后取所有 <span class="arithmatex">\(k_r^2=\mu^2\)</span>。上面的式子是很重要的。它告诉我们如果我们想要计算一个实际的散射过程，且已知一个模型对应的Green函数 <span class="arithmatex">\(\tilde G\)</span>，则用上面的公式就能直接得到散射振幅。以上面的图为例，可以看到其只有两个传播子，但是却乘了四个传播子之逆，因此最终在质壳条件下为零。这也是应当的，散射振幅的最低阶数为 <span class="arithmatex">\(O(g^4)\)</span>。
+更一般的多点函数 <span class="arithmatex">\(\tilde G^{(n)}(k_i)\)</span> 定义如下：</p>
+<div align="center">
+  <img src="../../images/qft_images/Pasted%20image%2020251228232423.png" width="500">
+</div>
+
+<p>即所有有 <span class="arithmatex">\(n\)</span> 条外线的图对应表达式之和。进一步的，我们可以定义其傅里叶变换后的函数为：</p>
+<div class="arithmatex">\[
+G^{(n)}(x_1,\cdots,x_n)\equiv\int\dfrac{\mathrm{d}^4k_1}{(2\pi)^4}\cdots\dfrac{\mathrm{d}^4k_n}{(2\pi)^4}\mathrm{e}^{+ik_1\cdot x_1+\cdots+ik_n\cdot x_n}\tilde G^{(n)}(k_1,\cdots,k_n)
+\]</div>
+<h2 id="132-gnx_i-zrho">13.2  <span class="arithmatex">\(G^{(n)}(x_i)\)</span> 的生成泛函 <span class="arithmatex">\(Z[\rho]\)</span></h2>
+<p>接下来，我们将看到 <span class="arithmatex">\(\tilde G^{(n)}(k_i)\)</span> 的物理意义。上一章我们提到，外线不在质壳上的图可以视为更大的图的一个<strong>内部区域</strong>。为了构造一个更大的图，我们向Hamiltonian中加入一项Model 1的相互作用项：</p>
+<div class="arithmatex">\[
+\mathcal H\to\mathcal H+\rho(x)\phi(x)
+\]</div>
+<p>回忆我们对Model 1的处理（参考[[Coleman QFT - Lecture 8. 微扰理论 I：Wick diagram]]），对于场与势的作用，其基本顶点可表示为：</p>
+<div align="center">
+  <img src="../../images/qft_images/Pasted%20image%2020251229160218.png" width="500">
+</div>
+
+<p>即一个单独的顶点连上一根介子线。其代表的振幅为：</p>
+<div class="arithmatex">\[
+\langle k|-i\int\mathrm{d}^4x\,\rho(x)\phi(x)\,|0\rangle=-i\int\rho(x)\langle k|\phi(x)|0\rangle\,\mathrm{d}^4x
+\]</div>
+<p>而</p>
+<div class="arithmatex">\[
+\langle k|\phi(x)|0\rangle=\int\dfrac{\mathrm{d}^3\vec k'}{(2\pi)^32\omega_{k'}}\mathrm{e}^{ik'\cdot x}\langle k|\alpha^\dagger_{k'}|0\rangle=\int\mathrm{d}^3\vec k\,\mathrm{e}^{ik'\cdot x}\delta^{(3)}(\vec k-\vec k')=\mathrm{e}^{ik\cdot x}
+\]</div>
+<p>因此</p>
+<div class="arithmatex">\[
+\text{graph}=-i\int\rho(x)\,\mathrm{e}^{ik\cdot x}\,\mathrm{d}^4x=-i\tilde \rho(-k)
+\]</div>
+<p>对于原先的图，我们可以让每根外线都连接一个上面的基本顶点，这样外线就都变成了内线，因此整个图对 <span class="arithmatex">\(\langle 0|S|0\rangle\)</span> 有贡献。因此，在新的模型下，真空-真空跃迁的矩阵元为：</p>
+<div class="arithmatex">\[
+Z[\rho]\equiv\langle 0|S|0\rangle=1+\sum_{n=1}^\infty\dfrac{(-i)^n}{n!}\int\dfrac{\mathrm{d}^4k_1}{(2\pi)^4}\cdots\dfrac{\mathrm{d}^4k_n}{(2\pi)^4}\tilde G^{(n)}(k_1,\cdots,k_n)\tilde \rho(-k_1)\tilde \rho(-k_2)\cdots\tilde \rho(-k_n)
+\]</div>
+<p>这里的 <span class="arithmatex">\(n!\)</span> 来源于 <span class="arithmatex">\(k_1,\cdots,k_n\)</span> 是不可区分的，因此在计算其积分时重复计算了 <span class="arithmatex">\(n!\)</span> 次。这一组合效应常常出现在只有内线的Feynman图中。</p>
+<blockquote>
+<p>[!important]
+<strong>注意</strong>：这里我们修改了Fourier变换的定义。此时采用的定义为：</p>
+<div class="arithmatex">\[
+f(x)=\int\dfrac{\mathrm{d}^4k}{(2\pi)^4}\tilde f(k)\,\mathrm{e}^{ik\cdot x},\quad \tilde f(k)=\int\mathrm{d}^4x\,f(x)\,\mathrm{e}^{-ik\cdot x}
+\]</div>
+</blockquote>
+<p>我们利用下面的公式：</p>
+<div class="arithmatex">\[
+\int\mathrm{d} x\,f(x)g(x)=\int\dfrac{\mathrm{d}k}{2\pi}\tilde f(k)\tilde g(k)^*=\int\dfrac{\mathrm{d}k}{2\pi}\tilde f(k)\tilde g(-k)
+\]</div>
+<p>得到：</p>
+<div class="arithmatex">\[
+Z[\rho]=1+\sum_{n=1}^\infty\dfrac{(-i)^n}{n!}\int\mathrm{d}^4x_1\cdots\mathrm{d}^4x_n\,G^{(n)}(x_1,\cdots,x_n)\rho(x_1)\cdots\rho(x_n)
+\]</div>
+<p>此时，我们可以看出 <span class="arithmatex">\(G^{(n)}(x_1,\cdots,x_n)\)</span> 的含义了：其代表了系统对外源 <span class="arithmatex">\(\rho(x)\)</span> 的响应，因此称为<strong>Green函数</strong>。而 <span class="arithmatex">\(Z[\rho]\)</span> 是关于外源分布 <span class="arithmatex">\(\rho(x)\)</span> 的泛函，称为
+<strong>生成泛函</strong>。我们只需求其各阶泛函导数即可求出Green函数：</p>
+<div class="arithmatex">\[
+G^{(n)}(x_1,\cdots,x_n)=i^n\dfrac{\partial^n Z[\rho]}{\partial\rho(x_1)\cdots\partial\rho(x_n)}\bigg|_{\rho(x)=0}
+\]</div>
+<p>最后再提一点：我们已经证明过所有Wick图之和等于连通Wick图之和的指数。对于生成泛函也有类似的结论。即：</p>
+<div class="arithmatex">\[
+Z[\rho]=\langle0|\sum\text{all Wick diagrams}|0\rangle=\langle 0|:\exp\left(\sum\text{all connected diagrams}\right):|0\rangle
+\]</div>
+<div class="arithmatex">\[
+\begin{align}
+\ln Z[\rho]&amp;=\langle 0|:\sum\text{all connected diagrams}:|0\rangle\\
+&amp;=\sum_{n=1}^\infty\dfrac{(-i)^n}{n!}\int\mathrm{d}^4x_1\cdots\mathrm{d}^4x_n\,G_c^{(n)}(x_1,\cdots,x_n)\rho(x_1)\cdots\rho(x_n)
+\end{align}
+\]</div>
+<p>这里 <span class="arithmatex">\(G_c\)</span> 代表连通的Green图。</p>
+<h2 id="133">13.3 丢掉绝热开关</h2>
+<p>前面提到，对于如Model 3中的相互作用 <span class="arithmatex">\(g\psi\psi^*\phi\)</span>，我们需要引入一个绝热开关 <span class="arithmatex">\(f(t)\)</span>，其保证了时间上的边界条件，即在 <span class="arithmatex">\(t=\pm\infty\)</span> 时不存在相互作用。
+现在，我们希望去掉这个人为引入的绝热开关，即取 <span class="arithmatex">\(f(t)=1\)</span>。此时的代价在于，不论何时相互作用总是存在的。我们仍在Hamiltonian上加上与外源的作用：</p>
+<div class="arithmatex">\[
+\mathcal H=\mathcal H_0+\mathcal H'\to\mathcal H_0+\mathcal H'+\rho(x)\phi(x),\quad \mathcal H'=g\psi^*\psi\phi
+\]</div>
+<p>我们本应将这个 Hamiltonian 分为 <span class="arithmatex">\(\mathcal H_0\)</span> 与 <span class="arithmatex">\(\mathcal H'+\rho\phi\)</span> 两部分，分别对应于<strong>自由Hamiltonian</strong>与<strong>相互作用Hamiltonian</strong>。现在，一个新奇的想法是：既然我们要考察的是外源作用对系统的影响，何不将其分为 <span class="arithmatex">\(\mathcal H_0+\mathcal H'\)</span> 与 <span class="arithmatex">\(\rho\phi\)</span> 这两部分？
+让我们看看这样划分的结果。自由部分Hamiltonian支配场的演化，也就是说现在的标量场演化满足：</p>
+<div class="arithmatex">\[
+\phi_H(t)=\mathrm{e}^{iHt}\phi_H(0)\mathrm{e}^{-iHt},\quad H=\int\mathrm{d}^3x\,(\mathcal H_0+\mathcal H')
+\]</div>
+<p>这里的 <span class="arithmatex">\(H\)</span> 实际上就是Model 3的总哈密顿量。因此，我们实际上采取了<strong>Heisenberg绘景</strong>。这里的 <span class="arithmatex">\(\phi_H(x)\)</span> 称为<strong>Heisenberg场</strong>。其不是自由场，因此不满足自由场的运动方程（即<strong>KG方程</strong>）。
+另一方面，态的演化由外源项 <span class="arithmatex">\(\rho(x)\phi(x)\)</span> 决定。现在我们的基态同样要做出改变，首先“真空态”应当定义为 <span class="arithmatex">\(H\)</span> 的零本征态：</p>
+<div class="arithmatex">\[
+\hat H|0\rangle^P=0,\quad ^P\langle0|0\rangle^P=1
+\]</div>
+<p><span class="arithmatex">\(|0\rangle^P\)</span> 称为<strong>物理真空态</strong>。同时，时间演化自然也由外源项决定。</p>
+<div class="arithmatex">\[
+U_I(\infty,-\infty)=\exp\left[-i\int\mathrm{d}^4x\,\rho(x)\phi_H(x)\right]
+\]</div>
+<p>这里我们实际上将外源项中的自由场 <span class="arithmatex">\(\phi(x)\)</span> 换成了Heisenberg场 <span class="arithmatex">\(\phi_H(x)\)</span>，因为在新的散射理论下，我们有的仅仅是新的Heisenberg场，自然应当取上面的形式。
+新的生成泛函定义为：</p>
+<div class="arithmatex">\[
+Z[\rho]\equiv\,^P\langle0|S|0\rangle^P=\,^P\langle 0|T\exp\left[-i\int\mathrm{d}^4x\,\rho(x)\phi_H(x)\right]|0\rangle^P
+\]</div>
+<p>注意：新的Heisenberg场存在一些问题，比如Wick定理不成立，其缩并 <span class="arithmatex">\(\overset {|\Large \mkern-2mu{}^{\overline{\quad\quad}}\mkern-3mu\normalsize |}{\phi_H(x) \phi_H} (y)\)</span> 甚至不再是一个纯数。但我们还是能将上面的指数展开为Dyson级数的形式：</p>
+<div class="arithmatex">\[
+Z[\rho]=\sum_{n=0}^\infty\dfrac{(-i)^n}{n!}\int\mathrm{d}^4x_1\cdots\mathrm{d}^4x_n\,\rho(x_1)\cdots\rho(x_n)\,^P\langle 0|T(\phi_H(x_1)\cdots\phi_H(x_n))|0\rangle^P
+\]</div>
+<p>回顾我们开始时用Green函数的定义式，立刻得到新的散射理论下Green函数定义为：</p>
+<div class="arithmatex">\[
+G^{(n)}(x_1,\cdots,x_n)\equiv\,^P\langle 0|T(\phi_H(x_1)\cdots\phi_H(x_n))|0\rangle^P
+\]</div>
+<p>现在，我们在新的散射理论下重新定义了态、场、生成泛函 <span class="arithmatex">\(Z[\rho]\)</span> 与Green函数 <span class="arithmatex">\(G(x_i)\)</span>。回顾我们最先是如何定义Green函数的：先将有 <span class="arithmatex">\(n\)</span> 条外线且外线可以不在质壳上的Feynman图定义为 <span class="arithmatex">\(\tilde G^{(n)}(k_i)\)</span>，再将Green函数定义为其Fourier变换。这引出了下面的问题：</p>
+<blockquote>
+<p>[!question]
+新的Green函数还能由Feynman图的相加得到吗？换句话说，如何利用Feynman图计算真空-真空跃迁振幅，即生成泛函 <span class="arithmatex">\(Z[\rho]\)</span> ？</p>
+</blockquote>
+<h2 id="134">13.4 问题的解答</h2>
+<p>上面问题的答案是正确的。我们考虑标准的使用Feynman图的流程，生成泛函为真空-真空跃迁振幅：</p>
+<div class="arithmatex">\[
+Z[\rho]^{\mathrm{Feyn}}=\lim_{t_\pm\to\pm\infty}\langle 0|\exp\left(-i\int_{t_-}^{t_+}(\mathcal H_I+\rho(x)\phi(x))\,\mathrm{d}^4x\right)|0\rangle,\quad \mathcal H_I=g\psi^*(x)\psi(x)\phi(x)
+\]</div>
+<p>但这一表达式是存在缺陷的。因为当 <span class="arithmatex">\(\rho=0\)</span> 时，这一表达式的结果不是 <span class="arithmatex">\(1\)</span>。这是因为在上面的表达式中，包含了一些有其他单独的不连通真空泡的部分，每一个图都伴随着一组在其外加入任意的<strong>不连通真空泡</strong>的图。因此我们要除去它们。之前我们通过引入<strong>抵消项</strong>来规避这一影响，但此方法仅适用于加上绝热开关后的理论。更简单的方法是直接除掉 <span class="arithmatex">\(\rho=0\)</span> 的跃迁振幅：</p>
+<div class="arithmatex">\[
+Z[\rho]^{\mathrm{Feyn}}=\lim_{t_\pm\to\pm\infty}\dfrac{\langle 0|T\exp\left(-i\int_{t_-}^{t_+}(\mathcal H_I+\rho(x)\phi(x))\,\mathrm{d}^4x\right)|0\rangle}{\langle 0|T\exp\left(-i\int_{t_-}^{t_+}\mathcal H_I\,\mathrm{d}^4x\right)|0\rangle}
+\]</div>
+<p>这个方法很粗暴，但的确是有效的，上式得到的就是所有不含不连通真空泡的无外线图之和。其按 <span class="arithmatex">\(\rho\)</span> 的幂次展开式的系数即为用Feynman
+图算出的Green函数 <span class="arithmatex">\(G^{(n)\mathrm{Feyn}}(x_i)\)</span>：</p>
+<div class="arithmatex">\[
+Z[\rho]^{\mathrm{Feyn}}=\sum_{n=0}^\infty\dfrac{(-i)^n}{n!}\int\mathrm{d}^4x_1\cdots\mathrm{d}^4x_n\,\rho(x_1)\rho(x_2)\cdots\rho(x_n)G^{(n)\mathrm{Feyn}}(x_1,\cdots,x_n)
+\]</div>
+<p>直接利用Dyson展开式。可以得到：</p>
+<div class="arithmatex">\[
+G^{(n)\mathrm{Feyn}}(x_1,\cdots,x_n)=\lim_{t_\pm\to\pm\infty}\dfrac{\langle 0|T\exp\left(-i\int_{t_-}^{t_+}\mathcal H_I\,\mathrm{d}^4x\right)\phi(x_1)\cdots\phi(x_n)|0\rangle}{\langle 0|T\exp\left(-i\int_{t_-}^{t_+}\mathcal H_I\,\mathrm{d}^4x\right)|0\rangle}
+\]</div>
+<p>我们知道，Heisenberg场与自由场之间的关系为：</p>
+<div class="arithmatex">\[
+\phi_H(t,\vec x)=U_I(t,0)^\dagger\phi(t,\vec x)U_I(t,0)=U_I(0,t)\phi(t,\vec x)U_I(t,0),\quad U_I=\exp\left[-i\int\mathrm{d}^4x\,\mathcal H_I\right]
+\]</div>
+<p>这里我们约定了 <span class="arithmatex">\(t=0\)</span> 时各绘景的统一性。现在来看Green函数 <span class="arithmatex">\(G^{(n)\mathrm{Feyn}}(x_i)\)</span> 的表达式，由于最后对 <span class="arithmatex">\(x_i\)</span> 的积分是全对称的，因此我们不妨假设 <span class="arithmatex">\(t_1&gt;t_2&gt;\cdots&gt;t_n\)</span>，此时分子写为：</p>
+<div class="arithmatex">\[
+\begin{align}
+&amp;\lim_{t\pm\to\pm\infty}\langle0|T\exp\left[-i\int_{t_1}^{t_+}\mathrm{d}^4x\,\mathcal H_I\right]\phi(x_1)\exp\left[-i\int_{t_2}^{t_1}\mathrm{d}^4x\,\mathcal H_I\right]\phi(x_2)\dots\phi(x_n)\exp\left[-i\int_{t_-}^{t_n}\mathrm{d}^4x\,\mathcal H_I\right]|0\rangle\\
+=&amp;\lim_{t_\pm\to\pm\infty}\langle 0|U_I(t_+,t_1)\phi(x_1)U_I(t_1,t_2)\phi(x_2)\cdots U_I(t_{n-1},t_n)\phi(x_n)U(t_n,t_-)|0\rangle\\
+=&amp;\lim_{t\pm\to\pm\infty}\langle0|U_I(t_+,0)\phi_H(x_1)\phi_H(x_2)\cdots\phi_H(x_n)U_I(0,t_-)|0\rangle
+\end{align}
+\]</div>
+<p>接下来，我们来考虑 <span class="arithmatex">\(t_\pm\to\pm\infty\)</span> 时会发生什么。我们将左侧的一大块全部定义为一个左矢 <span class="arithmatex">\(\langle \psi|\)</span>：</p>
+<div class="arithmatex">\[
+\langle \psi|\equiv\langle 0|U_I(t_+,0)\phi_H(x_1)\cdots\phi_H(x_n)
+\]</div>
+<p>因此我们要求的就是：</p>
+<div class="arithmatex">\[
+\langle\psi|U_I(0,t_-)|0\rangle=\langle\psi|\mathrm{e}^{iH_It_-}|0\rangle=\langle\psi|\mathrm{e}^{iHt_-}|0\rangle,\quad H=H_I+H_0,\quad H_0|0\rangle=0
+\]</div>
+<p>我们希望将 <span class="arithmatex">\(|0\rangle\)</span> 换成物理真空态 <span class="arithmatex">\(|0\rangle^P\)</span>，即 <span class="arithmatex">\(H\)</span> 的零本征态。记</p>
+<div class="arithmatex">\[
+H|n\rangle=E_n|n\rangle,\quad H|0\rangle^P=0
+\]</div>
+<p>其构成一组完备基，我们可以将其插入：</p>
+<div class="arithmatex">\[
+\langle\psi|\mathrm{e}^{iHt_-}|0\rangle=\sum_n\langle \psi|n\rangle\langle n|\mathrm{e}^{iHt_-}|0\rangle=\langle\psi|0\rangle^P\,^P\langle0|0\rangle+\sum_{n\ne 0}\mathrm{e}^{-iE_nt_-}\langle \psi|n\rangle\langle n|0\rangle
+\]</div>
+<p>当 <span class="arithmatex">\(t_-\to-\infty\)</span> 时，后一项会振荡得越来越快。这里，我们将引用一个分析中的结论：</p>
+<blockquote>
+<p>[!theorem]
+<strong>Riemann-Lebesgue Lemma</strong>：若 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\([a,b]\)</span> 上Riemann可积，则</p>
+<div class="arithmatex">\[
+\lim_{n\to\infty}\int_a^b f(x)\cos nx\,\mathrm{d}x=\lim_{n\to\infty}\int_a^b f(x)\sin nx\,\mathrm{d}x=0
+\]</div>
+</blockquote>
+<p>其说一个性质良好的函数乘上一个快速振荡的函数，在区域中的积分随振荡速度的加快而趋于零。当然，上面表达式中实际不是积分，而是对 <span class="arithmatex">\(n\)</span> 的求和，但结论也是一样的。我们可以在 <span class="arithmatex">\(t_-\to-\infty\)</span> 的极限下丢掉后一项，因此</p>
+<div class="arithmatex">\[
+\lim_{t_-\to-\infty}\langle\psi|\mathrm{e}^{iHt_-}|0\rangle=\langle\psi|0\rangle^P\,^P\langle0|0\rangle
+\]</div>
+<p>因此我们只是做替换：</p>
+<div class="arithmatex">\[
+U_I(0,-\infty)|0\rangle\to|0\rangle^P\,^P\langle0|0\rangle
+\]</div>
+<p>同样的，对于左侧也有：</p>
+<div class="arithmatex">\[
+\langle 0|U_I(+\infty,0)\to\langle0|0\rangle^P\,^P\langle 0|
+\]</div>
+<p>因此</p>
+<div class="arithmatex">\[
+\begin{align}
+G^{(n)\mathrm{Feyn}}(x_1,\cdots,x_n)&amp;=\lim_{t\pm\to\pm\infty}\dfrac{\langle0|U_I(t_+,0)\phi_H(x_1)\phi_H(x_2)\cdots\phi_H(x_n)U_I(0,t_-)|0\rangle}{\langle 0|U_I(t_+,t_-)|0\rangle}\\&amp;=\dfrac{\langle0|0\rangle^P\,^P\langle 0|\phi_H(x_1)\cdots\phi_H(x_n)|0\rangle^P\,^P\langle0|0\rangle}{\langle 0|0\rangle^P\,^P\langle 0|0\rangle^P\,^P\langle 0|0\rangle}\\&amp;=\,^P\langle 0|\phi_H(x_1)\cdots\phi_H(x_n)|0\rangle^P\\
+&amp;=G^{(n)}(x_1,\cdots,x_n)
+\end{align}
+\]</div>
+<p>因此我们证明了我们仍可以用Feynman图来求<strong>生成泛函</strong>与<strong>Green函数</strong>。也就是说我们定义的两种路径是完全等价的。</p>
+<h2 id="135">13.5 构造“入态”与“出态”</h2>
+<p>上面我们验证了用Feynman图计算出来的真空-真空散射振幅 <span class="arithmatex">\(\langle 0|U_I(+\infty,-\infty)|0\rangle\)</span>（去除不连通真空泡），与在Heisenberg绘景下得到的物理真空-物理真空散射振幅 <span class="arithmatex">\(^P\langle 0|U_I'(+\infty,-\infty)|0\rangle^P\)</span> 相同，即：</p>
+<div class="arithmatex">\[
+\lim_{t_\pm\to\pm\infty}\dfrac{\langle 0|T\exp\left(-i\int_{t_-}^{t_+}(\mathcal H_I+\rho(x)\phi(x))\,\mathrm{d}^4x\right)|0\rangle}{\langle 0|T\exp\left(-i\int_{t_-}^{t_+}\mathcal H_I\,\mathrm{d}^4x\right)|0\rangle}=\,^P\langle 0|T\exp\left[-i\int\mathrm{d}^4x\,\rho(x)\phi_H(x)\right]|0\rangle^P
+\]</div>
+<p>那对于其他的散射矩阵元呢？引出下面的问题：</p>
+<blockquote>
+<p>[!question]
+我们前面知道通过将Green函数限制在外线的质壳上能得到散射矩阵的矩阵元。这一关系在新的散射理论中是否仍成立？以四点函数为例：</p>
+<div class="arithmatex">\[
+\langle k_3,k_4|S-1|k_1,k_2\rangle=\prod_{r=1}^4[(-i)(k_r^2-\mu^2)]\tilde G^{(4)}(-k_3,-k_4,k_1,k_2)
+\]</div>
+<p>是否成立？</p>
+</blockquote>
+<p>答案：“<strong>almost</strong>”是对的。我们将在本节中构造“入态”与“出态”(in/out-state)，散射矩阵S的矩阵元等于入态与出态的内积。我将证明其矩阵元在除了一个相关的因子外就等于右侧的式子。这个因子源于所谓的<strong>波函数重整化</strong>。公式的完整证明将留到下一章完成，这实际上就是著名的<strong>LSZ(Lehmann-Symanzik-Zimmermann)约化公式</strong>。
+在开始之前，为了能让式子看起来简单一点，鉴于本节我们将只会用到新的散射理论，因此原先的真空态 <span class="arithmatex">\(|0\rangle\)</span> 与自由场 <span class="arithmatex">\(\phi(x)\)</span> 都不会再用到，因此我们将新的散射理论中的Heisenberg场与物理真空态记为：</p>
+<div class="arithmatex">\[
+\phi(x)\equiv \phi_H(x),\quad |0\rangle\equiv|0\rangle^P
+\]</div>
+<p>现在，我们假设新的散射理论中有一个<strong>物理的单介子态</strong> <span class="arithmatex">\(|p\rangle\)</span>，其满足正交归一关系：</p>
+<div class="arithmatex">\[
+\langle p|p'\rangle=(2\pi)^32\omega_{p}\delta^{(3)}(\vec p-\vec p')
+\]</div>
+<p>其自然地被定义为动量算符 <span class="arithmatex">\(P^\mu\)</span> 的本征态：</p>
+<div class="arithmatex">\[
+P^\mu|p\rangle=p^\mu|p\rangle,\quad p^0=\omega_p=\sqrt{|\vec p|^2+\mu^2}
+\]</div>
+<p>接下来，我来解释波函数重整化的概念。首先考虑单个场的真空-真空矩阵元，由平移不变性：</p>
+<div class="arithmatex">\[
+\langle 0|\phi(x)|0\rangle=\langle 0|\mathrm{e}^{iP\cdot x}\phi(0)\mathrm{e}^{-iP\cdot x}|0\rangle=\langle 0|\phi(0)|0\rangle
+\]</div>
+<p>我要求新的场<strong>在真空态下的平均值是零</strong>。这可以通过下面的变换实现：</p>
+<div class="arithmatex">\[
+\phi(x)\to\phi(x)-\langle0|\phi(0)|0\rangle
+\]</div>
+<p>即直接减去为常数的平均值即可。此外，还可以计算从真空态到单粒子态的跃迁矩阵元：</p>
+<div class="arithmatex">\[
+\langle k|\phi(x)|0\rangle=\mathrm{e}^{ik\cdot x}\langle k|\phi(0)|0\rangle
+\]</div>
+<p>现在，由于 <span class="arithmatex">\(\langle k|\phi(0)|0\rangle\)</span> 应当具有Lorentz不变性，这会让我们想到构造 <span class="arithmatex">\(k^\mu k_\mu\)</span>，但其就是 <span class="arithmatex">\(\mu^2\)</span> 。因此这一表达式应该与 <span class="arithmatex">\(k\)</span> 无关，是一个常数，写为：</p>
+<div class="arithmatex">\[
+\langle k|\phi(0)|0\rangle=\sqrt Z_3
+\]</div>
+<p>这个奇怪的 <span class="arithmatex">\(\sqrt Z_3\)</span> 只是一个约定，其出自Dyson的原始论文。对于单核子态其为 <span class="arithmatex">\(\sqrt Z_2\)</span>。我的第二个要求是新的场的此矩阵元为<span class="arithmatex">\(1\)</span>，因此总的来说，我将场重新取为：</p>
+<div class="arithmatex">\[
+\phi'(x)\equiv Z_3^{-1/2}(\phi(x)-\langle 0|\phi(x)|0\rangle),\quad \langle 0|\phi'(x)|0\rangle=0,\quad \langle k|\phi'(x)|0\rangle=\mathrm{e}^{ik\cdot x}
+\]</div>
+<p>你可以验证的是，在原先的散射理论中，自由标量场是直接满足上面的两个条件的。现在在新的散射理论下，Heisenberg场不满足这两项条件，变换后的场 <span class="arithmatex">\(\phi'(x)\)</span> 称为<strong>重整化场</strong>。
+现在，我们的目标变成要寻找一个算符，其作用在真空态上会产生一个任意的单粒子态 <span class="arithmatex">\(|f\rangle\)</span>。一般的，其可用平面波态展开为：</p>
+<div class="arithmatex">\[
+|f\rangle=\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^32\omega_k}F(\vec k)|k\rangle
+\]</div>
+<p>现在，让我们定义一个函数 <span class="arithmatex">\(f(x)\)</span>：</p>
+<div class="arithmatex">\[
+f(x)=\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^32\omega_k}F(\vec k)\mathrm{e}^{-ik\cdot x}
+\]</div>
+<p>其为满足KG方程的平面波：</p>
+<div class="arithmatex">\[
+(\,\square^2+\mu^2)f(x)=0
+\]</div>
+<p>这样每个“波包”的单粒子态 <span class="arithmatex">\(|f\rangle\)</span> 都对应到一个KG方程的解空间中的函数 <span class="arithmatex">\(f(x)\)</span> ，其通过平面波基下的展开系数 <span class="arithmatex">\(F(\vec k)\)</span> 相联系。可验证的是：</p>
+<div class="arithmatex">\[
+\langle k'|f\rangle=F(\vec k')
+\]</div>
+<p>接下来，我将定义一个奇怪的算符：</p>
+<div class="arithmatex">\[
+\phi'^{f}(t)\equiv i\int\mathrm{d}^3\vec x\,[\phi'(x)\partial_0f(x)-f(x)\partial_0\phi'(x)]
+\]</div>
+<p>首先，由于这里面涉及的算符只有重整化场 <span class="arithmatex">\(\phi'(x)\)</span> ，因此显然有</p>
+<div class="arithmatex">\[
+\langle 0|\phi'^f(x)|0\rangle=0
+\]</div>
+<p>那 <span class="arithmatex">\(\langle k|\phi'^f(x)|0\rangle\)</span> 呢？来算算：</p>
+<div class="arithmatex">\[
+\begin{align}
+\langle k|\phi'^f(t)|0\rangle&amp;=i\int\mathrm{d}^3\vec x\int\dfrac{\mathrm{d}^3\vec k'}{(2\pi)^32\omega_{k'}}F(\vec k')[-i\omega_{k'}\,\mathrm{e}^{-ik'\cdot x}-\mathrm{e}^{-ik'\cdot x}\partial_0]\langle k|\phi'(x)|0\rangle\\
+&amp;=i\int\mathrm{d}^3\vec x\int\dfrac{\mathrm{d}^3\vec k'}{(2\pi)^32\omega_{k'}}F(\vec k')\,\mathrm{e}^{i(k-k')\cdot x}[-i\omega_{k'}-i\omega_{k}]\\&amp;=i\left(\dfrac{-2i\omega_k}{2\omega_k}\right)F(\vec k)=F(\vec k)=\langle k|f\rangle
+\end{align}
+\]</div>
+<p>类似的计算给出：</p>
+<div class="arithmatex">\[
+\langle0|\phi'^f(t)|k\rangle=0
+\]</div>
+<p>因此，新算符 <span class="arithmatex">\(\phi'^f(t)\)</span> 就像一个产生单粒子态 <span class="arithmatex">\(|f\rangle\)</span> 的产生算符一样。最后，对于多粒子态 <span class="arithmatex">\(|n\rangle\)</span>，情况又怎样呢？仍取动量本征态：</p>
+<div class="arithmatex">\[
+P^\mu|n\rangle=p_n^\mu|n\rangle
+\]</div>
+<p>因此</p>
+<div class="arithmatex">\[
+\langle n|\phi'(x)|0\rangle=\mathrm{e}^{ip_n\cdot x}\langle n|\phi'(0)|0\rangle
+\]</div>
+<p>但还不知道 <span class="arithmatex">\(\langle n|\phi'(0)|0\rangle\)</span> 是什么。现在来算 <span class="arithmatex">\(\langle n|\phi'^f(t)|0\rangle\)</span>：</p>
+<div class="arithmatex">\[
+\begin{align}
+\langle n|\phi'^f(t)|0\rangle&amp;=i\int\dfrac{\mathrm{d}^3\vec k'}{(2\pi)^32\omega_{k'}}F(\vec k')(-i\omega_k-iE_n)\langle n|\phi'(0)|0\rangle\int\mathrm{d}^3\vec x\,\mathrm{e}^{-i(k-p_n)\cdot x}\\
+&amp;=\dfrac{\omega_{\vec p_n}+E_n}{2\omega_{\vec p_n}}F(\vec p_n)\langle n|\phi'(0)|0\rangle\mathrm{e}^{-i(\omega_{\vec p_n}-E_n)t}
+\end{align}
+\]</div>
+<p>注意这与单粒子情形的区别。单粒子下 <span class="arithmatex">\(E_k=\omega_k\)</span> ，但多粒子下 <span class="arithmatex">\(\omega_{\vec p_n}&lt;E_n\)</span>，因此其依赖于时间 <span class="arithmatex">\(t\)</span>，结果是振荡的。
+进一步，考察 <span class="arithmatex">\(t\to\pm\infty\)</span> 的极限，考虑一个任意的态 <span class="arithmatex">\(|\psi\rangle\)</span>，其与 <span class="arithmatex">\(\phi'^f(t)|0\rangle\)</span> 的内积为：</p>
+<div class="arithmatex">\[
+\lim_{t\to\pm\infty}\langle\psi|\phi'^f(t)|0\rangle=\lim_{t\to\pm\infty}\sum_n\,\langle\psi|n\rangle\langle n|\phi'^f(t)|0\rangle
+\]</div>
+<p><span class="arithmatex">\(n=0\)</span> 时，<span class="arithmatex">\(\langle 0|\phi'^f(x)|0\rangle=0\)</span> 导致此项为零。<span class="arithmatex">\(n&gt;1\)</span> 时，由于振荡因子的存在，同样利用Riemann-Lebesgue引理知对 <span class="arithmatex">\(n\)</span> 求和的结果为零，因此唯一有贡献的项是单粒子态，即：</p>
+<div class="arithmatex">\[
+\lim_{t\to\pm\infty}\langle\psi|\phi'^f(t)|0\rangle=\sum_k\langle\psi|k\rangle\langle k|\phi'^f(t)|0\rangle=\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^32\omega_k}\langle\psi|k\rangle F(\vec k)=\langle\psi|f\rangle
+\]</div>
+<p>因此，前面说的“新算符 <span class="arithmatex">\(\phi'^f(t)\)</span> 就像一个产生单粒子态 <span class="arithmatex">\(|f\rangle\)</span> 的产生算符一样”需要加上无穷远的渐近条件 <span class="arithmatex">\(t\to\pm\infty\)</span>：</p>
+<div class="arithmatex">\[
+\lim_{t\to\pm\infty}\phi'^f(t)|0\rangle=|f\rangle
+\]</div>
+<p>这看上去和入态和出态的定义很像。所谓的入态与出态，实际上就是在 <span class="arithmatex">\(t\to\pm\infty\)</span> 时能回到平面波态的态，因此这一过程看起来可以用于构造入态与出态。具体说明以及我们遗留下来，关于LSZ公式的证明将在下一章中完成。</p>
+<blockquote>
+<p>[!tip] 自由场的重新考虑
+这一节有一些乱，比如重整化场的条件与一个莫名其妙定义的算符 <span class="arithmatex">\(\phi'^f(t)\)</span>，可能让人有点晕。我们来考虑在旧的散射理论中，这些东西都对应什么。这将有助于你理解并记忆这些东西。
+自由场的平面波展开为：</p>
+<div class="arithmatex">\[
+\phi(x)=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3}(2\omega_{\vec p})}(\,\alpha_{p}\,\mathrm{e}^{-ip\cdot x}+\alpha^\dagger_{p}\,\mathrm{e}^{ip\cdot x}\,)
+\]</div>
+<p>其直接满足了两个条件：</p>
+<div class="arithmatex">\[
+\langle 0|\phi'(x)|0\rangle=0,\quad \langle k|\phi'(x)|0\rangle=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3}(2\omega_{\vec p})}\mathrm{e}^{ip\cdot x}\langle k|p\rangle=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3}(2\omega_{\vec p})}\mathrm{e}^{ip\cdot x}(2\pi)^{3}(2\omega_{\vec p})\delta^{(3)}(\vec p-\vec k)=\mathrm{e}^{ik\cdot x}
+\]</div>
+<p>再来看看那个奇怪的算符 <span class="arithmatex">\(\phi'^f(t)\)</span> 是什么，直接代入定义式得到：</p>
+<div class="arithmatex">\[
+\begin{align}
+\phi'^{f}(t)&amp;\equiv i\int\mathrm{d}^3\vec x\,[\phi(x)\partial_0f(x)-f(x)\partial_0\phi(x)]\\
+&amp;=i\int\mathrm{d}^3\vec x\left[\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_p)}(\alpha_{p}\,\mathrm{e}^{-ip\cdot x}+\alpha^\dagger_{p}\,\mathrm{e}^{ip\cdot x})\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^3(2\omega_k)}F(\vec k)\cdot -i\omega_k\mathrm{e}^{-ik\cdot x}-\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_p)}(-i\omega_p\alpha_{p}\,\mathrm{e}^{-ip\cdot x}+i\omega_p\alpha^\dagger_{p}\,\mathrm{e}^{ip\cdot x})\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^3(2\omega_k)}F(\vec k)\,\mathrm{e}^{-ik\cdot x}\right]\\
+&amp;=\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^3(2\omega_k)^2}\alpha^\dagger_kF(\vec k)\cdot 2\omega_k=\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^3(2\omega_k)}F(\vec k)\,\alpha^\dagger_k
+\end{align}
+\]</div>
+<p>因此其显然是一个单粒子态产生算符，作用于真空态的效果为：</p>
+<div class="arithmatex">\[
+\phi'^f(t)|0\rangle=\int\dfrac{\mathrm{d}^3\vec k}{(2\pi)^3(2\omega_k)}F(\vec k)\,|k\rangle=|f\rangle
+\]</div>
+<p>这正是我们预期的结果。因此，在原先的散射理论下，算符 <span class="arithmatex">\(\phi'^f(t)\)</span> 就是 <span class="arithmatex">\(|f\rangle\)</span> 的产生算符，实际上也不依赖于时间。但在我们新的理论下，Heisenberg场是无法显式求解的，因此我们类比自由场，构造了新理论下的单粒子态产生算符 <span class="arithmatex">\(\phi'^f(t)\)</span>。其不同点便在于只有取无穷远的渐近极限 <span class="arithmatex">\(t\to\pm\infty\)</span> ，此算符才能变成真正的产生算符。</p>
+</blockquote>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["search.highlight", "search.indexes"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

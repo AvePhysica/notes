@@ -1,0 +1,2111 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://AvePhysica.github.io/notes/notes/Coleman%20QFT%20-%20Problem%203/">
+      
+      
+        <link rel="prev" href="../Coleman%20QFT%20-%20Problem%202/">
+      
+      
+        <link rel="next" href="../Coleman%20QFT%20-%20Problem%204/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Coleman QFT - Problem 3 - Luminosity</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Luminosity" class="md-header__button md-logo" aria-label="Luminosity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Luminosity
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Coleman QFT - Problem 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AvePhysica/notes" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Luminosity" class="md-nav__button md-logo" aria-label="Luminosity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Luminosity
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AvePhysica/notes" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    笔记
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    笔记
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Field Theory
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Quantum Field Theory
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%201.%20%E5%9C%A8%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E4%B8%AD%E5%BC%95%E5%85%A5%E7%9B%B8%E5%AF%B9%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 1. 在量子力学中引入相对论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%202.%20%E7%AE%80%E5%8D%95%E7%9A%84%E5%A4%9A%E4%BD%93%E7%90%86%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 2. 简单的多体理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%203.%20%E6%9E%84%E5%BB%BA%E6%A0%87%E9%87%8F%E9%87%8F%E5%AD%90%E5%9C%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 3. 构建标量量子场
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%204.%20%E5%9C%BA%E7%9A%84%E6%AD%A3%E5%88%99%E9%87%8F%E5%AD%90%E5%8C%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 4. 场的正则量子化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%205.%20%E5%AF%B9%E7%A7%B0%E6%80%A7%E4%B8%8E%E5%AE%88%E6%81%92%E5%BE%8B%20I%EF%BC%9A%E6%97%B6%E7%A9%BA%E5%AF%B9%E7%A7%B0%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 5. 对称性与守恒律 I：时空对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%206.%20%E5%AF%B9%E7%A7%B0%E6%80%A7%E4%B8%8E%E5%AE%88%E6%81%92%E5%BE%8B%20II%EF%BC%9A%E5%86%85%E9%83%A8%E5%AF%B9%E7%A7%B0%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 6. 对称性与守恒律 II：内部对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%207.%20%E5%BE%AE%E6%89%B0%E8%AE%BA%E4%B8%8E%E6%95%A3%E5%B0%84%E7%90%86%E8%AE%BA%E5%88%9D%E6%AD%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 7. 微扰论与散射理论初步
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%208.%20%E5%BE%AE%E6%89%B0%E7%90%86%E8%AE%BA%20I%EF%BC%9AWick%20diagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 8. 微扰理论 I：Wick diagram
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%209.%20%E5%BE%AE%E6%89%B0%E7%90%86%E8%AE%BA%20II%EF%BC%9A%E5%8F%91%E6%95%A3%E4%B8%8E%E6%8A%B5%E6%B6%88%E9%A1%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 9. 微扰理论 II：发散与抵消项
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2010.%20%E8%B4%A8%E9%87%8F%E9%87%8D%E6%95%B4%E5%8C%96%E4%B8%8E%E8%B4%B9%E6%9B%BC%E5%9B%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 10. 质量重整化与费曼图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2011.%20%E6%95%A3%E5%B0%84%E7%90%86%E8%AE%BA%20I%EF%BC%9AMandelstam%E5%8F%98%E9%87%8F%E3%80%81CPT%E5%92%8C%E7%9B%B8%E7%A9%BA%E9%97%B4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 11. 散射理论 I：Mandelstam变量、CPT和相空间
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2012.%20%E6%95%A3%E5%B0%84%E7%90%86%E8%AE%BA%20II%EF%BC%9A%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 12. 散射理论 II：应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2013.%20Green%E5%87%BD%E6%95%B0%E4%B8%8EHeisenberg%E5%9C%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 13. Green函数与Heisenberg场
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2014.%20LSZ%E7%BA%A6%E5%8C%96%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 14. LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2015.%20%E9%87%8D%E6%95%B4%E5%8C%96%20I%EF%BC%9A%E7%A1%AE%E5%AE%9A%E6%8A%B5%E6%B6%88%E9%A1%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 15. 重整化 I：确定抵消项
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2016.%20%E9%87%8D%E6%95%B4%E5%8C%96%20II%EF%BC%9A%E6%8E%A8%E5%B9%BF%E4%B8%8E%E5%BB%B6%E4%BC%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 16. 重整化 II：推广与延伸
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2017.%20%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%B2%92%E5%AD%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 17. 不稳定粒子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2018.%20Lorentz%E7%BE%A4%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 18. Lorentz群的表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2019.%20Dirac%E6%96%B9%E7%A8%8B%20I%EF%BC%9A%E6%9E%84%E9%80%A0%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E9%87%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 19. Dirac方程 I：构造拉格朗日量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2020.%20Dirac%E6%96%B9%E7%A8%8B%20II%EF%BC%9A%E6%B1%82%E8%A7%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 20. Dirac方程 II：求解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2021.%20Dirac%E6%96%B9%E7%A8%8B%20III%EF%BC%9A%E9%87%8F%E5%AD%90%E5%8C%96%E4%B8%8EFeynman%E8%A7%84%E5%88%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 21. Dirac方程 III：量子化与Feynman规则
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2022.%20CPT%E4%B8%8EFermi%E5%9C%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 22. CPT与Fermi场
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2023.%20%E6%97%8B%E9%87%8F%E5%9C%BA%E7%90%86%E8%AE%BA%E7%9A%84%E9%87%8D%E6%95%B4%E5%8C%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 23. 旋量场理论的重整化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2024.%20%E5%90%8C%E4%BD%8D%E6%97%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 24. 同位旋
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2025.%20%E5%A4%84%E7%90%86%E6%97%A0%E9%99%90%E5%A4%A7%EF%BC%9A%E6%AD%A3%E8%A7%84%E5%8C%96%E4%B8%8E%E9%87%8D%E6%95%B4%E5%8C%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 25. 处理无限大：正规化与重整化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2026.%20%E7%9F%A2%E9%87%8F%E5%9C%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 26. 矢量场
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2027.%20%E7%94%B5%E7%A3%81%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8%E4%B8%8E%E6%9C%80%E5%B0%8F%E8%80%A6%E5%90%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 27. 电磁相互作用与最小耦合
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Lecture%2028.%20%E6%B3%9B%E5%87%BD%E7%A7%AF%E5%88%86%E4%B8%8EFeynman%E5%9B%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Lecture 28. 泛函积分与Feynman图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%201/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%202/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%205/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%206/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%207/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%208/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%209/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%2010/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%2011/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%2012/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%2013/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%2014/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coleman%20QFT%20-%20Problem%2015/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coleman QFT - Problem 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ultracold Atom Physics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ultracold Atom Physics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lecture%201.%20A%20Single%20Atom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lecture 1. A Single Atom
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lecture%202.%20Two-body%20Interaction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lecture 2. Two-body Interaction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    代码
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    代码
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    README
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Coleman QFT - Problem 3</h1>
+
+<p>前三个题我们尝试对一个<strong>非相对论场论</strong>应用正则量子化步骤。已知理论的拉格朗日量为：</p>
+<div class="arithmatex">\[
+\mathcal L=i\psi^*\partial_0\psi+b\nabla\psi^*\cdot\nabla\psi
+\]</div>
+<p>其中 <span class="arithmatex">\(b\)</span> 是一个实系数。</p>
+<blockquote>
+<p>[!question]
+假设 <span class="arithmatex">\(\mathcal L\)</span> 定义了一个经典场论。
+（1）列出其对应的Euler-Lagrange方程。
+（2）考虑平面波解，即 <span class="arithmatex">\(\psi\sim\mathrm{e}^{i(\vec p\cdot\vec x-\omega t)}\)</span>。求解色散关系 <span class="arithmatex">\(\omega(|\vec p|)\)</span>。
+（3）此理论并不是Lorentz不变的，但是其仍然有时空平移对称性与 <span class="arithmatex">\(U(1)\)</span> 的内部对称性。即下面的变换是对称性：</p>
+<div class="arithmatex">\[
+\psi\to\mathrm{e}^{-i\lambda}\psi,\quad \psi^*\to\mathrm{e}^{i\lambda}\psi^*
+\]</div>
+<p>因此其有守恒的能量、动量与电荷。求解这些守恒量的表达式，用场及其导数的积分式表示。</p>
+</blockquote>
+<p>（1）将 <span class="arithmatex">\(\psi\)</span> 与 <span class="arithmatex">\(\psi^*\)</span> 视为独立的场，对 <span class="arithmatex">\(\psi^*\)</span> 与 <span class="arithmatex">\(\psi\)</span> 变分得到EL方程：</p>
+<div class="arithmatex">\[
+i\partial_0\psi-b\nabla^2\psi=0,\quad i\partial_0\psi^*+b\nabla^2\psi^*=0
+\]</div>
+<p>（2）代入平面波解：</p>
+<div class="arithmatex">\[
+\omega+b|\vec p|^2=0\Rightarrow \omega=-b|\vec p|^2
+\]</div>
+<p>可以看到此色散关系是二次的，因此这的确是一个非相对论理论。
+（3）考虑时空平移对称性，其导致能动张量守恒。能动张量为：</p>
+<div class="arithmatex">\[
+T^{\rho\mu}=\pi_a^\mu\partial^\rho\phi_a-g^{\mu\rho}\mathcal L
+\]</div>
+<p>由于我们只需求对应的守恒量（能量与动量），只需考虑 <span class="arithmatex">\(\mu=0\)</span> 的分量。</p>
+<div class="arithmatex">\[
+\pi^0_\psi=\dfrac{\partial\mathcal L}{\partial(\partial_0\psi)}=i\psi^*,\quad \pi_{\psi^*}^0=0
+\]</div>
+<p>能量为：</p>
+<div class="arithmatex">\[
+T^{00}=i\psi^*\partial^0\psi-\mathcal L=-b\nabla\psi\cdot\nabla\psi^*,\quad H=-b\int\mathrm{d}^3\vec x\,\nabla\psi\cdot\nabla\psi^*
+\]</div>
+<p>动量为：</p>
+<div class="arithmatex">\[
+T^{i0}=i\psi^*\partial^i\psi,\quad \vec P=i\int \mathrm{d}^3\vec x\,\psi^*\nabla\psi
+\]</div>
+<p>考虑 <span class="arithmatex">\(U(1)\)</span> 对称性，其对应的守恒流为：</p>
+<div class="arithmatex">\[
+D\psi=-i\psi,\quad D\psi^*=i\psi^*,\quad J^\mu=\pi_a^\mu D\phi^a-F^\mu=-i\psi\,\pi_\psi^{\mu}+i\psi^*\,\pi_{\psi^*}^\mu
+\]</div>
+<p>取 <span class="arithmatex">\(\mu=0\)</span> ，则</p>
+<div class="arithmatex">\[
+J^0=\psi\psi^*,\quad Q=\int\mathrm{d}^3\vec x\,\psi\psi^*
+\]</div>
+<hr />
+<blockquote>
+<p>[!question]
+接下来我们尝试<strong>量子化</strong>这一理论。
+（1）对体系进行正则量子化。</p>
+<blockquote>
+<p>[!Hint]
+You may be bothered by the fact that the momentum conjugate to <span class="arithmatex">\(\psi^*\)</span> vanishes. Don't be. Because the equations of motion are first-order in time, a complete and independent set of initial-value data consists of <span class="arithmatex">\(\psi\)</span> and its conjugate momentum, <span class="arithmatex">\(i\psi^*\)</span> , alone. It is only on these that you need to impose the canonical quantization conditions.)</p>
+</blockquote>
+<p>（2）<span class="arithmatex">\(\psi^*,\psi\)</span> 可用产生-湮灭算符 <span class="arithmatex">\(a_{\vec p},a^\dagger{\vec p}\)</span> 做平面波展开，利用对易关系确定一个<strong>合适的</strong>展开系数。
+（3）写出能量、动量与内部对称性对应的电荷的表达式，用产生-湮灭算符表示。(Normal-order freely.)</p>
+</blockquote>
+<p>（1）由于 <span class="arithmatex">\(\pi_\psi^0=i\psi^*\)</span>，故<strong>正则量子化</strong>导出的对易关系为：</p>
+<div class="arithmatex">\[
+[\psi(\vec x,t),\psi(\vec y,t)]=[\psi^*(\vec x,t),\psi^*(\vec y,t)]=0\quad [\psi(\vec x,t),\psi^*(\vec y,t)]=\delta^{(3)}(\vec x-\vec y)
+\]</div>
+<p>（2）假设平面波展开式为：</p>
+<div class="arithmatex">\[
+\psi(\vec x,t)=\int\mathrm{d}^3\vec p\,[f(\vec p)a_{\vec p}\,\mathrm{e}^{i(\vec p\cdot\vec x-\omega t)}+g(\vec p)a_{\vec p}^\dagger\,\mathrm{e}^{-i(\vec p\cdot\vec x-\omega t)}]
+\]</div>
+<div class="arithmatex">\[
+\psi^*(\vec x,t)=\int\mathrm{d}^3\vec p\,[f^*(\vec p)a_{\vec p}^\dagger\,\mathrm{e}^{-i(\vec p\cdot\vec x-\omega t)}+g^*(\vec p)a_{\vec p}\,\mathrm{e}^{i(\vec p\cdot\vec x-\omega t)}]
+\]</div>
+<p>产生-湮灭算符的对易关系为：</p>
+<div class="arithmatex">\[
+[a_\vec p,a_{\vec p'}]=[a_\vec p^\dagger,a_{\vec p'}^\dagger]=0,\quad [a_\vec p,a_{\vec p'}^\dagger]=\delta^{(3)}(\vec p-\vec p')
+\]</div>
+<p>则下面对易子为：</p>
+<div class="arithmatex">\[
+[\psi(\vec x,t),\psi^*(\vec y,t)]=\int\mathrm{d}^3\vec p\,[|f(\vec p)|^2\mathrm{e}^{i\vec p\cdot(\vec x-\vec y)}-|g(\vec p)|^2\mathrm{e}^{-i\vec p\cdot(\vec x-\vec y)}]=\delta^{(3)}(\vec x-\vec y)
+\]</div>
+<div class="arithmatex">\[
+[\psi(\vec x,t),\psi(\vec y,t)]=\int\mathrm{d}^3\vec p\,f(\vec p)g(\vec p)\cdot2i\sin(\vec p\cdot(\vec x-\vec y))
+\]</div>
+<p>后面这个对易子实际上者能为我们提供一点信息：即只需取 <span class="arithmatex">\(f(\vec p)g(\vec p)\)</span> 是关于 <span class="arithmatex">\(\vec p\)</span> 的偶函数即可。因此，我们不能通过这些对易关系完全确定 <span class="arithmatex">\(f(\vec p)\)</span> 与 <span class="arithmatex">\(g(\vec p)\)</span> 的形式。下面是一种<strong>合适的</strong>选取：</p>
+<div class="arithmatex">\[
+f(\vec p)=\dfrac{1}{(2\pi)^{3/2}},\quad g(\vec p)=0
+\]</div>
+<p>（3）第一题已经求出三者作为场的积分的表达式。先看能量：</p>
+<div class="arithmatex">\[
+H=-b\int\mathrm{d}^3\vec x\,\nabla\psi\cdot\nabla\psi^*=H=b\int\mathrm{d}^3\vec x\,\psi^*\nabla^2\psi=-b\int\mathrm{d}^3\vec p\,a_{\vec p}^\dagger a_{\vec p}\,|\vec p|^2=\sum_{\vec p}N_{\vec p}\,\omega_{\vec p}
+\]</div>
+<p>这是我们期望的结果。动量为：</p>
+<div class="arithmatex">\[
+\vec P=-i\int\mathrm{d}^3\vec x\,\psi^*\nabla\psi=\int\mathrm{d}^3\vec p\,\vec p\,a_{\vec p}^\dagger a_{\vec p}=\sum_{\vec p}N_{\vec p}\,\vec p
+\]</div>
+<p>电荷为：</p>
+<div class="arithmatex">\[
+Q=\int\mathrm{d}^3\vec x\,\psi^*\psi=\int\mathrm{d}^3\vec p\,a_{\vec p}^\dagger a_{\vec p}=\sum_{\vec p}N_{\vec p}
+\]</div>
+<hr />
+<blockquote>
+<p>[!question]
+在相对论性的复标量场理论中，我们构造了相应于三种分立对称性(CPT)的变换算符 <span class="arithmatex">\(U_C,U_P,\varOmega_T\)</span>。其对标量场的作用为：</p>
+<div class="arithmatex">\[
+\begin{align}U_C^\dagger\,\psi(\vec x,t)\,U_C&amp;=\psi^*(\vec x,t)\\ U_P^\dagger\,\psi(\vec x,t)\,U_P&amp;=\psi(-\vec x,t)\\ \varOmega^{-1}_T\,\psi(\vec x,t)\,\varOmega_T&amp;=\psi(\vec x,-t)\end{align}
+\]</div>
+<p>在上面的非相对论理论中，如果我们仍然采取上面的变换定义，将会只有两种变换是仍存在的，而另一种违反了一些关系而不能存在。请说明这一点。</p>
+</blockquote>
+<p><strong>宇称</strong>：其对复标量场的变换为：</p>
+<div class="arithmatex">\[
+U_P^\dagger\,\psi(\vec x,t)\,U_P=\psi(-\vec x,t),\quad U_P^\dagger\,\psi^*(\vec x,t)\,U_P=\psi^*(-\vec x,t)
+\]</div>
+<p>我们希望宇称对算符的变换关系为：</p>
+<div class="arithmatex">\[
+U_P^\dagger\, a_{\vec p }\,U_P=a_{-\vec p},\quad U_P^\dagger\, a^\dagger_{\vec p }\,U_P=a^\dagger_{-\vec p}
+\]</div>
+<p>做平面波展开：</p>
+<div class="arithmatex">\[
+U_P^\dagger\,\psi(\vec x,t)\,U_P=\int\mathrm{d}^3\vec p\,\dfrac{1}{(2\pi)^{3/2}}a_{-\vec p}\,\mathrm{e}^{i(\vec p\cdot\vec x-\omega t)}=\int\mathrm{d}^3\vec p\,\dfrac{1}{(2\pi)^{3/2}}a_{\vec p}\,\mathrm{e}^{i(-\vec p\cdot\vec x-\omega t)}=\psi(-\vec x,t)
+\]</div>
+<p><span class="arithmatex">\(\psi^*\)</span> 验证同理。因此其的定义是良好的。</p>
+<p><strong>时间反演</strong>：我们希望其对算符的作用为：</p>
+<div class="arithmatex">\[
+\varOmega_T^{-1}\,a_{\vec p}\,\varOmega_T=a_{-\vec p},\quad \varOmega_T^{-1}\,a_{\vec p}^\dagger\,\varOmega_T=a_{-\vec p}^\dagger
+\]</div>
+<p>同样展开验证：（注意反线性算符会将系数变为复共轭）</p>
+<div class="arithmatex">\[
+\varOmega^{-1}_T\,\psi(\vec x,t)\,\varOmega_T=\int\mathrm{d}^3\vec p\,\dfrac{1}{(2\pi)^{3/2}}a_{-\vec p}\,\mathrm{e}^{-i(\vec p\cdot\vec x-\omega t)}=\int\mathrm{d}^3\vec p\,\dfrac{1}{(2\pi)^{3/2}}a_{\vec p}\,\mathrm{e}^{-i(-\vec p\cdot\vec x-\omega t)}=\psi(\vec x,-t)
+\]</div>
+<p><span class="arithmatex">\(\psi^*\)</span> 验证同理。因此其的定义也是良好的。</p>
+<p><strong>电荷共轭</strong>：直接考虑其对对易子的作用：</p>
+<div class="arithmatex">\[
+U_C^\dagger\,[\psi(\vec x,t),\psi^*(\vec y,t)]\,U_C=[\psi^*(\vec x,t),\psi(\vec y,t)]=-\delta^{(3)}(\vec x-\vec y)
+\]</div>
+<p>但是</p>
+<div class="arithmatex">\[
+U_C^\dagger\,[\psi(\vec x,t),\psi^*(\vec y,t)]\,U_C=U_C^\dagger\,\delta^{(3)}(\vec x-\vec y)\,U_C=\delta^{(3)}(\vec x-\vec y)
+\]</div>
+<p>两者是矛盾的，因此电荷共轭不会存在。</p>
+<hr />
+<blockquote>
+<p>[!question]
+考虑一个无质量的自由标量场。其拉格朗日量为：</p>
+<div class="arithmatex">\[
+\mathcal L(x)=\dfrac12\partial^\mu\phi(x)\partial_\mu\phi(x)
+\]</div>
+<p>对其实施一个单参连续<strong>扩张</strong>变换(dilation)，变换由下式定义：</p>
+<div class="arithmatex">\[
+\mathcal D:\phi(x)\to\mathrm{e}^\lambda\phi(\mathrm{e}^\lambda x)
+\]</div>
+<p>（1）说明作用量 <span class="arithmatex">\(S=\int\mathrm{d}^4x\,\mathcal L(x)\)</span> 在此变换下不变，因此此变换是系统的对称性。
+（2）计算扩张变换对应的守恒流 <span class="arithmatex">\(J^\mu\)</span> 与守恒量 <span class="arithmatex">\(Q\)</span>。
+（3）计算 <span class="arithmatex">\(Q\)</span> 与 <span class="arithmatex">\(\phi\)</span> 的对易子，验证其为：</p>
+<div class="arithmatex">\[
+[\phi,Q]=iD\phi
+\]</div>
+<p>（4）计算 <span class="arithmatex">\(Q\)</span> 与 <span class="arithmatex">\(P^\mu\)</span> 的对易子，验证其为：</p>
+<div class="arithmatex">\[
+[P^\mu,Q]=iP^\mu
+\]</div>
+</blockquote>
+<p>（1）作用量的变换为：</p>
+<div class="arithmatex">\[
+\mathcal D:S\to S'=\int\mathrm{d}^4 x\,\dfrac12\partial^\mu(\mathrm{e}^\lambda\phi(\mathrm{e}^\lambda x))\partial_\mu(\mathrm{e}^\lambda\phi(\mathrm{e}^\lambda x))=\int\mathrm{d}^4y\,\mathrm{e}^{-4\lambda}\cdot\dfrac12\mathrm{e}^{2\lambda}\dfrac{\partial\phi(y)}{\partial y_\mu}\cdot\mathrm{e}^{2\lambda}\dfrac{\partial\phi(y)}{\partial y^\mu}=\int\mathrm{d}^4y\,\mathcal L(y)=S
+\]</div>
+<p>故其不变。
+（2）在无穷小变换下：</p>
+<div class="arithmatex">\[
+D\phi=\dfrac{\partial(\mathrm{e}^\lambda\phi(\mathrm{e}^\lambda x))}{\partial\lambda}\bigg|_{\lambda=0}=\phi(x)+x^\mu\partial_\mu\phi(x)
+\]</div>
+<div class="arithmatex">\[
+D\mathcal L=\partial^\mu\phi\,\partial_{\mu}(D\phi)=2\partial^\mu\phi\,\partial_{\mu}\phi+x^\nu\partial^\mu\phi\,\partial_{\mu}\partial_\nu\phi=\dfrac{1}{2}\partial_{\mu}[x^\mu\partial^\nu\phi\,\partial_{\nu}\phi]\Rightarrow F^\mu=\dfrac12x^\mu\partial^\nu\phi\,\partial_{\nu}\phi
+\]</div>
+<p>守恒流即为：</p>
+<div class="arithmatex">\[
+J^\mu=\pi^\mu D\phi-F^\mu=\partial^{\mu}\phi\,(\phi+x^\nu\partial_\nu\phi)-\dfrac 12x^\mu\partial^\nu\phi\,\partial_{\nu}\phi
+\]</div>
+<p>守恒荷：</p>
+<div class="arithmatex">\[
+Q=\int\mathrm{d}^3\vec x\,\left[\partial^{0}\phi\,(\phi+x^\nu\partial_\nu\phi)-\dfrac 12x^0\partial^\nu\phi\,\partial_{\nu}\phi\right]
+\]</div>
+<p>（3）等时对易关系为：</p>
+<div class="arithmatex">\[
+[\phi(\vec y),\pi(\vec x)]=[\phi(\vec y),\dot\phi(\vec x)]=i\delta^{(3)}(\vec x-\vec y),\quad\text{at equal time}
+\]</div>
+<p>由于 <span class="arithmatex">\(Q\)</span> 是守恒量，我们取其时间与 <span class="arithmatex">\(\phi(y)\)</span> 的时间相同。另一方面，我们可以求出 <span class="arithmatex">\(\phi\)</span> 与其对坐标的偏导 <span class="arithmatex">\(\nabla\phi\)</span> 的对易子为零，这可以直接由展开式得到：</p>
+<div class="arithmatex">\[
+[\nabla\phi(\vec x,t),\phi(\vec y,t)]=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[i\vec p\,\mathrm{e}^{i\vec p\cdot(\vec x-\vec y)}+i\vec p\,\mathrm{e}^{-i\vec p\cdot(\vec x-\vec y)}]=0
+\]</div>
+<p>这是因为被积函数是奇函数。计算对易子 <span class="arithmatex">\([\phi(y),Q]\)</span>：</p>
+<div class="arithmatex">\[
+[\phi(y),Q]=\int\mathrm{d}^3\vec x\,i\delta^{(3)}(\vec x-\vec y)\left[\phi(x)+x^\nu\partial_\nu\phi(x)+\pi(x) x^0-x^0\pi(x)\right]=i[\phi(y)+y^\nu\partial_\nu\phi(y)]=iD\phi(y)
+\]</div>
+<p>即证明了 <span class="arithmatex">\([\phi,Q]=iD\phi\)</span>。
+（4）四维动量为：</p>
+<div class="arithmatex">\[
+P^\mu=\int\mathrm{d}^3\vec x\,T^{\mu 0}=\int\mathrm d^3 x\,(\pi(x)\partial^\mu\phi(x)-g^{0\mu}\mathcal L)
+\]</div>
+<p>而</p>
+<div class="arithmatex">\[
+[\partial^\mu\phi(x),Q]=\partial^\mu (iD\phi)=i[2+x^\nu\partial_\nu]\partial^\mu\phi(x)
+\]</div>
+<div class="arithmatex">\[
+[P^\mu,Q]=\int\mathrm{d}^3\vec x\,\left\{i(4+x^\nu\partial_\nu)(\pi(x)\partial^\mu(x))-i(4+x^\nu\partial_\nu)g^{0\mu}\mathcal L\right\}=\int\mathrm{d}^3\vec x\,i(4+x\cdot\partial)T^{\mu 0}
+\]</div>
+<p>第二项可以做分部积分：</p>
+<div class="arithmatex">\[
+i\int\mathrm{d}^3\vec x\,(x\cdot\partial)T^{\mu 0}=ix^0\partial_0P^\mu+i\int\mathrm{d}^3\vec x\,[\partial_i(x^iT^{\mu 0})-3T^{\mu 0}]=-3i P^\mu
+\]</div>
+<p>第一项为零是因为能动张量守恒，第二项为边界项也为零。
+因此</p>
+<div class="arithmatex">\[
+[P^\mu,Q]=4iP^\mu-3i P^\mu=iP^\mu
+\]</div>
+<p>证明了题目的表达式。</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["search.highlight", "search.indexes"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
