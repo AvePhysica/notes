@@ -60,9 +60,9 @@ nav:
 theme:
   name: material
   palette:
-    primary: #9240f7
-    accent: #4da9ff
-    background: #d0aff8
+    primary: #69C8FF
+    accent: #9938FF
+    background: #BE80FF
   features:
     - search.highlight
     - search.indexes
