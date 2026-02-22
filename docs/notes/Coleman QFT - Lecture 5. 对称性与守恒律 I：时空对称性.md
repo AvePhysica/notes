@@ -136,6 +136,7 @@ $$
 $$
 
 故
+
 $$iDq^a=i\dfrac{\partial q^a}{\partial\lambda}\big|_{\lambda=0}=[q^a,Q]$$
 
 ## 5.3 场论中的守恒流
