@@ -51,6 +51,9 @@ nav:
           - Coleman QFT - Problem 13: notes/Coleman QFT - Problem 13.md
           - Coleman QFT - Problem 14: notes/Coleman QFT - Problem 14.md
           - Coleman QFT - Problem 15: notes/Coleman QFT - Problem 15.md
+      - Ultracold Atom Physics: 
+          - Lecture 1. A Single Atom: notes/Lecture 1. A Single Atom.md
+          - Lecture 2. Two-body Interaction: notes/Lecture 2. Two-body Interaction.md
   - 代码:
       - README: code/README.md
 
