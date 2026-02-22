@@ -27,7 +27,7 @@ $$
 确定。其可以视为单点Green函数，即：
 
 <div align="center">
-  <img src="Pasted image 20260108211406.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260108211406.png" width="500">
 </div>
 
 $A$ 可以用 $g$ 的幂级数展开。这是因为当 $g_0=0$ 时，初始理论就是自由场的Lagrangian，故自然满足所有重整化条件，因此也不会存在抵消项。故
@@ -39,25 +39,25 @@ $$
 抵消项 $A\phi'$ 对应的Feynman图可表示为：
 
 <div align="center">
-  <img src="Pasted image 20260108211925.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260108211925.png" width="500">
 </div>
 
 现在，我们假设已经确定了所有抵消项，直至 $O(g^{n-1})$ 阶的值。现在来考虑 $O(g^n)$ 阶的重整化条件，其可以分为阴影内有一个顶点、以及有不止一个顶点的两部分。前者正是 $A_n\phi'$，而后者则保证每个顶点的阶数都是 $O(g^{n-1})$ 及以下的，因此根据假设是已知的，这样就可以解出 $A_n$：
 
 <div align="center">
-  <img src="Pasted image 20260108212441.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260108212441.png" width="500">
 </div>
 
 这一重整化条件还给了我们另一启示，考虑具有下面结构的图：
 
 <div align="center">
-  <img src="Pasted image 20260108212600.png" width="300">
+  <img src="../../images/qft_images/Pasted%20image%2020260108212600.png" width="500">
 </div>
 
 我将其称为“蝌蚪图”。重整化条件给出所有这种图的求和为零，这是因为：
 
 <div align="center">
-  <img src="Pasted image 20260108212741.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260108212741.png" width="500">
 </div>
 
 ## 15.2 Kallen-Lehmann 谱表示
@@ -189,7 +189,7 @@ $$
 这个函数的解析形式是比较有趣的。如果我们不考虑小虚部 $i\epsilon$，第一项存在在 $p^2=\mu^2$ 的极点，而第二项则存在一条实轴上的割线，割线上满足 $\sigma(a^2)\ne 0$，因此起点为 $\mu^2+\eta$。小虚部 $i\epsilon$ 代表取割线上方的解析分支。如下图所示。
 
 <div align="center">
-  <img src="Pasted image 20260108232626.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260108232626.png" width="500">
 </div>
 
 >[!tip] 补充
@@ -203,19 +203,19 @@ $$
 实际操作之前，我先定义一种特别的Green函数，称为**单粒子不可约Green函数** (one-particle irreducible Green's function)，用 1PI 表示：
 
 <div align="center">
-  <img src="Pasted image 20260109101123.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260109101123.png" width="500">
 </div>
 
 其定义为所有满足**不能通过剪断一根线变成不连通图**条件的连通图之和。同时，按照惯例，1PI 图的表达式不包含外线传播子与能动量守恒的delta函数。对于有两根外线的1PI图，其表达式记为 $-i\tilde\Pi'(p^2)$：
 
 <div align="center">
-  <img src="Pasted image 20260109102530.png" width="300">
+  <img src="../../images/qft_images/Pasted%20image%2020260109102530.png" width="500">
 </div>
 
 现在，两点Green函数可以拆成下面的级数形式：
 
 <div align="center">
-  <img src="Pasted image 20260109102604.png" width="700">
+  <img src="../../images/qft_images/Pasted%20image%2020260109102604.png" width="500">
 </div>
 
 记 $\tilde D(p^2)=\dfrac{i}{p^2-\mu^2+i\epsilon}$ 为自由介子场传播子，则
@@ -245,7 +245,7 @@ $$
 基本顶点为：
 
 <div align="center">
-  <img src="Pasted image 20260109103536.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260109103536.png" width="500">
 </div>
 
 （用了导数相互作用的技巧）类似的，$B,C$ 可以表示为 $g$ 的幂级数：
@@ -269,8 +269,8 @@ $$
 这样我们就给出了 $B,C$ 的确定方案。对于核子重整化条件4,5，其与介子重整化的处理方法是完全相同的。核子的传播子与自能函数表示为：
 
 <div align="center">
-  <img src="Pasted image 20260109104624.png" width="30%" style="display: inline-block;">
-  <img src="Pasted image 20260109104636.png" width="29%" style="display: inline-block;">
+  <img src="../../images/qft_images/Pasted%20image%2020260109104624.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260109104636.png" width="500">
 </div>
 
 与之有关的抵消项为：
@@ -292,7 +292,7 @@ $$
 前面都只是形式上的讨论，我们来实际算一算最低阶下（即 $O(g^2)$ 阶）的介子自能函数：
 
 <div align="center">
-  <img src="Pasted image 20260109232105.png" width="800">
+  <img src="../../images/qft_images/Pasted%20image%2020260109232105.png" width="500">
 </div>
 
 上面的两个图有贡献，我们将其写为：
@@ -362,7 +362,7 @@ $$
 接下来，你当然可以直接积分。但有一个奇妙的trick，它被称为**Wick旋转**。考虑被积函数在 $q_0$ 平面上的解析性质，$|\vec q|^2-a$ 可以大于零，也可以小于零，但不管哪一种，我们都可以将沿着实轴 $\mathrm{Re}\;q_0$ 的积分路径旋转至沿虚轴进行，如下图所示：
 
 <div align="center">
-  <img src="Pasted image 20260110000128.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260110000128.png" width="500">
 </div>
 
 这里所谓的“旋转”实际上是取了大圆弧围道，使得围道**内部无极点**。这样的话，可以定义：

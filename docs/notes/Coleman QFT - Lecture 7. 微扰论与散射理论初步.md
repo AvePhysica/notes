@@ -47,7 +47,7 @@ $$
 其中 $T$ 刻画势场存在的时间，而 $\Delta$ 用来描述势逐渐打开与关闭的时间尺度。$f$ 的具体行为可以参考下面的图示：
 
 <div align="center">
-  <img src="Pasted image 20251124212431.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251124212431.png" width="500">
 </div>
 
 我们有理由相信，在 $f(t,T,\Delta)H_I$ 下的含时散射问题在取 $T\to\infty,\Delta\to\infty$ 下会回到原先的定态散射情形。但是，含时散射能让我们方便地描述入射与出射平面波态 $|\vec k_i\rangle,|\vec k_f\rangle$。同时，散射矩阵即为：

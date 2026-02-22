@@ -235,7 +235,7 @@ $$
 由于已经得到了 $A^0$，故 $\partial_iA_0$ 也是已知的，故可得 $\partial_0 A_i$。这样就证明了 $\{A_i,F^{0i}\}$ 构成了Proca方程的IVD。我们可以将其与之前的理论相对比：
 
 <div align="center">
-  <img src="Pasted image 20260216105540.png" width="800">
+  <img src="../../images/qft_images/Pasted%20image%2020260216105540.png" width="500">
 </div>
 
 于是，Hamiltonian则为：
@@ -556,14 +556,14 @@ $$
 这就像我们犯了两个错误，但它们却恰好能互相抵消，所以说我们是幸运的。在这里，我还没有办法说明这个巧合是如何发生的，证明这一点需要用到泛函积分进行量子化的方法。这也是泛函积分的优势所在。但在那之前，我们先暂且认为这个传播子是正确的。于是可以写出该理论的Feynman规则：
 
 <div align="center">
-  <img src="Pasted image 20260216145033.png" width="800">
+  <img src="../../images/qft_images/Pasted%20image%2020260216145033.png" width="500">
 </div>
 
 下面我们运用这些规则来计算一个例子：
 **Compton散射（有质量光子）**：康普顿散射指光子与电子发生的弹性散射。这里取 $\varGamma=1$，因为光子是极矢量。$O(e^2)$ 的Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260216145437.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260216145437.png" width="500">
 </div>
 
 则散射振幅为：

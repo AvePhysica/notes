@@ -372,7 +372,7 @@ $$
 对于该散射过程，我们要缩并掉两个核子场。由于对称性，缩并 $\bar\psi_2\psi_1$ 和 $\psi_2\bar\psi_1$ 的贡献是一样的，这去掉了前面的系数 $1/2!$，相当于去掉Feynman图上顶点的编号。对应的Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260127162006.png" width="700">
+  <img src="../../images/qft_images/Pasted%20image%2020260127162006.png" width="500">
 </div>
 
 矩阵元为：
@@ -400,7 +400,7 @@ $$
 来看看其与核子-介子散射有什么不同。同样的，画出其Feynman图：
 
 <div align="center">
-  <img src="Pasted image 20260127163421.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260127163421.png" width="500">
 </div>
 
 对应的表达式就是：
@@ -423,19 +423,19 @@ $$
 由于Fermi场的非对易关系以及矩阵运算不能随意交换顺序，因此Feynman规则更为复杂。将分成三个部分：
 
 <div align="center">
-  <img src="Pasted image 20260127174213.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260127174213.png" width="500">
 </div>
 
 首先是因子，内线对应于传播子，根据其是介子线还是核子线，写下标量传播子与Dirac传播子。顶点处写下 $-ig\varGamma$，以及动量守恒的delta函数。而外线则根据其出射与入射，以及核子与反核子写下对应的旋量。
 
 <div align="center">
-  <img src="Pasted image 20260127174810.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260127174810.png" width="500">
 </div>
 
 第二部分是将矩阵按一定的顺序组装起来。由于基本顶点有一根朝内的核子线与一根朝外的核子线，因此核子线要么首尾连接至外线，形成一条**核子链**，要么成环。对前一种情况，我们要从整根线的最前端开始，逆着箭头的方向依次写下各部分的因子。以下图为例：
 
 <div align="center">
-  <img src="Pasted image 20260127195852.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260127195852.png" width="500">
 </div>
 
 我们从(1)开始，沿Fermi线的逆方向一直写到(7)。其对应于表达式
@@ -447,7 +447,7 @@ $$
 对于后一种成环的情况，以下图为例：
 
 <div align="center">
-  <img src="Pasted image 20260127200320.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260127200320.png" width="500">
 </div>
 
 对应的表达式为
@@ -460,7 +460,7 @@ $$
 我们还是回到原来的核子-介子散射的计算上来。将自旋态合进旋量中，入射核子态记为 $u$，出射核子态记为 $u'$。同时，为了演示具体的计算，假设 $\varGamma=i\gamma_5$。$O(g^2)$ 的Feynman图实际上有两张：
 
 <div align="center">
-  <img src="Pasted image 20260127202431.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260127202431.png" width="500">
 </div>
 
 两幅图中都只有一根核子链，根据Feynman规则可以写出
@@ -485,7 +485,7 @@ $$
 $O(g^2)$ 阶的Feynman图是容易画出来的：
 
 <div align="center">
-  <img src="Pasted image 20260127203439.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260127203439.png" width="500">
 </div>
 
 每幅图中都有两根核子链，我可以写下其Feynman振幅，除了一个**符号问题**：

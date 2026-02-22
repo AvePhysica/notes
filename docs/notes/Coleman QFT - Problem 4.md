@@ -4,8 +4,8 @@
 >其中图二代表了一个常数 $-\alpha+i\beta$。我们通过其作用于真空态上的归一化关系确定了其实部 $\alpha$，本题请通过直接求解图二验证这一点。
 
 <div align="center">
-  <img src="Pasted image 20251128134719.png" width="30%" style="display: inline-block;">
-  <img src="Pasted image 20251128134745.png" width="30%" style="display: inline-block;">
+  <img src="../../images/qft_images/Pasted%20image%2020251128134719.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251128134745.png" width="500">
 </div>
 
 其表达式为：

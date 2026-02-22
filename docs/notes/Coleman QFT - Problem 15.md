@@ -69,7 +69,7 @@ $$
 基本顶点Feynman图：
 
 <div align="center">
-  <img src="Pasted image 20260218145220.png" width="300">
+  <img src="../../images/qft_images/Pasted%20image%2020260218145220.png" width="500">
 </div>
 
 有
@@ -138,7 +138,7 @@ $$
  $O(g^2)$ 阶的介子-介子散射的Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260218210613.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260218210613.png" width="500">
 </div>
 
 最后一张图是抵消项，四个图之和在对称点处应互相抵消，也就是说

@@ -24,7 +24,7 @@ $$
 相互作用是包含导数的，但我们可以采取在[[Coleman QFT - Lecture 14. LSZ约化公式]]中得到的有效方法。简单认为 $\mathcal H_I=-\mathcal L_I$，并且做替换 $\partial_\mu\to ip_\mu$。我们将相互作用项分为两类。首先，对于项 $g(A\partial_\mu A\partial^\mu A-\frac12 \mu^2A^3)$，其基本顶点为：
 
 <div align="center">
-  <img src="Pasted image 20260107125732.png" width="700">
+  <img src="../../images/qft_images/Pasted%20image%2020260107125732.png" width="500">
 </div>
 
 表达式即：
@@ -36,7 +36,7 @@ $$
 当然，动量守恒要求 $k_1+k_2+k_3=0$。其到 $O(g^2)$ 的双介子弹性散射图为：
 
 <div align="center">
-  <img src="Pasted image 20260107125936.png" width="300">
+  <img src="../../images/qft_images/Pasted%20image%2020260107125936.png" width="500">
 </div>
 
 表达式为：
@@ -62,7 +62,7 @@ $$
 其次，对于项 $g^2(\frac12 A^2\partial_\mu A\partial^\mu A-\frac18\mu^2A^4)$，其基本顶点为：
 
 <div align="center">
-  <img src="Pasted image 20260107131508.png" width="700">
+  <img src="../../images/qft_images/Pasted%20image%2020260107131508.png" width="500">
 </div>
 
 表达式为：

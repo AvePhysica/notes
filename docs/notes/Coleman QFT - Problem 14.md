@@ -154,7 +154,7 @@ $$
 (a) 过程对应的Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260215155740.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260215155740.png" width="500">
 </div>
 
 注意，这里由于不存在电荷为2的中间核子，因此只有第二幅图有贡献。即
@@ -172,7 +172,7 @@ $$
 而 (c) 过程则两幅图均有贡献：
 
 <div align="center">
-  <img src="Pasted image 20260215160059.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260215160059.png" width="500">
 </div>
 
 因此
@@ -213,7 +213,7 @@ $$
 首先来看核子-核子散射 $N+N\to N+N$。两个理论均给出Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260215164528.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260215164528.png" width="500">
 </div>
 
 Theory 1：
@@ -243,7 +243,7 @@ $$
 再来看介子-核子散射 $\phi+N\to \phi+N$，第二个理论中的二次耦合项会有额外的贡献。我们画出Feynman图：
 
 <div align="center">
-  <img src="Pasted image 20260215165657.png" width="800">
+  <img src="../../images/qft_images/Pasted%20image%2020260215165657.png" width="500">
 </div>
 
 Theory 1：

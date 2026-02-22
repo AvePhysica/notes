@@ -246,14 +246,14 @@ $$
 由Wick定理，后面的时序积等于所有缩并的正规序积之和。接下来，我画出一个图来代表没有缩并的正规序 $:\psi_1^*\psi_1\phi_1\psi_2^*\psi_2\phi_2:$
 
 <div align="center">
-  <img src="Pasted image 20251128092507.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020251128092507.png" width="500">
 </div>
 
 这个图包含了两个所谓的**基本顶角**。每个顶角均由一根不带箭头的 $\phi$ 线与两根带箭头的 $\psi,\psi^*$ 线连接到同一顶点构成。其中向外的的箭头代表 $\psi^*$ 线，而向内箭头代表 $\psi$ 线。实际上，对于 $g^n$ 阶展开式，其无缩并的正规序积由 $n$ 个不相连的基本顶角表示。
 那么，如何表示缩并呢？只需将缩并的两个场对应的线**相连**即可。比如 $\phi$ 场缩并的正规序积 $:\psi_1^*\psi_1\overset{|\Large \mkern-2mu{}^{\overline{\quad\quad}}\mkern-2mu\normalsize |}{\phi_1 \psi_2^*\psi_2\phi_2}:$ 由下面的图表示：
 
 <div align="center">
-  <img src="Pasted image 20251128101128.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020251128101128.png" width="500">
 </div>
 
 其包含的场算符为 $:\psi_1^*\psi_1\psi^*_2\psi_2:$ ，这代表核子（与反核子）的弹性散射。注意 $\psi$ 含有核子的湮灭算符与反核子的产生算符，而 $\psi^*$ 则相反，因此其对以下的过程有贡献（矩阵元非零）：
@@ -280,7 +280,7 @@ $$
 其可以用下面的图表示：
 
 <div align="center">
-  <img src="Pasted image 20251128103328.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020251128103328.png" width="500">
 </div>
 
 此时剩下的场算符为 $:\psi_1\phi_1\psi^*_2\phi_2:$ ，其对以下的过程有贡献：
@@ -294,7 +294,7 @@ $$
 上面画出的图称为**Wick图**。我们知道，缩并在此情境下只允许上面的两种方式。因此，我们只能在图上将无箭头的 $\phi$ 线相连，或者将同向箭头的 $\psi,\psi^*$ 线相连。可以发现，Wick展开式中的项与“合法的”Wick图是**一一对应**的。因此，如果要求解Dyson级数中的某一特定阶的项（比如 $g^n$ 阶项），我们只需画出所有含 $n$ 个顶点的“合法的”Wick图，并将其对应的Wick展开式相加即可。我们还可以对更复杂的缩并画出对应的Wick图，比如：
 
 <div align="center">
-  <img src="Pasted image 20251128104336.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251128104336.png" width="500">
 </div>
 
 其对应的Wick展开式实际上是一个纯数。
@@ -310,7 +310,7 @@ $$
 这两者确实在Wick展开式中是不同的项。因此下面两幅图都有贡献，是**不同**的图：
 
 <div align="center">
-  <img src="Pasted image 20251128110451.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020251128110451.png" width="500">
 </div>
 
 然而，我们最后的积分关于 $x_1$ 与 $x_2$ 是对称的，因此上面两项对总散射振幅有相同的贡献。更一般的，对于任意的Wick图，如果我们只是交换序号，其贡献显然不变。为此，我们希望去掉这种冗余度，将顶点上的标记“擦掉”。为此，我们先定义如下的量：
@@ -329,7 +329,7 @@ $$
 现在，我们要将顶点擦掉，也就是同时考虑 $n(D)!$ 个具有相同结构的Wick图。然而，这些Wick图中可能存在**相同**的图。比如看下面的两幅图：
 
 <div align="center">
-  <img src="Pasted image 20251128111713.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251128111713.png" width="500">
 </div>
 
 其只是相当于对整个图做了一个旋转，因此对应于Wick展开式中相同的图，**我们不能重复计算**。现在记对于图 $D$，其存在 $S(D)$ 种置换顶点标记可以得到相同的Wick图。故与图 $D$ 有相同结构的不同的图共有 $\dfrac{n(D)!}{S(D)}$ 个。因此，这一组与图 $D$ 有相同结构的图的总贡献为：
@@ -342,7 +342,7 @@ $$
 任意一个不连通的图都可以分解成几个连通的部分，如下图是一个可被分为三个连通部分的不连通图：
 
 <div align="center">
-  <img src="Pasted image 20251128112627.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251128112627.png" width="500">
 </div>
 
 接下来，我先直接陈述一个奇妙的定理：
@@ -391,8 +391,8 @@ $$
 其中只含一个 $\phi$ 场。因此其基本顶角仅含一根不带箭头的 $\phi$ 线。我们可以尝试画一画其连通的Wick图。事实上，其只有两个连通图：
 
 <div align="center">
-  <img src="Pasted image 20251128134719.png" width="30%" style="display: inline-block;">
-  <img src="Pasted image 20251128134745.png" width="30%" style="display: inline-block;">
+  <img src="../../images/qft_images/Pasted%20image%2020251128134719.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251128134745.png" width="500">
 </div>
 
 因为连接两个顶点只有右图所示的一种方式，且其已经没有外线用来连接其他图。这两幅图分别记为 $D_1,D_2$，其对应算符为：

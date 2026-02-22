@@ -331,7 +331,7 @@ $$
 这里，每一项 $\displaystyle\int\mathrm{d}^4x_i\,\mathrm{d}^4y_i(iJ(x_i))\Delta_F(x_i-y_i)(iJ(y_i))$ 代表中间一个传播子内线，两侧源作为内线端点的图。因此，求和的 $n$ 阶项就对应于 $n$ 根不连通内线的Feynman图，例如：
 
 <div align="center">
-  <img src="Pasted image 20260220190158.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260220190158.png" width="500">
 </div>
 
 接下来，相互作用项对应于
@@ -355,22 +355,22 @@ $$
 因此其会敲掉三个源顶点，使其相连。这又有两种可能：
 
 <div align="center">
-  <img src="Pasted image 20260220191049.png" width="60%" style="display: inline-block;">
-  <img src="Pasted image 20260220191101.png" width="18%" style="display: inline-block;">
+  <img src="../../images/qft_images/Pasted%20image%2020260220191049.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260220191101.png" width="500">
 </div>
 
 这将导致右图所示的顶点。另一种可能是：
 
 <div align="center">
-  <img src="Pasted image 20260220191219.png" width="60%" style="display: inline-block;">
-  <img src="Pasted image 20260220191233.png" width="18%" style="display: inline-block;">
+  <img src="../../images/qft_images/Pasted%20image%2020260220191219.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260220191233.png" width="500">
 </div>
 
 对于二阶项，则相当于有两个顶点。可能的Feynman图就是
 
 <div align="center">
-  <img src="Pasted image 20260220200023.png" width="15%" style="display: inline-block;">
-  <img src="Pasted image 20260220200036.png" width="30%" style="display: inline-block;">
+  <img src="../../images/qft_images/Pasted%20image%2020260220200023.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260220200036.png" width="500">
 </div>
 
 我不想谈论那些麻烦的组合问题，这里只是演示泛函积分是如何导出Feynman规则的。相互作用通过作用于 $J(x)$ 上得到顶点处的delta函数：

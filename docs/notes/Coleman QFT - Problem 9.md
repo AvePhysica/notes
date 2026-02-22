@@ -79,7 +79,7 @@ $$
 后面的Green函数可以用Feynman图计算。由于我们最终只要 $\sigma(q^2)$ 到 $O(g^2)$ 阶的结果，因此关于 $\tilde G'$ 只需计算至 $O(g)$ 阶即可，这实际上就是一个基本顶点：
 
 <div align="center">
-  <img src="Pasted image 20260114115828.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260114115828.png" width="500">
 </div>
 因此
 
@@ -137,12 +137,12 @@ $$
 
 到 $O(g^3)$ 阶的图为：
 <div align="center">
-  <img src="Pasted image 20260114123558.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020260114123558.png" width="500">
 </div>
 主要来计算第二个图：
 
 <div align="center">
-  <img src="Pasted image 20260114123629.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020260114123629.png" width="500">
 </div>
 
 $$

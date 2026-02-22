@@ -51,7 +51,7 @@ $$
 相关的Feynman图为：
 
 <div align="center">
-  <img src="Pasted image 20260209121123.png" width="700">
+  <img src="../../images/qft_images/Pasted%20image%2020260209121123.png" width="500">
 </div>
 
 对应的表达式为：

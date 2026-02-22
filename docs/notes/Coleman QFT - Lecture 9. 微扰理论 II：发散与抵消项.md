@@ -77,11 +77,11 @@ $$
 
 将涉及到三个连通Wick图：
 <div align="center">
-  <img src="Pasted image 20251203111548.png" width="30%" style="display: inline-block;">
-  <img src="Pasted image 20251203111559.png" width="27.8%" style="display: inline-block;">
+  <img src="../../images/qft_images/Pasted%20image%2020251203111548.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251203111559.png" width="500">
 </div>
 <div align="center">
-  <img src="Pasted image 20251203111609.png" width="500">
+  <img src="../../images/qft_images/Pasted%20image%2020251203111609.png" width="500">
 </div>
 其中前两个我们已经在Model 1中遇到过了，而第三个为抵消项对应的Wick图。其分别代表的算符为：
 
@@ -259,7 +259,7 @@ $$
 
 即如下图所示。
 <div align="center">
-  <img src="Pasted image 20251203171455.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020251203171455.png" width="500">
 </div>
 
 >[!tip]

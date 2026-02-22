@@ -5,13 +5,13 @@
 我们仍在Model 3下讨论。我将定义一个四点函数 $\tilde G^{(4)}(k_1,k_2,k_3,k_4)$，其定义为所有有四条介子外线的图代表的表达式之和。其将包含微扰的所有阶数。如下图所示：
 
 <div align="center">
-  <img src="Pasted image 20251228224927.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020251228224927.png" width="500">
 </div>
 
 我将采取如下的定义：所有的图包含了连通与不连通的图，每个图包含所有的delta函数，以及所有传播子（包括外线），外线的动量均规定为向内，并且要对内线动量积分。于是，上面的四点函数 $\tilde G^{(4)}(k_1,k_2,k_3,k_4)$ 的按阶数展开的前几项为：
 
 <div align="center">
-  <img src="Pasted image 20251228225157.png" width="600">
+  <img src="../../images/qft_images/Pasted%20image%2020251228225157.png" width="500">
 </div>
 
 可以看到，其的确是包含 $O(g^0)$ 阶的图，而此外最低阶就是 $O(g^4)$ 了。我们将对应的表达式写出来：
@@ -30,7 +30,7 @@ $$
 更一般的多点函数 $\tilde G^{(n)}(k_i)$ 定义如下：
 
 <div align="center">
-  <img src="Pasted image 20251228232423.png" width="800">
+  <img src="../../images/qft_images/Pasted%20image%2020251228232423.png" width="500">
 </div>
 
 即所有有 $n$ 条外线的图对应表达式之和。进一步的，我们可以定义其傅里叶变换后的函数为：
@@ -50,7 +50,7 @@ $$
 回忆我们对Model 1的处理（参考[[Coleman QFT - Lecture 8. 微扰理论 I：Wick diagram]]），对于场与势的作用，其基本顶点可表示为：
 
 <div align="center">
-  <img src="Pasted image 20251229160218.png" width="350">
+  <img src="../../images/qft_images/Pasted%20image%2020251229160218.png" width="500">
 </div>
 
 即一个单独的顶点连上一根介子线。其代表的振幅为：

@@ -139,7 +139,7 @@ $$
 同时，对于一个**类空矢量**，**存在一个Lorentz变换可以将其变为其相反的矢量**。具体可参照下面的双曲面图：
 
 <div align="center">
-  <img src="Pasted image 20251118223609.png" width="300">
+  <img src="../../images/qft_images/Pasted%20image%2020251118223609.png" width="500">
 </div>
 
 类时矢量处在上下的双曲面（灰色）上，其是不连通的，因此无法通过Lorentz变换将其从一支变到另一支上。而类时矢量处在侧面的双曲面上，其完全连通，因此可以有Lorentz变换得到其相反矢量。即

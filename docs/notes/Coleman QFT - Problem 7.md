@@ -50,7 +50,7 @@ $$
 衰变过程 $A\to B+C+D$ 的最低阶Feynman振幅为：
 
 <div align="center">
-  <img src="Pasted image 20260102111709.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260102111709.png" width="500">
 </div>
 
 三粒子末态的态密度公式为：
@@ -86,7 +86,7 @@ $$
 由这两个条件，我们可以画出 $(E_B,E_C)$ 平面上的允许区域：
 
 <div align="center">
-  <img src="Pasted image 20260102112330.png" width="400">
+  <img src="../../images/qft_images/Pasted%20image%2020260102112330.png" width="500">
 </div>
 
 此区域的面积为 $m^2/8$。因此衰变率为：
