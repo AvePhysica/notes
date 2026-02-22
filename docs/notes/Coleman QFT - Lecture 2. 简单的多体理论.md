@@ -30,7 +30,6 @@ $$
 |\vec p_1\rangle\equiv a^\dagger_{\vec p}|0\rangle,\quad |\vec p_1,\vec p_2\rangle\equiv a^\dagger_{\vec p_1}a^\dagger_{\vec p_2}|0\rangle
 $$
 
->[!example]
 >从产生-湮灭算符的对易关系我们可以推导出多粒子态的正交归一关系。首先我们约定真空态是归一的：$$\langle 0|0\rangle=1$$
 >**单粒子态**：$$\langle \vec p'|\vec p\rangle=\langle 0|a_{\vec p}a_{\vec p}^\dagger|0\rangle=\delta^{(3)}(\vec p-\vec p')$$
 >**双粒子态**：$$\langle \vec p_1',\vec p_2'|\vec p_1,\vec p_2\rangle=\langle 0|a_{\vec p_1'}a_{\vec p_2'}a_{\vec p_1}^\dagger a_{\vec p_2}^\dagger|0\rangle=\delta^{(3)}(\vec p_1'-\vec p_1)\delta^{(3)}(\vec p_2'-\vec p_2)+\delta^{(3)}(\vec p_1'-\vec p_2)\delta^{(3)}(\vec p_2'-\vec p_1)$$
@@ -72,24 +71,25 @@ $$
 $$
 U(\Lambda)\alpha^\dagger(p)U^\dagger(\Lambda)=\alpha^\dagger
 (\Lambda p)$$
+
 对其他任意的多粒子态均可验证上面的变换式。取其共轭式即得湮灭算符的变换关系：
-$$
 
+$$
 U(\Lambda)\alpha(p)U^\dagger(\Lambda)=\alpha(\Lambda^{-1}p)
-
 $$
-> [!check]
-> 对任意的多粒子态：$$U(\Lambda)|p_1,\cdots,p_n\rangle=U(\Lambda)\alpha^\dagger(p_1)\cdots\alpha^\dagger(p_n)|0\rangle=\alpha^\dagger(\Lambda p_1)\cdots\alpha^\dagger(\Lambda p_n)|0\rangle=|\Lambda p_1,\cdots,\Lambda p_n\rangle$$
+
+> 对任意的多粒子态：
+>
+> $$U(\Lambda)|p_1,\cdots,p_n\rangle=U(\Lambda)\alpha^\dagger(p_1)\cdots\alpha^\dagger(p_n)|0\rangle=\alpha^\dagger(\Lambda p_1)\cdots\alpha^\dagger(\Lambda p_n)|0\rangle=|\Lambda p_1,\cdots,\Lambda p_n\rangle$$
 
 顺便一提，平移变换算符为 $U(a)=\mathrm{e}^{iP\cdot a}$，其对态的变换为：
-$$
 
+$$
 U(a)|0\rangle=|0\rangle,\quad U(a)|p_1,\cdots,p_n\rangle=\exp\left(ia\cdot\sum_{i=1}^np_i\right)|p_1,\cdots,p_n\rangle
-
 $$
+
 可推导出产生-湮灭算符的变换关系：
+
 $$
-
 \mathrm{e}^{iP\cdot a}\alpha^\dagger(p)\mathrm{e}^{-iP\cdot a}=\mathrm{e}^{ip\cdot a}\alpha^\dagger(p),\quad \mathrm{e}^{iP\cdot a}\alpha(p)\mathrm{e}^{-iP\cdot a}=\mathrm{e}^{-ip\cdot a}\alpha(p)
-
 $$
