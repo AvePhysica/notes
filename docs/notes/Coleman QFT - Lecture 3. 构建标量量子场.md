@@ -19,11 +19,32 @@ $$
 
 现在，我们只有一组**标量场** $\phi^a(x)$。先假设这些 $\phi^a(x)$ 都是互相对易的。先假定其必须满足以下的条件：
 
-1. Casualty：$$[\phi^a(x),\phi^a(y)]=0,\quad \text{if $(x-y)^2<0$}$$
-2. Hemitian：$$ \phi^a(x)=\phi^a(x)^\dagger$$
-3. Translations：$$ \mathrm{e}^{-iP\cdot y}\phi^a(x)\mathrm{e}^{iP\cdot y}=\phi^a(x-y)$$
-4. Lorentz Transformations：$$U(\Lambda)^\dagger\phi^a(x)U(\Lambda)=\phi^a(\Lambda^{-1} a)$$
-5. Linear combination assumption：$$\phi^a(x)=\int \mathrm{d}^3\vec p\,[F^a_{\vec p}(x)a_{\vec p}+G^a_{\vec p}(x)a^\dagger_{\vec p}\,]$$
+1. Casualty：
+
+$$
+[\phi^a(x),\phi^a(y)]=0,\quad \text{if $(x-y)^2<0$}
+$$
+
+2. Hemitian：
+
+$$
+\phi^a(x)=\phi^a(x)^\dagger
+$$
+
+3. Translations：
+$$
+\mathrm{e}^{-iP\cdot y}\phi^a(x)\mathrm{e}^{iP\cdot y}=\phi^a(x-y)
+$$
+
+4. Lorentz Transformations：
+$$
+U(\Lambda)^\dagger\phi^a(x)U(\Lambda)=\phi^a(\Lambda^{-1} a)
+$$
+
+5. Linear combination assumption：
+$$
+\phi^a(x)=\int \mathrm{d}^3\vec p\,[F^a_{\vec p}(x)a_{\vec p}+G^a_{\vec p}(x)a^\dagger_{\vec p}\,]
+$$
 上面的第四条是**标量场**的定义，即洛伦兹变换下的标量。至于为什么平移是 $-y$ 以及洛伦兹变换是 $\Lambda^{-1}$，可以理解为我对算符场做了一个**主动变换**，而这等效于对时空坐标点的**逆向被动变换**。
 
 ### 显式构造标量场
@@ -71,8 +92,11 @@ $$
 $$
 
 > [!check]
-> 可以直接显式验证上面的标量场满足Lorentz不变性：$$\begin{align}U^\dagger(\Lambda)\phi(x)U(\Lambda)&=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[f\,\mathrm{e}^{-ip\cdot x}\,\alpha(\Lambda^{-1}p)+g\,\mathrm{e}^{ip\cdot x}\,\alpha^\dagger(\Lambda^{-1}p)]\\&=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[f\,\mathrm{e}^{-i(\Lambda p)\cdot x}\,\alpha(p)+g\,\mathrm{e}^{i(\Lambda p)\cdot x}\,\alpha^\dagger(p)]\\&=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[f\,\mathrm{e}^{-ip\cdot (\Lambda^{-1}x)}\,\alpha(p)+g\,\mathrm{e}^{ip\cdot (\Lambda^{-1} x)}\,\alpha^\dagger(p)]\\&=\phi(\Lambda^{-1}x)
-> \end{align}$$
+> 可以直接显式验证上面的标量场满足Lorentz不变性：
+> $$
+> \begin{align}U^\dagger(\Lambda)\phi(x)U(\Lambda)&=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[f\,\mathrm{e}^{-ip\cdot x}\,\alpha(\Lambda^{-1}p)+g\,\mathrm{e}^{ip\cdot x}\,\alpha^\dagger(\Lambda^{-1}p)]\\&=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[f\,\mathrm{e}^{-i(\Lambda p)\cdot x}\,\alpha(p)+g\,\mathrm{e}^{i(\Lambda p)\cdot x}\,\alpha^\dagger(p)]\\&=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[f\,\mathrm{e}^{-ip\cdot (\Lambda^{-1}x)}\,\alpha(p)+g\,\mathrm{e}^{ip\cdot (\Lambda^{-1} x)}\,\alpha^\dagger(p)]\\&=\phi(\Lambda^{-1}x)
+> \end{align}
+> $$
 
 总结一下，现在满足条件3，4和5的标量场具有下面的形式：
 
@@ -177,10 +201,17 @@ $$
 
 > [!check]
 > 将标量场写为如下形式：
+> 
 > $$\phi(x)=\int\dfrac{\mathrm{d}^4 p}{(2\pi)^3}\delta(p^2-\mu^2)\theta(p^0)(\alpha(p)\,\mathrm{e}^{-ip\cdot x}+\alpha^\dagger(p)\,\mathrm{e}^{ip\cdot x})$$
+> 
 > $$\square^2 \,\phi(x)=\partial^\mu\partial_\mu\phi(x)=\int\dfrac{\mathrm{d}^4 p}{(2\pi)^3}\delta(p^2-\mu^2)\theta(p^0)(-p^2)(\alpha(p)\,\mathrm{e}^{-ip\cdot x}+\alpha^\dagger(p)\,\mathrm{e}^{ip\cdot x})$$
-> 所以$$(\square^2+\mu^2)\phi(x)=\partial^\mu\partial_\mu\phi(x)=\int\dfrac{\mathrm{d}^4 p}{(2\pi)^3}\delta(p^2-\mu^2)\theta(p^0)(\mu^2-p^2)(\alpha(p)\,\mathrm{e}^{-ip\cdot x}+\alpha^\dagger(p)\,\mathrm{e}^{ip\cdot x})$$
+> 
+> 所以
+> 
+> $$(\square^2+\mu^2)\phi(x)=\partial^\mu\partial_\mu\phi(x)=\int\dfrac{\mathrm{d}^4 p}{(2\pi)^3}\delta(p^2-\mu^2)\theta(p^0)(\mu^2-p^2)(\alpha(p)\,\mathrm{e}^{-ip\cdot x}+\alpha^\dagger(p)\,\mathrm{e}^{ip\cdot x})$$
+> 
 > 可以看到在壳条件 $p^2=\mu^2$ 直接导致积分函数恒为零，因此KG方程成立。
+> 
 > $$\square^2\phi(x)+\mu^2\phi(x)=0$$
 
 第二个重要性质是我们已经得到的因果律条件：
