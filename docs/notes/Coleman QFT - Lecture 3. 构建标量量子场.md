@@ -97,10 +97,12 @@ $$
 
 > [!check]
 > 可以直接显式验证上面的标量场满足Lorentz不变性：
+> 
 > $$
 > \begin{align}U^\dagger(\Lambda)\phi(x)U(\Lambda)&=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[f\,\mathrm{e}^{-ip\cdot x}\,\alpha(\Lambda^{-1}p)+g\,\mathrm{e}^{ip\cdot x}\,\alpha^\dagger(\Lambda^{-1}p)]\\&=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[f\,\mathrm{e}^{-i(\Lambda p)\cdot x}\,\alpha(p)+g\,\mathrm{e}^{i(\Lambda p)\cdot x}\,\alpha^\dagger(p)]\\&=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[f\,\mathrm{e}^{-ip\cdot (\Lambda^{-1}x)}\,\alpha(p)+g\,\mathrm{e}^{ip\cdot (\Lambda^{-1} x)}\,\alpha^\dagger(p)]\\&=\phi(\Lambda^{-1}x)
 > \end{align}
 > $$
+> 
 
 总结一下，现在满足条件3，4和5的标量场具有下面的形式：
 
