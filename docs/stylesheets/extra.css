@@ -1,13 +1,13 @@
 :root {
   --site-theme-primary: #F0DEFF;
-  --site-theme-accent: #9938FF;
-  --site-theme-background: #BE80FF;
+  --site-theme-accent: #B46BFF;
+  --site-theme-background: #F0DEFF;
 }
 
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: var(--site-theme-primary);
-  --md-primary-fg-color--light: #8bd6ff;
-  --md-primary-fg-color--dark: #45b9ff;
+  --md-primary-fg-color--light: #F7EEFF;
+  --md-primary-fg-color--dark: #D9B8FF;
   --md-accent-fg-color: var(--site-theme-accent);
   --md-default-bg-color: var(--site-theme-background);
 }
