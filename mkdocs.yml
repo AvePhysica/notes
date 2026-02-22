@@ -61,7 +61,11 @@ theme:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
-
+      preview: false
+  - pymdownx.superfences
+  - admonition
+  - attr_list
+  
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
