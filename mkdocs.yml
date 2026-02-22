@@ -64,7 +64,6 @@ theme:
     accent: #4da9ff
     background: #d0aff8
   features:
-    - dark_mode
     - search.highlight
     - search.indexes
   language: zh
