@@ -1,0 +1,20 @@
+:root {
+  --site-theme-primary: #F0DEFF;
+  --site-theme-accent: #9938FF;
+  --site-theme-background: #BE80FF;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--site-theme-primary);
+  --md-primary-fg-color--light: #F7EEFF;
+  --md-primary-fg-color--dark: #D9B8FF;
+  --md-accent-fg-color: var(--site-theme-accent);
+  --md-default-bg-color: var(--site-theme-background);
+}
+
+[data-md-color-scheme="default"] .md-content,
+[data-md-color-scheme="default"] .md-sidebar,
+[data-md-color-scheme="default"] .md-header,
+[data-md-color-scheme="default"] .md-tabs {
+  background-color: transparent;
+}
