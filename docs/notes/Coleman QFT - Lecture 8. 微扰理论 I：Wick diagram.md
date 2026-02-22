@@ -10,7 +10,11 @@ $$
 
 >[!example]
 >**Model 1**：Lagrangian为
->$$\mathcal L=\dfrac12(\partial^\mu\phi)(\partial_\mu\phi)-\dfrac12 \mu^2\phi^2-g\rho(x)\phi(x)$$
+>
+>$$
+>\mathcal L=\dfrac12(\partial^\mu\phi)(\partial_\mu\phi)-\dfrac12 \mu^2\phi^2-g\rho(x)\phi(x)
+>$$
+>
 >可以看到前半部分就是自由标量场的Lagrangian，后面的一项则刻画了标量场 $\phi(x)$ 与一个时空坐标依赖的c-number场 $\rho(x)$ 的耦合或相互作用。常数 $g$ 称为**耦合常数**。
 
 标量场满足的运动方程（即E-L方程）为：
@@ -29,12 +33,20 @@ $$
 
 >[!example]
 >**Model 2**：Lagrangian为
->$$\mathcal L=\dfrac12(\partial^\mu\phi)(\partial_\mu\phi)-\dfrac12 \mu^2\phi^2-g\rho(\vec x)\phi(x)$$
+>
+>$$
+>\mathcal L=\dfrac12(\partial^\mu\phi)(\partial_\mu\phi)-\dfrac12 \mu^2\phi^2-g\rho(\vec x)\phi(x)
+>$$
+>
 >其与Model 1的差别在于 $\rho(x)$ 变成了 $\rho(\vec x)$ ，即源 $\rho(\vec x)$ 与时间无关。这可以类比为静电磁场的情形。
 
 >[!example]
 >**Model 3**：Lagrangian为
->$$\mathcal L=\dfrac12(\partial^\mu\phi)(\partial_\mu\phi)-\dfrac12 \mu^2\phi^2+\partial^\mu\psi^*\partial_\mu\psi-m^2\psi^*\psi-g\phi\psi^*\psi$$
+>
+>$$
+>\mathcal L=\dfrac12(\partial^\mu\phi)(\partial_\mu\phi)-\dfrac12 \mu^2\phi^2+\partial^\mu\psi^*\partial_\mu\psi-m^2\psi^*\psi-g\phi\psi^*\psi
+>$$
+>
 >这个模型中包含了两种标量场 $\phi,\psi$，其中 $\phi$ 场不带电（这里的电是指 SO(2) 内部对称性的守恒荷）而 $\psi,\psi^*$ 带电。同时最后一项描述两个场之间的耦合。可以视为两种粒子各自产生的场又互相影响造成了耦合。
 
 $\phi$ 场的运动方程为：
@@ -178,7 +190,11 @@ $$
 
 >[!theorem]
 >**Wick Theorem**：
->$$\begin{align}T(\phi_1\cdots\phi_n)=&:\phi_1\phi_2\cdots\phi_n:\\+&:\overset {|\Large \mkern-1mu{}^{\overline{\;\;\,}}\mkern-2mu\normalsize |}{\phi_1\phi_2}\phi_3\cdots\phi_n:(\text{其他所有有一个缩并的项})\\\\+&:\overset {|\Large \mkern-1mu{}^{\overline{\;\;\,}}\mkern-2mu\normalsize |}{\phi_1\phi_2}\overset {|\Large \mkern-1mu{}^{\overline{\;\;\,}}\mkern-2mu\normalsize |}{\phi_3\phi_4}+\cdots\phi_n:+(\text{其他所有有两个缩并的项})\\\\+&\cdots+(\text{其他所有有$\tfrac{n}{2}$或$\tfrac{n-1}{2}$个缩并的项})\end{align}$$
+>
+>$$
+>\begin{align}T(\phi_1\cdots\phi_n)=&:\phi_1\phi_2\cdots\phi_n:\\+&:\overset {|\Large \mkern-1mu{}^{\overline{\;\;\,}}\mkern-2mu\normalsize |}{\phi_1\phi_2}\phi_3\cdots\phi_n:(\text{其他所有有一个缩并的项})\\\\+&:\overset {|\Large \mkern-1mu{}^{\overline{\;\;\,}}\mkern-2mu\normalsize |}{\phi_1\phi_2}\overset {|\Large \mkern-1mu{}^{\overline{\;\;\,}}\mkern-2mu\normalsize |}{\phi_3\phi_4}+\cdots\phi_n:+(\text{其他所有有两个缩并的项})\\\\+&\cdots+(\text{其他所有有$\tfrac{n}{2}$或$\tfrac{n-1}{2}$个缩并的项})\end{align}
+>$$
+>
 
 可以看到，等号右侧全是一些纯数与正规序积的乘积，因此Wick定理给出了从难算矩阵元的**时序积**形式到好计算矩阵元的**正规序积**形式的变换公式。下面来证明Wick定理：
 
@@ -349,7 +365,11 @@ $$
 
 >[!theorem]
 >所有Wick图（对应的Wick展开式）之和等于所有**连通的**Wick图（对应的Wick展开式）之和的正规序的指数函数。即
->$$\sum \text{all Wick diagram}=\;:\exp\left(\sum\text{all connected Wick diagram}\right):$$
+>
+>$$
+>\sum \text{all Wick diagram}=\;:\exp\left(\sum\text{all connected Wick diagram}\right):
+>$$
+>
 
 下面我们来证明这个定理。为此，先引入一些符号。记所有连通图为 $D^{(c)}_r,\;r=1,2,3,\cdots$ ，一个一般的Wick图 $D$ 一定可以分解为 $D^{(c)}_r$ 的组合，设其中有 $n_r$ 个连通图 $D_r^{(c)}$ ，其中 $n_r$ 显然为非负整数。比如图8.13中有两个左侧类型的连通图，一个右侧类型的连通图。由于不同的连通图之间不会通过缩并耦合，因此图 $D$ 的算符 $O(D)$ 可表示为：
 

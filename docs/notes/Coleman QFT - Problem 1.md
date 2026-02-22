@@ -29,9 +29,17 @@ $$
 
 >[!question]
 >**（时序积）** 两个算符场 $A(x)$ 与 $B(y)$ 的**时序积**被定义为：
->$$T(A(x)B(y))=\begin{cases}A(x)B(y),\quad \text{if $x_0>y_0$} \\ B(y)A(x),\quad \text{if $x_0<y_0$}\end{cases}$$
+>
+>$$
+>T(A(x)B(y))=\begin{cases}A(x)B(y),\quad \text{if $x_0>y_0$} \\ B(y)A(x),\quad \text{if $x_0<y_0$}\end{cases}
+>$$
+>
 >即时间上晚的算符放在前面。仅使用场满足的KG方程以及等时对易子，证明：对于一个质量为 $\mu$ 的自由标量场，满足：
->$$(\square_x^2+\mu^2)T(\phi(x)\phi(y))=c\delta^{(4)}(x-y)$$
+>
+>$$
+>(\square_x^2+\mu^2)T(\phi(x)\phi(y))=c\delta^{(4)}(x-y)
+>$$
+>
 >并确定 $c$ 的值。
 
 Proof：KG方程为：

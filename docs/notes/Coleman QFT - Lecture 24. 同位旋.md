@@ -159,11 +159,23 @@ $$
 
 >[!tip]
 >这里补上前面[[Coleman QFT - Lecture 5. 对称性与守恒律 I：时空对称性]]中没有讲到的一个点，就是守恒荷为什么是生成元。考虑一个Lagrangian不变的对称性变换，则
->$$j^\mu=\pi^\mu_a\delta\phi^a,\quad I=\int\mathrm{d}^3\vec x\,\pi_a\delta\phi^a$$
+>
+>$$
+>j^\mu=\pi^\mu_a\delta\phi^a,\quad I=\int\mathrm{d}^3\vec x\,\pi_a\delta\phi^a
+>$$
+>
 >则
->$$[\phi^a(x),I]=\int\mathrm{d}^3\vec y\,[\phi_a(x),\pi_b(x^0,\vec y)]\delta\phi^b(x^0,\vec y)=\int\mathrm{d}^3\vec y\,i\delta_{ab}\delta^{(3)}(\vec x-\vec y)\delta\phi^b(x^0,\vec y)=i\delta\phi^a(x)$$
+>
+>$$
+>[\phi^a(x),I]=\int\mathrm{d}^3\vec y\,[\phi_a(x),\pi_b(x^0,\vec y)]\delta\phi^b(x^0,\vec y)=\int\mathrm{d}^3\vec y\,i\delta_{ab}\delta^{(3)}(\vec x-\vec y)\delta\phi^b(x^0,\vec y)=i\delta\phi^a(x)
+>$$
+>
 >这正是无穷小变换下的表达式：
->$$\phi^a(x)\to \mathrm{e}^{iQ\lambda}\phi^a(x)\mathrm{e}^{-iQ\lambda}\Rightarrow \delta\phi^a(x)=-i[\phi^a,Q]$$
+>
+>$$
+>\phi^a(x)\to \mathrm{e}^{iQ\lambda}\phi^a(x)\mathrm{e}^{-iQ\lambda}\Rightarrow \delta\phi^a(x)=-i[\phi^a,Q]
+>$$
+>
 >因此守恒荷 $I$ 就是对称变换的生成元 $Q$。
 
 因此，在这个同位旋对称性群下，核子态构成 $I=1$ 的表示空间，而介子态构成 $I=1/2$ 的表示空间。一开始的质子与中子，以及三种介子就是 $I_3$ 的本征态，即

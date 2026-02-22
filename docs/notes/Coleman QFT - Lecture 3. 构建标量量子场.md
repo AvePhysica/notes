@@ -193,7 +193,11 @@ $$
 
 >[!hint]
 >我们从KG方程出发，其解的一般形式为：
->$$\phi(x)=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(\,a_{\vec p}\,\mathrm{e}^{-ip\cdot x}+b_{\vec p}\,\mathrm{e}^{ip\cdot x}\,)$$
+>
+>$$
+>\phi(x)=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(\,a_{\vec p}\,\mathrm{e}^{-ip\cdot x}+b_{\vec p}\,\mathrm{e}^{ip\cdot x}\,)
+>$$
+>
 >厄米性要求 $b_{\vec p}=a_{\vec p}^\dagger$ 。由方程 $[\phi(x),\phi(y)]=0$，我们可以得到算符的基本对易关系：$$[a_{\vec p},a_{\vec p}^\dagger]=\delta^{(3)}(\vec p-\vec p')$$
 >利用平移变换关系：$$\phi(x-a)=\mathrm{e}^{-iP\cdot x}\phi(x)\mathrm{e}^{iP\cdot x}$$
 >我们可以通过求导推导出 $a_{\vec p},\,a^\dagger_{\vec p}$ 与动量算符 $\vec P$ 以及哈密顿量 $\hat H$ 的对易关系。例如对时间求导：海森堡方程为$$\dfrac{\partial\phi(x)}{\partial t}=i[H,\phi(x)]$$$$\mathrm{LHS}=\dfrac{\partial}{\partial t}\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(\,a_{\vec p}\,\mathrm{e}^{-ip\cdot x}+b_{\vec p}\,\mathrm{e}^{ip\cdot x}\,)=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(-i\omega_{\vec p}\,a_{\vec p}\,\mathrm{e}^{-ip\cdot x}+i\omega_{\vec p}a_{\vec p}^\dagger\,\mathrm{e}^{ip\cdot x}\,)$$$$\mathrm{RHS}=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^{3/2}\sqrt{2\omega_{\vec p}}}(\,i[H,a_{\vec p}]\,\mathrm{e}^{-ip\cdot x}+i[H,a^\dagger_{\vec p}]\,\mathrm{e}^{ip\cdot x}\,)$$
@@ -208,7 +212,11 @@ $$
 其间隔一定是类空的，因为$(\vec x-\vec y)^2=-|\vec x-\vec y|^2<0$，因此我们期望其结果为0。验证如下：
 
 >[!check]
->$$[\phi(\vec x,t),\phi(\vec y,t)]=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[\mathrm{e}^{i\vec p\cdot(\vec x-\vec y)}-\mathrm{e}^{-i\vec p\cdot(\vec x-\vec y)}]=0$$
+>
+>$$
+>[\phi(\vec x,t),\phi(\vec y,t)]=\int\dfrac{\mathrm{d}^3\vec p}{(2\pi)^3(2\omega_{\vec p})}[\mathrm{e}^{i\vec p\cdot(\vec x-\vec y)}-\mathrm{e}^{-i\vec p\cdot(\vec x-\vec y)}]=0
+>$$
+>
 >因为被积函数为奇函数。
 
 因此

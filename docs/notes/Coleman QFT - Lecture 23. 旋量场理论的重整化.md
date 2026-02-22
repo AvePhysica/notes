@@ -108,9 +108,17 @@ $$
 
 >[!tip] Discuss
 >前面假定了相互作用是宇称不变的，那如果不是会怎样呢？这样 $b$ 没有理由被消除。我们求助于 $\gamma_5=\begin{pmatrix}0&\mathbb 1\\\mathbb 1&0 \end{pmatrix}$：
->$$\langle0|\gamma_5\psi(0)|1,p_{(0)}\rangle=\sqrt{2m}\begin{pmatrix}b\\0\\a\\0\end{pmatrix}$$
+>
+>$$
+>\langle0|\gamma_5\psi(0)|1,p_{(0)}\rangle=\sqrt{2m}\begin{pmatrix}b\\0\\a\\0\end{pmatrix}
+>$$
+>
 >现在可以构造新的场为：
->$$\psi'=\dfrac{a\psi-b\gamma_5\psi}{a^2-b^2},\quad \langle0|\psi'(0)|1,p_{(0)}\rangle=u_0^{(1)}$$
+>
+>$$
+>\psi'=\dfrac{a\psi-b\gamma_5\psi}{a^2-b^2},\quad \langle0|\psi'(0)|1,p_{(0)}\rangle=u_0^{(1)}
+>$$
+>
 >但这会导致更多的抵消项的产生。但这就是失去宇称对称性的后果：对称性越少，需要的重整化抵消项就越多。
 
 ## 23.2 重整化的Dirac传播子

@@ -5,15 +5,35 @@
 
 >[!example]
 >**Ex.1 SO(2)对称性**：考虑一组自由标量场，其有相同的质量。最简单的情形是只有两个场：$a=\{1,2\}$。拉格朗日量密度为：
->$$\mathcal L=\dfrac12(\partial^\mu\phi^a\partial_\mu\phi^a-\mu^2\phi^a\phi^a)$$
+>
+>$$
+>\mathcal L=\dfrac12(\partial^\mu\phi^a\partial_\mu\phi^a-\mu^2\phi^a\phi^a)
+>$$
+>
 >由于这是一个二次型 $\phi^a\phi^a=(\phi^1)^2+(\phi^2)^2$，其在二维旋转群 $SO(2)$ 下不变。具体来说，变换为：
->$$\phi^1\to\phi^1\cos\lambda+\phi^2\sin\lambda,\quad\phi^2\to\phi^2\cos\lambda-\phi^1\sin\lambda$$
+>
+>$$
+>\phi^1\to\phi^1\cos\lambda+\phi^2\sin\lambda,\quad\phi^2\to\phi^2\cos\lambda-\phi^1\sin\lambda
+>$$
+>
 >这也是一个单参连续变换。有
->$$D\phi^1=\phi^2,\quad D\phi^2=-\phi^1,\quad \pi_1^\mu=\partial^\mu\phi^1,\quad\pi_1^\mu=\partial^\mu\phi^2,\quad D\mathcal L=0$$
+>
+>$$
+>D\phi^1=\phi^2,\quad D\phi^2=-\phi^1,\quad \pi_1^\mu=\partial^\mu\phi^1,\quad\pi_1^\mu=\partial^\mu\phi^2,\quad D\mathcal L=0
+>$$
+>
 >故对应的守恒流为：
->$$ J^\mu=\pi_a^\mu D\phi^a-F^\mu=(\partial^\mu\phi^1)\phi^2-(\partial^\mu\phi^2)\phi^1$$
+>
+>$$
+> J^\mu=\pi_a^\mu D\phi^a-F^\mu=(\partial^\mu\phi^1)\phi^2-(\partial^\mu\phi^2)\phi^1
+>$$
+>
 >验证其散度为零是简单的：
->$$\partial_\mu J^\mu=(\square^2\phi^1)\phi^2-(\square^2\phi^2)\phi^1=(\mu^2\phi^1)\phi^2-(\mu^2\phi^2)\phi^1=0$$
+>
+>$$
+>\partial_\mu J^\mu=(\square^2\phi^1)\phi^2-(\square^2\phi^2)\phi^1=(\mu^2\phi^1)\phi^2-(\mu^2\phi^2)\phi^1=0
+>$$
+>
 >使用了从Lagrangian推出来的EL方程（即KG方程）。这里便能看出两个场的质量相等是必须的。
 
 我们接着上面的例子，来求其守恒量 $Q$：
@@ -116,20 +136,40 @@ $$
 >[!hint]
 >为什么我们在变分时可以将 $\psi,\psi^*$ 视为独立的场？它们明明应该互为复共轭嘛。
 >为回答这一点，我们直接考虑一个一般的Lagrangian：
->$$\mathcal L=\mathcal L(\psi,\psi^*,\partial_\mu\psi,\partial_\mu\psi^*)$$
+>
+>$$
+>\mathcal L=\mathcal L(\psi,\psi^*,\partial_\mu\psi,\partial_\mu\psi^*)
+>$$
+>
 >作用量当然要是实的。对作用量的变分一定具有下面的形式：
->$$\delta S=\int\mathrm{d}^4x\,(A\delta\psi+A^*\delta\psi^*)=0$$
+>
+>$$
+>\delta S=\int\mathrm{d}^4x\,(A\delta\psi+A^*\delta\psi^*)=0
+>$$
+>
 >一方面，取 $\delta\psi$ 为实，则 $\delta\psi=\delta\psi^*$ ，因此 $A=A^*$。
 >另一方面，还可以取 $\delta\psi$ 为纯虚，则 $\delta\psi=-\delta\psi^*$ ，因此 $A=-A^*$。
 >综合一下，就得到了 $A=A^*=0$ 的结论。这与我们在一开始时将 $\delta\psi,\delta\psi^*$ 视为**独立**得到的结果是相同的。
 
 >[!example]
 >**Ex.2**：回到我们一开始的Lagrangian：
->$$\mathcal L=\dfrac12(\partial^\mu\phi^a\partial_\mu\phi^a-\mu^2\phi^a\phi^a)$$
+>
+>$$
+>\mathcal L=\dfrac12(\partial^\mu\phi^a\partial_\mu\phi^a-\mu^2\phi^a\phi^a)
+>$$
+>
 >但现在的 $a=1,2,\cdots,n$ ，因此其有 $SO(n)$ 对称性。其将对应于 $\dfrac12n(n-1)$ 个守恒流：
->$$J_\mu^{[ab]}=(\partial_\mu\psi^a)\psi^b-(\partial_\mu\psi^b)\psi^a=-J_\mu^{[ba]}$$
+>
+>$$
+>J_\mu^{[ab]}=(\partial_\mu\psi^a)\psi^b-(\partial_\mu\psi^b)\psi^a=-J_\mu^{[ba]}
+>$$
+>
 >现在我不太可能将所有对应的守恒量 $Q^{[ij]}$ 全部同时对角化，因为其对应的变换彼此不对易。但是，我们可以对角化其中的一部分。 比如：对 $n=3$，可以引入场：
->$$\psi=\dfrac{1}{\sqrt 2}(\phi^1+i\phi^2),\quad \psi^*=\dfrac{1}{\sqrt 2}(\phi^1-i\phi^2),\quad \phi_3=\phi_0$$
+>
+>$$
+>\psi=\dfrac{1}{\sqrt 2}(\phi^1+i\phi^2),\quad \psi^*=\dfrac{1}{\sqrt 2}(\phi^1-i\phi^2),\quad \phi_3=\phi_0
+>$$
+>
 >则 $\psi,\psi^*,\phi_0$ 对 $Q_{12}$ 的作用为 $-1,+1$ 以及不变。
 
 ## 6.2 电荷的洛伦兹不变性
@@ -282,29 +322,53 @@ $$
 
 >[!example]
 >**Ex.3  $\phi^4$相互作用**：加入 $\phi^4$ 相互作用后的Lagrangian为：
->$$\mathcal L^{(1)}=\dfrac12(\partial^\mu\phi)^2-\dfrac12\mu^2\phi^2-g\phi^4$$
+>
+>$$
+>\mathcal L^{(1)}=\dfrac12(\partial^\mu\phi)^2-\dfrac12\mu^2\phi^2-g\phi^4
+>$$
+>
 >宇称变换的作用为：
->$$P:\phi(\vec x,t)\to\phi(-\vec x,t)$$
+>
+>$$
+>P:\phi(\vec x,t)\to\phi(-\vec x,t)
+>$$
+>
 >其会改变Lagrangian：$$\mathcal L^{(1)}(\vec x,t)\to\mathcal L^{(1)}(-\vec x,t)$$
 >但由于作用量要对全空间积分，故作用量不变。
 >事实上，还有一种宇称作用方式：当认为 $\phi$ 是赝标量场时，宇称作用为
->$$P:\phi(\vec x,t)\to-\phi(-\vec x,t)$$
+>
+>$$
+>P:\phi(\vec x,t)\to-\phi(-\vec x,t)
+>$$
+>
 >称为赝标量变换规则。在此变换下，显然Lagrangian仍是协变的。
 
 >[!example]
 >**Ex.3  $\phi^3$相互作用**：再加入 $\phi^3$ 相互作用后的Lagrangian为：
->$$\mathcal L^{(2)}=\dfrac12(\partial^\mu\phi)^2-\dfrac12\mu^2\phi^2-g\phi^4-h\phi^3$$
+>
+>$$
+>\mathcal L^{(2)}=\dfrac12(\partial^\mu\phi)^2-\dfrac12\mu^2\phi^2-g\phi^4-h\phi^3
+>$$
+>
 >现在赝标量变换 $\phi\to-\phi$ 不再是对称性了。只有标量宇称变换是对称性。
 
 >[!example]
 >**Ex.4   $\epsilon_{\mu\nu\rho\sigma}$ 的耦合**：Lagrangian为：
->$$\mathcal L^{(3)}=\dfrac12 \sum_{a=1}^4[(\partial_\mu\phi^a)^2-\mu_a^2(\phi^a)^2]-\lambda\epsilon_{\mu\nu\rho\sigma}\partial^\mu\phi^1\partial^\nu\phi^2\partial^\rho\phi^3\partial^\sigma\phi^4$$
+>
+>$$
+>\mathcal L^{(3)}=\dfrac12 \sum_{a=1}^4[(\partial_\mu\phi^a)^2-\mu_a^2(\phi^a)^2]-\lambda\epsilon_{\mu\nu\rho\sigma}\partial^\mu\phi^1\partial^\nu\phi^2\partial^\rho\phi^3\partial^\sigma\phi^4
+>$$
+>
 >其中 $\epsilon_{\mu\nu\rho\sigma}$ 是四阶全反对称张量，可以发现耦合中的每一项均含有一个时间分量与三个空间分量，因此为使这一项在宇称下不变，我们假设其中有一个场为赝标量场，剩下三个为标量场（或者反过来）。此时宇称才是其对称性。
 >
 
 >[!example]
 >**Ex.5 前面的组合**：在上一个例子中再加上 $\phi^3$ 相互作用项：
->$$ \mathcal L^{(4)}=\mathcal L^{(3)}-h\sum_{a=1}^4(\phi^a)^3$$
+>
+>$$
+> \mathcal L^{(4)}=\mathcal L^{(3)}-h\sum_{a=1}^4(\phi^a)^3
+>$$
+>
 >则不论我们定义哪一个场是赝标量场，都会引起Lagrangian变化，因此此Lagrangian不存在宇称对称性。
 
 ### 时间反演(time reversal)
@@ -342,7 +406,11 @@ $$
 
 >[!tip]
 >这里我没有很区分**反线性**与**反幺正**。实际上，(\*)式的前一式为反幺正的定义，而后一式为反线性的定义。但是，可以证明的是，反幺正算符一定反线性。这可以由计算反线性定义式的模长为零证明：
->$$|\varOmega(\alpha a+\beta b)-\alpha^*\varOmega a+\beta^*\varOmega b|^2=0$$
+>
+>$$
+>|\varOmega(\alpha a+\beta b)-\alpha^*\varOmega a+\beta^*\varOmega b|^2=0
+>$$
+>
 >具体展开自行计算。
 
 量子力学中，关于对称性的一个著名定理是所谓的**Wigner's Theorem**，其指出在选取合适的相位时，任意的保内积模长的变换一定是**幺正或反幺正**的。其具体证明可参见[[AQM_Note 4]]。

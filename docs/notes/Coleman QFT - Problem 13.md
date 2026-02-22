@@ -39,7 +39,11 @@ $$
 >[!question]
 >（1）类似的，计算到 $O(g^2)$ 阶的介子的自能函数 $\tilde\Pi'(k^2)$。仅保留对Feynman参数的积分。
 >（2）在[[Coleman QFT - Problem 9]]中，我们推导过公式：
->$$-\mathrm{Im}[-i\tilde D'(k^2)]^{-1}=\mathrm{Im}\,\tilde \Pi'(k^2)=\dfrac{-\pi\sigma(k^2)}{|\tilde D(k^2)|^2}$$
+>
+>$$
+>-\mathrm{Im}[-i\tilde D'(k^2)]^{-1}=\mathrm{Im}\,\tilde \Pi'(k^2)=\dfrac{-\pi\sigma(k^2)}{|\tilde D(k^2)|^2}
+>$$
+>
 >由于当 $k>2m$ 时 $\sigma(k^2)>0$ ，因此介子自能函数 $\tilde\Pi'(k^2)$ 的虚部在 $k>2m$ 时是负的。由（1）的计算结果验证这一点。
 
 （1）类似的

@@ -147,10 +147,22 @@ $$
 
 >[!example]
 >考虑下面的拉格朗日量密度：
->$$\mathcal L=\pm \dfrac12(\partial_\mu\phi\partial^\mu\phi-m^2\phi^2)$$
->$$\pi^\mu=\pm\partial^\mu\phi$$
+>
+>$$
+>\mathcal L=\pm \dfrac12(\partial_\mu\phi\partial^\mu\phi-m^2\phi^2)
+>$$
+>
+>
+>$$
+>\pi^\mu=\pm\partial^\mu\phi
+>$$
+>
 >E-L方程为：
->$$\partial_\mu\pi^\mu=\mp m^2\phi\Rightarrow \partial_\mu\partial^\mu\phi+m^2\phi=0$$
+>
+>$$
+>\partial_\mu\pi^\mu=\mp m^2\phi\Rightarrow \partial_\mu\partial^\mu\phi+m^2\phi=0
+>$$
+>
 >这实际上就是KG方程。
 
 接下来，我们向哈密顿力学迈进。上面的类比表明，哈密顿量密度的定义应为：
@@ -167,11 +179,23 @@ $$
 
 >[!example]
 >接着上面的例子，将拉格朗日量密度写为：
->$$\mathcal L=\pm \dfrac12(\dot\phi^2-|\nabla \phi|^2-m^2\phi^2)$$
+>
+>$$
+>\mathcal L=\pm \dfrac12(\dot\phi^2-|\nabla \phi|^2-m^2\phi^2)
+>$$
+>
 >广义动量密度的时间分量：
->$$\pi=\dfrac{\partial\mathcal L}{\partial\dot\phi}=\pm\dot\phi$$
+>
+>$$
+>\pi=\dfrac{\partial\mathcal L}{\partial\dot\phi}=\pm\dot\phi
+>$$
+>
 >哈密顿量密度为：
->$$\mathcal H=\pm \dfrac12(\dot\phi^2+|\nabla \phi|^2+m^2\phi^2)$$
+>
+>$$
+>\mathcal H=\pm \dfrac12(\dot\phi^2+|\nabla \phi|^2+m^2\phi^2)
+>$$
+>
 >由正定性，上式应当取正号才是符合物理的。
 
 ## 4.4 量子场论
