@@ -1,29 +1,39 @@
 > [!question]
 > 当我们尝试对自由Dirac理论用对易子量子化时，我们遇到了能量不正定的问题，因此转而使用反对易子进行正则量子化规避了此问题。下面，我们来尝试对原先的标量场理论使用**反对易子**量子化。对于一个自由的带电标量场：
 >
+
 > $$
 > \mathcal L=\pm(\partial_\mu\phi^*-\mu^2\phi^*\phi)
 > $$
+
 >
 > 假设其满足基本反对易关系：
 >
+
 > $$
 > \{\phi(\vec x,t),\phi(\vec y,t)\}=\{\dot\phi(\vec x,t),\dot\phi(\vec y,t)\}=0
 > $$
+
 >
+
 > $$
 > \{\phi(\vec x,t),\phi^*(\vec y,t)\}=\{\dot\phi(\vec x,t),\dot\phi^*(\vec y,t)\}=0
 > $$
+
 >
+
 > $$
 > \{\phi(\vec x,t),\dot \phi^*(\vec y,t)\}=\lambda\delta^{(3)}(\vec x-\vec y)
 > $$
+
 >
 > 说明其会破坏Hilbert空间中的反对易子**正定性**，这是指对于任何 $\theta$ 以及态矢量 $|\phi\rangle$，均有
 >
+
 > $$
 > \langle\phi|\{\theta,\theta^\dagger\}|\phi\rangle\geq 0
 > $$
+
 >
 >
 
@@ -68,9 +78,11 @@ $$
 > [!question]
 > 计算质心系中介子-核子散射的微分散射截面，到最低阶 $O(g^2)$ 即可。此时的相互作用为“标量”理论：
 >
+
 > $$
 > \mathcal L'_I=g\bar\psi\psi\phi
 > $$
+
 >
 >
 
@@ -124,9 +136,11 @@ $$
 > [!question]
 > 在“赝标量”理论下计算核子-反核子散射的微分散射截面，到最低阶 $O(g^2)$ 即可。
 >
+
 > $$
 > \mathcal L_I'=g\bar\psi i\gamma_5\psi\phi
 > $$
+
 >
 >
 

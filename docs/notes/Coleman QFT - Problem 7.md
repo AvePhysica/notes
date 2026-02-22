@@ -1,9 +1,11 @@
 > [!question]
 > 我们已经完成了在质心系中的双粒子态密度的推导：
 >
+
 > $$
 > D=\dfrac{1}{16\pi^2}\dfrac{|\vec p_f|\,\mathrm{d}\varOmega_f}{E_T}
 > $$
+
 >
 > 计算实验系下的态密度 $D$（即 $\vec p_T\ne 0$ ）。
 
@@ -43,9 +45,11 @@ $$
 > [!question]
 > 设 $A,B,C,D$ 为四个实标量场，其动力学由下面的Lagrangian density确定：
 >
+
 > $$
 > \mathcal L=\dfrac12[(\partial_\mu A)^2-m^2A^2+(\partial_\mu B)^2+(\partial_\mu C)^2+(\partial_\mu D)^2]+g\,ABCD
 > $$
+
 >
 > 注意到 $A$ 的质量为 $m$ ，而 $B,C,D$ 是无质量的。其允许衰变过程 $A\to B+C+D$ 发生。在 $g$ 的最低阶下，计算 $A$ 的衰变率。如果相互作用项为 $g\,AB^3$ ，则其允许衰变过程 $A\to 3B$ 发生。此时的衰变率又是什么？
 

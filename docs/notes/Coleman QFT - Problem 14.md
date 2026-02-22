@@ -1,15 +1,19 @@
 > [!question]
 > 设 $\psi_A,\psi_B,\psi_C,\psi_D$ 是四个Dirac旋量场，$C,P,T$ 变换按下面的标准形式定义：
 >
+
 > $$
 > U_P^\dagger \psi(\vec x,t)U_P=\beta\psi(-\vec x,t),\quad U_C^\dagger\psi(x)U_C=\psi^*(x),\quad \varOmega_{PT}^{-1}\psi(x)\varOmega_{PT}=i\gamma_5\psi(-x)\quad (\text{Majorana basis})
 > $$
+
 >
 > 考虑下面的相互作用项：
 >
+
 > $$
 > \mathcal H'=g_1(\bar\psi_A\gamma^\mu\psi_B)(\bar\psi_C\gamma_\mu\psi_D)+g_2(\bar\psi_A\gamma^\mu\psi_B)(\bar\psi_C\gamma_\mu\gamma_5\psi_D)+g_3(\bar\psi_A\gamma^\mu\gamma_5\psi_B)(\bar\psi_C\gamma_\mu\psi_D)+g_4(\bar\psi_A\gamma^\mu\gamma_5\psi_B)(\bar\psi_C\gamma_\mu\gamma_5\psi_D)+\text{c.c.}
 > $$
+
 >
 > （1）说明 $\mathcal H'(0)$ 是 $CPT$ 不变的。
 > （2）在 $g_i$ 满足怎样的条件下， $\mathcal H'(0)$ 是 $C$ 不变的？$P$ 不变的？$T$ 不变的？$PC$ ？$CT$ ？$TP$ ？
@@ -90,7 +94,9 @@ $$
 > 在[[Coleman QFT - Lecture 25. 处理无限大：正规化与重整化]]中，我们推导了在四维时空中一个图的表观发散度可以写为：
 >
 > $$
+
 > D=4-B_E-\dfrac32 F_E+\sum_i n_i\delta_i,\quad \delta_i\equiv b_i+\dfrac32 f_i+d_i-4=\mathrm{dim}\,\mathcal L_i-4
+
 > $$
 >
 > 推导公式在一般的 $d$ 维时空中的版本。回答：使 $\phi^n$ 可重整化的最大的 $n$ 是多少？使 $(\bar\psi\psi)^2$ 可重整化的 $d$ 满足什么条件？
@@ -144,20 +150,26 @@ $$
 > 考虑旋量场与赝标量场的Yukawa相互作用：
 >
 > $$
+
 > \mathcal L'=g\bar\psi i\gamma_5\psi\phi
+
 > $$
 >
 > 我们已经在[[Coleman QFT - Lecture 21. Dirac方程 III：量子化与Feynman规则]]计算过介子-核子弹性散射的 $O(g^2)$ 阶的散射振幅了，其由两个图组成，设两个图代表的振幅分别为 $g^2M_1$ 与 $g^2M_2$。
 > 现在考虑介子与核子同位旋不变的相互作用理论（[[Coleman QFT - Lecture 24. 同位旋]]中有过讨论）：
 >
 > $$
+
 > \mathcal L'=g\,\vec \Phi\cdot\bar Ni\gamma_5\vec\tau N 
+
 > $$
 >
 > 考虑下面三个不同类型的介子-核子散射过程：
 >
 > $$
+
 > (a)\;p+\pi^+\to p+\pi^+\qquad (b) \;n+\pi^+\to n+\pi^+,\qquad (c)\;n+\pi^+\to p+\pi^0
+
 > $$
 >
 > 计算这三个过程到 $O(g^2)$ 阶的散射振幅，用 $g,M_1,M_2$ 表示。同时，计算同位旋描述下纯态 $I=\dfrac12$ 与 $I=\dfrac32$ 的弹性散射振幅 $a_{1/2}$ 与 $a_{3/2}$。

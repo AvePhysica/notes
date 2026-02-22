@@ -59,17 +59,23 @@ $$
 > [!question]
 > 本题来研究如何求解形如 $a\mkern-9.5mu /$ 的乘积的迹。前几个是容易的：
 >
+
 > $$
 > \mathrm{Tr}\,(\mathbb 1)=4
 > $$
+
 >
+
 > $$
 > \mathrm{Tr}\,(a\mkern-9.5mu /)=\mathrm{Tr}\,(\gamma_5\gamma_5a\mkern-9.5mu /)=-\mathrm{Tr}\,(\gamma_5a\mkern-9.5mu /\gamma_5)=-\mathrm{Tr}\,(\gamma_5\gamma_5a\mkern-9.5mu /)=0
 > $$
+
 >
+
 > $$
 > \mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /)=\dfrac12\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /+b\mkern-9.5mu /a\mkern-9.5mu /)=4a\cdot b
 > $$
+
 >
 > 请继续计算 $\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /c\mkern-9.5mu /),\;\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /c\mkern-9.5mu /d\mkern-9.5mu /)$ 以及 $\mathrm{Tr}\,(a\mkern-9.5mu /b\mkern-9.5mu /c\mkern-9.5mu /d\mkern-9.5mu /\gamma_5)$。
 

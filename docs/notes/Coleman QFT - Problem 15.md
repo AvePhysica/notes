@@ -1,9 +1,11 @@
 > [!question]
 > 这个问题将构造一个只有纵向极化解的理论。考虑Lagrangian：
 >
+
 > $$
 > \mathcal L=\pm\dfrac12\left[(\partial_\nu A^\nu)^2-\mu^2A_\nu A^\nu\right]
 > $$
+
 >
 > 说明其解为质量为 $m$ 的纵向波解，并且说明 $A_0$ 与其正则动量构成该理论的IVD。构造Hamiltonian，并确定符号。证明存在一种对应关系，可以将该理论的 $A_0$ 与其正则动量对应到标量场 $\phi$ 与 $\pi$ 上，使得该理论与Klein-Gordan理论等价。
 
@@ -68,9 +70,11 @@ $$
 > [!question]
 > 假设 $\psi_1,\psi_2$ 为两个Dirac场，质量为 $m_1,m_2$，以及 $A_\mu$ 为一个质量为 $\mu$ 的实矢量场。相互作用为：
 >
+
 > $$
 > \mathcal L'=gA_\mu(\bar\psi_1\gamma^\mu\psi_2+\bar\psi_2\gamma^\mu\psi_1)
 > $$
+
 >
 > 当 $m_1>m_2+\mu$ 时，衰变过程 $\psi_1\to \psi_2+A_\nu$ 可以发生。计算质心系中最低阶的衰变宽度 $\varGamma$。由于该过程矢量场 $A_\mu$ 实际上耦合到一个不守恒的流上（ $m_1\ne m_2$ 时），验证这个理论在 $\mu\to 0$ 时会出现发散的问题。
 
@@ -138,19 +142,25 @@ $$
 > 考虑一个 $\phi^4$ 作用的Lagrangian：
 >
 > $$
+
 > \mathcal L=\dfrac12\partial^\mu\phi'\partial_\mu\phi'-\dfrac12\mu^2\phi'^2-\dfrac{1}{4!}g\phi'^4-\dfrac{1}{4!}C\phi'^4+\cdots
+
 > $$
 >
 > 考虑该理论的耦合常数重整化，其要求介子-介子弹性散射的振幅在对称点 $s=t=u=\dfrac 43\mu^2$ 处精确满足：
 >
 > $$
+
 > i\mathcal A=ig
+
 > $$
 >
 > 其中三个Mandelstam变量为（参见[[Coleman QFT - Lecture 11. 散射理论 I：Mandelstam变量、CPT和相空间]]）：
 >
 > $$
+
 > s=(p+q)^2,\quad t=(p-p')^2,\quad u=(p-q')^2
+
 > $$
 >
 > 计算该散射过程到 $O(g^2)$ 阶的散射振幅，用 $s,t,u$ 表示，结果保留对Feynman参数的积分即可。并通过计算散射截面验证质心系中的光学定理成立。

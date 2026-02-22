@@ -2,9 +2,11 @@
 > 在 $d$ 维时空中，一个自由标量场的量纲是什么？
 > 已知
 >
+
 > $$
 > \mathcal L=\dfrac12(\partial_\mu\phi\partial^\mu \phi)-\sum_{n\geq 2}a_n\phi^n
 > $$
+
 >
 > $\mathcal L,S,a_n$ 的量纲分别是什么？
 
@@ -37,15 +39,19 @@ $$
 > [!question]
 > 在[[Coleman QFT - Problem 1]]的第四题中，定义了可观测量：
 >
+
 > $$
 > A(a)=\dfrac{1}{(a\sqrt\pi)^3}\int\mathrm{d}^3\vec x\,\phi(\vec x,0)\,\mathrm{e}^{-|\vec x|^2/a^2}
 > $$
+
 >
 > 对于小的 $a$ ，其期望的近似式为
 >
+
 > $$
 > \mathrm{var}\;A(a)=\alpha a^\beta+\cdots
 > $$
+
 >
 > （1）对于一个一般的维度 $d$ ，确定 $\beta$。
 > （2）将观测量中的 $\phi$ 换为哈密顿量密度 $\mathcal H$ ，确定此时的 $\beta$。
@@ -77,9 +83,11 @@ $$
 > [!question]
 > 考虑一个实矢量场 $A_\mu$。系统的拉格朗日量密度定义为：
 >
+
 > $$
 > \mathcal L=-\dfrac14 F_{\mu\nu}F^{\mu\nu},\quad F_{\mu\nu}\equiv \partial_\mu A_\nu-\partial_\nu A_{\mu}
 > $$
+
 >
 > 求解系统的Euler-Lagrange方程。
 > 进一步的，若定义电场 $\vec E=(F^{10},F^{20},F^{30})$ 以及磁场 $\vec B=(F^{32},F^{13},F^{21})$ ，推导其满足的Maxwell方程组。
@@ -123,15 +131,19 @@ $$
 > [!question]
 > 如果我们定义：
 >
+
 > $$
 > \theta^{\nu\mu}\equiv T^{\nu\mu}+a\partial_\lambda(A^\nu F^{\mu\lambda})
 > $$
+
 >
 > 选取合适的常数 $a$ ，$\theta^{\mu\nu}=\theta^{\nu\mu}$，且其 $\mu=\nu=0$ 分量为通常的能量密度，即
 >
+
 > $$
 > \theta^{00}=\dfrac12(|\vec E|^2+|\vec B|^2)
 > $$
+
 >
 >
 

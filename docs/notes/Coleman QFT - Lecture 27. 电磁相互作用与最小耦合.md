@@ -96,53 +96,69 @@ $$
 
 > [!example]  Example 1：自由Dirac场
 >
+
 > $$
 > \mathcal L_m=\bar\psi(i\partial\mkern-9mu/-m)\psi
 > $$
+
 >
 > 其内部对称性是 $U(1)$ ，即
 >
+
 > $$
 > \psi\to \mathrm{e}^{i\lambda}\psi,\quad \bar\psi\to\mathrm{e}^{-i\lambda}\bar\psi
 > $$
+
 >
 > 此变换下 $\mathcal L_m$ 不变，对应的守恒流为：
 >
+
 > $$
 > J^\mu=\dfrac{\partial\mathcal L_m}{\partial(\partial_\mu\phi)}D\phi=\bar\psi \gamma^\mu\psi
 > $$
+
 >
 > 检验：
 >
+
 > $$
 > \partial_\mu J^\mu=(\partial_\mu\bar\psi)\gamma^\mu\psi+\bar\psi\gamma^\mu(\partial_\mu\psi)=im\bar\psi\psi-im\bar\psi\psi=0
 > $$
+
 >
 >
 
 > [!example] Example 2：带电自由标量场
 >
+
 > $$
 > \mathcal L_m=\partial_\mu\phi^*\partial^\mu\phi-\mu^2\phi^*\phi
 > $$
+
 >
 > 其内部对称性也是 $U(1)$，变换为：
 >
+
 > $$
 > \phi\to \mathrm{e}^{i\lambda}\phi,\quad \phi^*\to\mathrm{e}^{-i\lambda}\phi^*
 > $$
+
 >
 > 因此
 >
+
 > $$
 > J^\mu=(\partial^\mu\phi^*)(-i\phi)+(\partial^\mu\phi)(i\phi^*)=i[\phi^*\partial^\mu\phi-\phi\partial^\mu\phi^*]
 > $$
+
 >
 > 检验：
 >
+
 > $$
 > \partial_\mu J^\mu=i[\phi^*\square^2\phi-\phi\square^2\phi^*]=i[\phi^*\mu^2\phi-\phi\mu^2\phi^*]=0
 > $$
+
 >
 >
 
@@ -281,41 +297,53 @@ $$
 
 > [!example] **Example 1. Revisited**：
 >
+
 > $$
 > D_\mu\psi=\partial_\mu\psi+ieA_\mu\psi
 > $$
+
 >
 > 则
 >
+
 > $$
 > \mathcal L_m=\bar\psi(i\partial\mkern-9mu/-m)\psi\to \mathcal L'=\bar\psi(i\partial\mkern-9mu/-m)\psi-eJ^\mu A_\mu
 > $$
+
 >
 > 这实际上就给出了最简单的耦合形式 $-eJ^\mu A_\mu$，因此我们验证了 $J^\mu$ 仍然守恒。原来的守恒流为：
 >
+
 > $$
 > J^\mu=\bar\psi\gamma^\mu\psi
 > $$
+
 >
 > 其中没有导数 $\partial_\mu$，因此我们无需对其做任何修改。$\mathcal L_I=-eJ^\mu A_\mu=-e\bar\psi\gamma^\mu\psi A_\mu$ 就是[[Coleman QFT - Lecture 26. 矢量场]]中提到的Yukawa耦合。
 
 > [!example] **Example 2. Revisited**：
 >
+
 > $$
 > D_\mu\phi=\partial_\mu\phi+ieA_\mu\phi,\quad D_\mu\phi^*=\partial_\mu\phi^*-ieA^\mu\phi^*
 > $$
+
 >
 > 则
 >
+
 > $$
 > \mathcal L_m=\partial_\mu\phi^*\partial^\mu\phi-\mu^2\phi^*\phi\to\mathcal L'=D_\mu\phi^*D^\mu\phi-\mu^2\phi^*\phi=\mathcal L_m-ie[\phi^*\partial^\mu\phi-\phi\partial^\mu\phi^*]A_\mu+e^2A^\mu A_\mu \phi^*\phi
 > $$
+
 >
 > 这个耦合形式就更为复杂了，其比 $-eJ^\mu A_\mu$ 多了一项**四次耦合**。新的守恒流为：
 >
+
 > $$
 > J^\mu=i[\phi^*\partial^\mu\phi-\phi\partial^\mu\phi^*]\to J^\mu_{\text{new}}=ie[\phi^*D^\mu\phi-\phi D^\mu\phi^*]
 > $$
+
 >
 > 你可以通过新的运动方程验证其确实是守恒流。
 
@@ -361,27 +389,35 @@ $$
 > [!abstract]
 > 现在，我们反过来梳理一遍步骤，可能对你理解这两节有帮助。系统的Lagrangian为：
 >
+
 > $$
 > \mathcal L=\mathcal L_P+\mathcal L',\quad \mathcal L_P=-\dfrac14 F_{\mu\nu}F^{\mu\nu}+\dfrac12\mu^2 A_\mu A^\mu,\quad \mathcal L'=\mathcal L_m+\mathcal L_{\text{coupling}}
 > $$
+
 >
 > 对 $A_\mu$ 变分得到的运动方程为：
 >
+
 > $$
 > \partial_\nu F^{\nu\mu}+\mu^2A^\mu-J^\mu=0\Rightarrow \mu^2\partial_\mu A_\mu=\partial_\mu J_\mu,\quad J^\mu\equiv-\dfrac{\partial\mathcal L'}{\partial A_\mu}
 > $$
+
 >
 > 现在假设存在一种规范变换 $A_\mu\to A_\mu+\partial_\mu\chi,\;\phi\to \phi'$，使得规范变换下 $\mathcal L'$ 不变。而无穷小规范变换诱导出一种变分，则只有 $\dfrac12\mu^2 A_\mu A^\mu$ 会发生变化，得到Lorenz条件以及流守恒方程：
 >
+
 > $$
 > \partial _\mu A^\mu=0\Rightarrow \partial_\mu J^\mu=0
 > $$
+
 >
 > 因此相互作用的规范不变性必然导致守恒流。另一方面，假设物质场的自由Lagrangian一开始具有某种内部对称性，因此具有某种守恒流：
 >
+
 > $$
 > \delta\phi=-iQ\lambda\phi\Rightarrow j^\mu=-i\pi^\mu Q\phi
 > $$
+
 >
 > 现在，我们将规范变换关于 $\phi$ 的部分定义为此内部对称性局域化的结果。此时引入协变导数 $D_\mu$。我们证明了如果将 $\mathcal L_m$ 中的所有 $\partial_\mu$ 换为 $D_\mu$，则其在规范变换下不变。这就是最小耦合方案。将新的 $\mathcal L_m$ 作为 $\mathcal L'$。则这种规范不变性对应的守恒流 $J^\mu$ 正是原先内部对称性导致的守恒流 $j^\mu$ 中将所有 $\partial_\mu$ 换为 $D_\mu$ 的结果。
 >
